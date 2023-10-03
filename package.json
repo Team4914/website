@@ -1,5 +1,5 @@
 {
-  "name": "roboticswebsite",
+  "name": "c-users-iyoun-onedrive-documents-programming-web-robotics-robotics-website-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.2.0"
+    "astro": "^3.2.2"
   }
 }
