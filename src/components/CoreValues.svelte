@@ -21,7 +21,6 @@ and the <div> classes with class divider make up the dividers dividing the butto
 
 GENERAL APPEARANCE
 To change the sendto link of the buttons, modify the "link" constants containing the urls
-To change ENTIRE COMPONENT's background color, modify
 To change height of buttons, modify the "h-[]" class in the <a> tags
 
 IMAGE:
