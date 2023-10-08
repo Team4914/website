@@ -19,7 +19,7 @@ const pages: Page[] = [
       { name: "Scouting", href: "/subteams/scouting" },
     ]
   },
-  { name: "Build Blog", href: "/build-blog" },
+  { name: "About Us", href: "/AboutUs" },
   { name: "Competitions", href: "/competitions" },
   { name: "Community Outreach", href: "/community-outreach" },
   { name: "Resources", href: "/resources" },

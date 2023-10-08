@@ -6,18 +6,15 @@ import Footer from '../components/Footer.svelte';
 import Sidebar from '../components/Sidebar.svelte';
 import Hero from '../components/Hero.svelte';
 import MainLayout from '../layouts/MainLayout.astro';
+import AboutLayout from '../layouts/AboutLayout.astro';
 ---
 
-<MainLayout title="Welcome to Robotics.">
-	<main>
-		<Sidebar />
-		<Navbar/>
-		<Hero myBackground="background-image: url(hero-img.png);" myPartOneTitle="VPCI" myPartTwoTitle="Robotics" doYouNeedTheButton=true myButtonInput="About Us"/> <!-- Team leader change (reason?) => recycling -->
-		<Hero_Cards />
-		<CoreValues/>
-		<Footer />
-	</main>
-</MainLayout>
+
+<AboutLayout title="build-blog">
+	<Navbar/>
+	<Hero myBackground="background-image: url(AboutUsImg-img.png);" myPartOneTitle="About" myPartTwoTitle="Us"/>
+</AboutLayout>
+
 
 <style>
 </style>

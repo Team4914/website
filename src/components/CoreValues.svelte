@@ -1,5 +1,4 @@
 <script lang = "ts">
-    import '../app.css';
 
     /*Storing button send-to links*/
     const linkSpirited = "asd";
