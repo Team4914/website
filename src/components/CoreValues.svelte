@@ -1,6 +1,4 @@
-<script lang = "ts">
-    import '../app.css';
-
+<script lang="ts">
     /*Storing button send-to links*/
     const linkSpirited = "asd";
     const linkTeamOriented = "asd";
@@ -44,25 +42,40 @@ To change the position of the image inside of the buttons upon being hovered ove
     (note: The larger the lower the values, the higher the part of the image to be displayed. It is advised to keep this value negative)
 -->
 
-
 <main>
     <!--creates the outer-most box - sort of like the background-->
-    <div class = "py-7 bg-base-200">
+    <div class="py-7 bg-base-200">
         <!--creates the inner box, used to hold all the Core Value components-->
-        <div class = "pb-7 bg-base-300 rounded-box">
+        <div class="pb-7 bg-base-300 rounded-box">
             <!--Creates the heading for the Core Values section-->
-            <div class = "grid h-20 card place-items-center sm:text-xl md:text-3xl">Core Values</div>
-            
+            <div
+                class="grid h-20 card place-items-center sm:text-xl md:text-3xl"
+            >
+                Core Values
+            </div>
+
             <!--Creates the buttons and dividers for the Core Values section -->
             <div class="flex flex-wrap w-full">
                 <!--Button corresponding to the "Spirited" web page-->
-                <a class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-2rem]" href = {linkSpirited}>Spirited</a>
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-2rem]"
+                    href={linkSpirited}>Spirited</a
+                >
                 <!--Button corresponding to the "Team Oriented" web page-->
-                <a class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-2rem]" href = {linkTeamOriented}>Team-Oriented</a>
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-2rem]"
+                    href={linkTeamOriented}>Team-Oriented</a
+                >
                 <!--Button corresponding to the "Empathetic" web page-->
-                <a class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-3rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-3rem]" href = {linkEmpathetic}>Empathetic</a>
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-3rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-3rem]"
+                    href={linkEmpathetic}>Empathetic</a
+                >
                 <!--Button corresponding to the "Methodical" web page-->
-                <a class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-4rem]" href = {linkMethodical}>Methodical</a>
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] bg-blend-overlay btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:bg-blend-screen hover:bg-[center_bottom_-4rem]"
+                    href={linkMethodical}>Methodical</a
+                >
             </div>
         </div>
     </div>
