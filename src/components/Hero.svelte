@@ -1,14 +1,14 @@
 
 
 <div class="hero min-h-screen bg-fixed" style="background-image: url(hero-img.png);">
-    <div class="hero-overlay"></div>
+    <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-2xl">
-        <h1 class="my-5 md:text-8xl text-6xl text-white font-bold underline underline-offset-8 decoration-red-800">
-          VPCI <span class="text-gradient bg-clip-text text-transparent">Robotics<span>
+        <h1 class="my-5 md:text-8xl text-6xl text-white font-bold underline underline-offset-8 decoration-red-800" >
+          {myPartOneTitle}<span class="text-gradient bg-clip-text text-transparent">&nbsp{myPartTwoTitle}<span>
         </h1>
         <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-        <button class="btn btn-primary glass">Get Started</button>
+        <span  style="display:{display}" ><Button value={myButtonInput} /></span>
       </div>
     </div>
   </div>
