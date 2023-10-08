@@ -1,12 +1,11 @@
 <script lang="ts">
-    import '../app.css';
 
     import pages from "./pageNames.ts";
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <!-- svelte-ignore a11y-label-has-associated-control -->
-<div class="navbar bg-base-100 sticky top-0"> <!-- Container -->
+<div class="navbar z-20 bg-base-100 sticky top-0"> <!-- Container -->
   <div class="navbar-start">
 
     <!-- Open Sidebar Button for Mobile Devices -->
@@ -33,7 +32,7 @@
           {#if page.submenus} <!-- pages with submenus -->
             <details>
               <summary>{page.name}</summary>
-              <ul class="p-2">
+              <ul class="p-2 z-10">
                 {#each page.submenus as submenu (submenu.name)} <!-- loop through each submenu -->
                   <li><a href={submenu.href}>{submenu.name}</a></li>
                 {/each}

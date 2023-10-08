@@ -8,7 +8,6 @@ type Page = {
   }
 
 const pages: Page[] = [
-  { name: "Home", href: "/" },
   { 
     name: "Subteams", 
     submenus: [

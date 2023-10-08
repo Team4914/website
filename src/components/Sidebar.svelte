@@ -1,13 +1,11 @@
 <script lang="ts">
-    import '../app.css';
-
     import pages from "./pageNames.ts";
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <!-- svelte-ignore a11y-label-has-associated-control -->
 
-<div class="drawer">
+<div class="drawer z-10">
     <!-- hidden checkbox that stores state under the hood -->
     <input id="sidebar" type="checkbox" class="drawer-toggle" /> 
 

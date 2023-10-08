@@ -3,33 +3,24 @@ export default {
     themes: [
       {
         mytheme: {
-    
-          "primary": "#dc2626",
-          
-          "secondary": "#fca5a5",
-                   
-          "accent": "#d97706",
-                   
-          "neutral": "#e5e7eb",
-                   
-          "base-100": "#374151",
-                   
-          "info": "#e11d48",
-                   
-          "success": "#ffe4e6",
-                   
-          "warning": "#f59e0b",
-                   
-          "error": "#e11d48",
+          "primary": "#8c141e",
+          "secondary": "#f2b035",
+          "accent": "#1db9ac",
+          "neutral": "#18342b",
+          "base-100": "#171212",
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#fbbd23",
+          "error": "#f87272",
         },
       },
     ],
   },
   plugins: [require("daisyui")],
-    theme: {
-      extend: {},
-    },
-  purge: ["./index.html",'./src/**/*.{svelte,js,ts}'], //for unused css
+  theme: {
+    extend: {},
+  },
+  purge: ["./index.html", './src/**/*.{svelte,js,ts}'], //for unused css
   variants: {
     extend: {},
   },

@@ -1,7 +1,6 @@
 <!-- Footer Component-->
 
 <script lang="ts">
-    import '../app.css';
 
     // Socials Links
     const logoImage = "https://cdn.discordapp.com/attachments/1156357127011573840/1159979170386935808/Logo.png?ex=6532fdc9&is=652088c9&hm=099ded07c69c35a15e545fda0f451f2bda2cd4847fec044d1efbbefa17f021c6&"
