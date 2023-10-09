@@ -18,7 +18,7 @@
     <!-- Website Title -->
     <!-- Removed hover/border effect for logo since we're using a button for it -->
     <a class="btn btn-active bg-base-100 hover:bg-transparent border-none no-animation normal-case text-xl align-top" href="/">
-      <img src="logo-transparent.png" class="h-full" alt="VPCI Robotics Logo">
+      <img src="logo-transparent.png" class="invert dark:invert-0 h-full" alt="VPCI Robotics Logo">
       <span class="self-center whitespace-nowrap">VPCI Robotics</span> <!-- TODO: fix not centered? --> 
     </a>
   </div>
@@ -34,12 +34,12 @@
               <summary>{page.name}</summary>
               <ul class="p-2 z-10">
                 {#each page.submenus as submenu (submenu.name)} <!-- loop through each submenu -->
-                  <li><a class="hover:text-secondary" href={submenu.href}>{submenu.name}</a></li>
+                  <li><a class="hover:text-primary dark:hover:text-secondary" href={submenu.href}>{submenu.name}</a></li>
                 {/each}
               </ul>
             </details>
           {:else} <!-- no submenus -->
-            <a class="hover:text-secondary" href={page.href}>{page.name}</a>
+            <a class="hover:text-primary dark:hover:text-secondary" href={page.href}>{page.name}</a>
           {/if}
         </li>
       {/each}

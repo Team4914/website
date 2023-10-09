@@ -1,5 +1,6 @@
 export default {
   daisyui: {
+    darkTheme: "dark",
     themes: [
       {
         dark: {
@@ -35,6 +36,7 @@ export default {
   variants: {
     extend: {},
   },
-  darkmode: false, // or 'media' or 'class'
+  darkMode: ['class', '[data-theme="dark"]']
+// or 'media' or 'class'
 }
 

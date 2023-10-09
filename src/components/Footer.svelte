@@ -28,7 +28,7 @@
 
         <div class="md:w-1/3 flex flex-col justify-center">       
             <h4
-                class="mt-auto text-lg font-bold text-base uppercase"
+                class="mt-auto text-lg font-boldtext-base uppercase"
             >
                 Industries
             </h4>
