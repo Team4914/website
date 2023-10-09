@@ -5,19 +5,31 @@ import Hero_Cards from '../components/Hero_Cards.svelte';
 import Footer from '../components/Footer.svelte';
 import Sidebar from '../components/Sidebar.svelte';
 import Hero from '../components/Hero.svelte';
-import MainLayout from '../layouts/MainLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<MainLayout title="Welcome to Robotics.">
+<script>
+	const theme = localStorage.getItem("theme");
+	console.log(theme)
+</script>
+
+<BaseLayout title="Welcome to Robotics.">
 	<main>
 		<Sidebar />
-		<Navbar/>
-		<Hero myBackground="background-image: url(hero-img.png);" myPartOneTitle="VPCI" myPartTwoTitle="Robotics" doYouNeedTheButton=true myButtonInput="About Us"/> <!-- Team leader change (reason?) => recycling -->
+		<Navbar client:load />
+		<Hero
+			backgroundImage="url(hero-img.png)"
+			gradientTitle={true}
+			standardTitleText="VPCI"
+			gradientTitleText="Robotics"
+			button={true}
+			buttonText="About Us"
+		/> <!-- Team leader change (reason?) => recycling -->
 		<Hero_Cards />
 		<CoreValues/>
 		<Footer />
 	</main>
-</MainLayout>
+</BaseLayout>
 
 <style>
 </style>

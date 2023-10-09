@@ -47,8 +47,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-<<<<<<< HEAD
 Feel free to check [the documentation](https://docs.astro.build) or join the [Astro Discord server](https://astro.build/chat).
-=======
-Feel free to check [the documentation](https://docs.astro.build) or join the [Astro Discord server](https://astro.build/chat).
->>>>>>> 17b2e5c61d70f79ada5d1230fa6d2f8ee9d914a8

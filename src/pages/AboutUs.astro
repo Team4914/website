@@ -5,14 +5,20 @@ import Hero_Cards from '../components/Hero_Cards.svelte';
 import Footer from '../components/Footer.svelte';
 import Sidebar from '../components/Sidebar.svelte';
 import Hero from '../components/Hero.svelte';
-import MainLayout from '../layouts/MainLayout.astro';
+import MainLayout from '../layouts/BaseLayout.astro';
 import AboutLayout from '../layouts/AboutLayout.astro';
 ---
 
 
 <AboutLayout title="build-blog">
 	<Navbar/>
-	<Hero myBackground="background-image: url(AboutUsImg-img.png);" myPartOneTitle="About" myPartTwoTitle="Us"/>
+	<Hero
+		backgroundImage="url(about-us-hero-img.png)"
+		gradientTitle={true}
+		standardTitleText="VPCI"
+		gradientTitleText="Robotics"
+		button={false}
+	/>
 </AboutLayout>
 
 
