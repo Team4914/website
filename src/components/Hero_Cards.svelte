@@ -1,30 +1,45 @@
 <script>
-  const welcomeInLanguages = ["Welcome", "Bienvenida", "Bienvenue"];
-  let message = 0;
-  let welcome = welcomeInLanguages[message];
-
-  function changeWelcome() {
-    welcome = welcomeInLanguages[message];
-    if (message == welcomeInLanguages.length - 1) {
-      message = 0;
-    } else {
-      message++;
+  import "../app.css";
+</script>
+<style>
+  @keyframes welcome { /*This is an animation for the welcome*/
+    12.5%, 37.5%, 62.5%, 87.5%{
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+      content: "Welcome";
+    }
+    25% {
+      opacity: 1;
+      content: "Bienvienda";
+    }
+    50% {
+      opacity: 1;
+      content:"Beinvenue";
+    }
+    75%{
+      opacity: 1;
+      content: "欢迎";
     }
   }
 
-  let interval;
-  $: {
-    interval = setInterval(changeWelcome, 2000);
+  #welcome::before{
+    animation: welcome infinite 16s;
+    content: "Welcome";
   }
-</script>
-
-
+  .card {
+  transition: transform 330ms ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+</style>
 <div class="bg-base-100 min-h-screen">
   <div class="hero bg-base-200 h-fit">
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h1 class="text-5xl font-bold duration-100">
-          {welcomeInLanguages[message]}
+          <span id = "welcome"></span>
         </h1>
         <p class="pt-6">
           Welcome to Team 4914, the Victoria Park Panthers. We are a student run
@@ -105,11 +120,3 @@
     <!-- "OUR MISSION", "OUR GOALS" and "OUR HISTORY" Cards Close-->
   </div>
 </div>
-
-<style>
-  .card {
-    transition: transform 330ms ease-in-out;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  }
-</style>
