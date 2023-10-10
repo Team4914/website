@@ -1,6 +1,3 @@
-<script>
-  import "../app.css";
-</script>
 <style>
   @keyframes welcome { /*This is an animation for the welcome*/
     12.5%, 37.5%, 62.5%, 87.5%{
