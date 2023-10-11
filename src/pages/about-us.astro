@@ -1,18 +1,13 @@
 ---
-import Navbar from '../components/Navbar.svelte';
+import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+
 import CoreValues from '../components/CoreValues.svelte';
 import Hero_Cards from '../components/Hero_Cards.svelte';
-import Footer from '../components/Footer.svelte';
-import Sidebar from '../components/Sidebar.svelte';
 import Hero from '../components/Hero.svelte';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import AboutLayout from '../layouts/AboutLayout.astro';
 import TextContainer from '../components/TextContainer.svelte';
 ---
 
-
-<BaseLayout title="build-blog">
-	<Navbar/>
+<NavbarFooterLayout title="build-blog">
 	<Hero
 		backgroundImage="url(about-us-hero.png)"
 		gradientTitle={true}
@@ -21,7 +16,7 @@ import TextContainer from '../components/TextContainer.svelte';
 		button={false}
 	/>
 	<TextContainer/>
-</BaseLayout>
+</NavbarFooterLayout>
 
 
 <style>
