@@ -1,9 +1,8 @@
 ---
 import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
 
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
 import Hero from '../components/Hero.svelte';
+import CompetitionCardsSection from "../components/CompetitionCardsSection.svelte"
 ---
 
 <script>
@@ -19,8 +18,10 @@ import Hero from '../components/Hero.svelte';
 		button={false}
 		buttonText="See More"
 	/> 
+
+    <CompetitionCardsSection/>
 	
-    
+
 </NavbarFooterLayout>
 
 <style>
