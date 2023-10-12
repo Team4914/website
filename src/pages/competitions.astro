@@ -1,9 +1,8 @@
 ---
 import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
 
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
 import Hero from '../components/Hero.svelte';
+import CompetitionCardsSection from '../components/CompetitionCardsSection.svelte';
 import CompetitionBanner from '../components/competitions/CompetitionBanner.svelte';
 ---
 
@@ -20,8 +19,10 @@ import CompetitionBanner from '../components/competitions/CompetitionBanner.svel
 		button={false}
 		buttonText="See More"
 	/> 
-	
-    <CompetitionBanner />
+
+    <CompetitionCardsSection/>
+	<CompetitionBanner />
+    
 </NavbarFooterLayout>
 
 <style>
