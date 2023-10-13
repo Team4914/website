@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let title:string; // Card Title
-    export let videoURL:string; // Video Link
-    export let content:string; // Card Content
+    export let title: string; // Card Title
+    export let videoURL: string; // Video Link
+    export let content: string; // Card Content
 </script>
 
 <div
@@ -14,11 +14,11 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>  
     </iframe>
-    <div class="w-3/5 ml-5">
+    <div class="w-3/5 ml-5 p-5">
         <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white">
             {title}
         </h1>
-        <p class="mt-2 text-sm text-gray-800 dark:text-gray-400">
+        <p class="mt-2 text-sm text-gray-800 dark:text-gray-400 text-center">
             {content}
         </p>
     </div>

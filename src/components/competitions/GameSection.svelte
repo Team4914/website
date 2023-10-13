@@ -3,7 +3,7 @@
 </script>
 
 <h1 class = "my-3 font-bold text-5xl text-center ">Past Games</h1> <!--Header-->
-<div class="flex flex-row flex-wrap justify-center gap-4 ">
+<div class="flex flex-row flex-wrap justify-center gap-4 p-5">
     <GameCard
         title="2022-23 CHARGED UP"
         videoURL="https://www.youtube-nocookie.com/embed/m-qwsMmkFwg"

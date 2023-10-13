@@ -2,7 +2,7 @@
 import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
 
 import Hero from '../components/Hero.svelte';
-import CompetitionCardsSection from '../components/competitions/CompetitionCardsSection.svelte';
+import AwardsSection from '../components/competitions/AwardsSection.svelte';
 import GameSection from '../components/competitions/GameSection.svelte';
 ---
 
@@ -20,7 +20,7 @@ import GameSection from '../components/competitions/GameSection.svelte';
 		buttonText="See More"
 	/> 
 
-    <CompetitionCardsSection/>
+    <AwardsSection client:idle/>
 	<GameSection />
     
 </NavbarFooterLayout>
