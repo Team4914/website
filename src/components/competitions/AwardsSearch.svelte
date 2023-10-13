@@ -13,11 +13,11 @@
 <div class="join">
     <div>
         <div>
-            <input on:change={onEnter} on:keypress={e => e.key == "Enter" && onEnter()} bind:value={searchTerm} class="input input-bordered join-item" placeholder="Search"/>
+            <input on:input={onEnter} on:keypress={e => e.key == "Enter" && onEnter()} bind:value={searchTerm} class="input input-bordered join-item" placeholder="Search"/>
         </div>
     </div>
 
-    <select on:change={onEnter} bind:value={searchYear} class="select select-bordered join-item"> <!-- Filter by Year -->
+    <select on:input={onEnter} bind:value={searchYear} class="select select-bordered join-item"> <!-- Filter by Year -->
         <option selected>All Years</option>
         {#each years as year } <!-- Loop through possible years in range -->
             <option>{year}</option>

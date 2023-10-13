@@ -3,6 +3,7 @@
 
     import AwardCard from "./AwardCard.svelte";
     import AwardsSearch from "./AwardsSearch.svelte";
+    import NoResult from './NoResult.svelte';
 
     type Award = {
         img: string,
@@ -90,7 +91,7 @@
             img: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
             imgAlt: "Image of Shoes",
             title: "2014 Winner",
-            year: 2015,
+            year: 2014,
             link: "https://www.thebluealliance.com/event/2014onnb",
             description: "North Bay Regional",
         },
@@ -98,7 +99,7 @@
             img: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
             imgAlt: "Image of Shoes",
             title: "2014 Rookie Inspiration Award",
-            year: 2015,
+            year: 2014,
             link: "https://www.thebluealliance.com/event/2014onnb",
             description: "North Bay Regional",
         },
@@ -146,10 +147,16 @@
     />
 
     <ul class="mt-10">
-        {#each awardsFiltered as award (award.title)}
-            <li class="py-3">
-                <AwardCard img={award.img} imgAlt={award.imgAlt} title={award.title} link={award.link} description={award.description}/>
+        {#if searchTerm && awardsFiltered.length === 0}
+            <li>
+                <NoResult />
             </li>
-        {/each}
+        {:else}
+            {#each awardsFiltered as award (award.title)}
+                <li class="py-3">
+                    <AwardCard img={award.img} imgAlt={award.imgAlt} title={award.title} link={award.link} description={award.description}/>
+                </li>
+            {/each}
+        {/if}
     </ul>
 </div>
