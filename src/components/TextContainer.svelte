@@ -11,5 +11,8 @@
         <h6 class = "font-bold text-lg">Nulla facilisi</h6> <!--Subtitle 3-->
         <!--Paragraph 3-->
         <p class = "my-2">Praesent et semper purus, non pellentesque mi. Fusce eros turpis, accumsan eget urna eu, fringilla tincidunt neque. Aenean tincidunt massa leo, ut vehicula lorem cursus ac. Cras vel eros elementum, lobortis tellus eu, scelerisque ipsum. Donec sed vehicula nunc, ac pretium lorem. Suspendisse mollis, risus eu mollis bibendum, mi nulla convallis arcu, nec scelerisque lacus augue at turpis.</p>
+        <h6 class = "font-bold text-lg">Nulla facilisi</h6> <!--Subtitle 4-->
+        <!--Paragraph 4-->
+        <p class = "my-2">Praesent et semper purus, non pellentesque mi. Fusce eros turpis, accumsan eget urna eu, fringilla tincidunt neque. Aenean tincidunt massa leo, ut vehicula lorem cursus ac. Cras vel eros elementum, lobortis tellus eu, scelerisque ipsum. Donec sed vehicula nunc, ac pretium lorem. Suspendisse mollis, risus eu mollis bibendum, mi nulla convallis arcu, nec scelerisque lacus augue at turpis.</p>
     </div>
 </div>
