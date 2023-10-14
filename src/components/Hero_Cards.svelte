@@ -1,3 +1,4 @@
+
 <style>
   @keyframes welcome { /*This is an animation for the welcome*/
     12.5%, 37.5%, 62.5%, 87.5%{
@@ -13,7 +14,7 @@
     }
     50% {
       opacity: 1;
-      content:"Bienvenue";
+      content:"Beinvenue";
     }
     75%{
       opacity: 1;
@@ -49,7 +50,7 @@
   <!-- "OUR MISSION", "OUR GOALS" and "OUR HISTORY" Cards -->
   <div class="flex flex-wrap justify-evenly">
     <!-- OUR MISSION Card Div -->
-    <div class="card bg-base-200 mx-10 my-10 w-96 shadow-xl hover:scale-105">
+    <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
           src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -67,7 +68,7 @@
       <!-- OUR MISSION Card Div Close -->
     </div>
     <!-- OUR GOALS Card Div -->
-    <div class="card bg-base-200 mx-10 my-10 w-96 shadow-xl hover:scale-105">
+    <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
           src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -88,7 +89,7 @@
       <!-- OUR GOALS Card Div Close -->
     </div>
     <!-- OUR HISTORY Card Div -->
-    <div class="card bg-base-200 mx-10 my-10 w-96 shadow-xl hover:scale-105">
+    <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
           src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
