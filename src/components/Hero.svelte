@@ -3,7 +3,7 @@
 
 export let backgroundImage:string; // background variable
 export let gradientTitle:boolean;
-export let standardTitleText:string; // background variable
+export let standardTitleText:string = ""; // background variable
 export let gradientTitleText:string = ""; // background variable
 export let button:boolean;
 export let buttonText:string = ""; // background variable
@@ -20,7 +20,9 @@ if(button) {
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-2xl">
       <h1 class="my-5 md:text-8xl text-6xl text-white font-bold underline underline-offset-8 decoration-red-800" >
-        {standardTitleText}<span class="text-gradient bg-clip-text text-transparent">&nbsp{#if gradientTitle}{gradientTitleText}{/if}<span>
+        {standardTitleText}
+        {#if standardTitleText}&nbsp{/if}
+        <span class="text-gradient bg-clip-text text-transparent">{#if gradientTitle}{gradientTitleText}{/if}<span>
       </h1>
       <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
        {#if button}

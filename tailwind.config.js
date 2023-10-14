@@ -32,7 +32,7 @@ export default {
   theme: {
     extend: {},
   },
-  purge: ["./index.html", './src/**/*.{svelte,js,ts}'], //for unused css
+  purge: ["./index.html", './src/**/*.{svelte,js,ts}', './src/**/**/*.{svelte,js,ts}'], //for unused css
   variants: {
     extend: {},
   },
