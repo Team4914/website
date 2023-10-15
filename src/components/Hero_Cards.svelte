@@ -48,7 +48,7 @@
     </div>
   </div>
   <!-- "OUR MISSION", "OUR GOALS" and "OUR HISTORY" Cards -->
-  <div class="flex flex-wrap justify-evenly">
+  <div class="flex flex-col md:flex-row justify-evenly">
     <!-- OUR MISSION Card Div -->
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
