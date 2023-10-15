@@ -50,7 +50,7 @@
         </div>
         <!-- All 3 Cards Div Close-->
     </div>
-    <div class="hero bg-base-100 rounded-lg">
+    <div class="card card-side bg-base-100 rounded-lg">
         <div class="hero-content flex-col lg:flex-row-reverse">
             <img src="https://www.onshape.com/global-assets/img/industry-pages/robotics/be-robust-robotics-cad-model.png" class="max-w-sm shadow-2xl" />
             <div>
