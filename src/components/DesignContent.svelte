@@ -52,7 +52,7 @@
     </div>
     <div class="card card-side bg-base-100 rounded-lg">
         <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="https://www.onshape.com/global-assets/img/industry-pages/robotics/be-robust-robotics-cad-model.png" class="max-w-sm shadow-2xl" />
+            <figure class="basis-3/4"><img src="https://www.onshape.com/global-assets/img/industry-pages/robotics/be-robust-robotics-cad-model.png" class="max-w-sm shadow-2xl" /></figure>
             <div>
                 <h1 class="text-5xl font-bold">HOW TO GET STARTED</h1>
                 <p class="py-6">Similar to programming, learning to use Inventor (CAD software) requires plenty of self learning in order to use. We host workshops to get you started however, we suggest that you try to design somethings individually so you can further understand the features.</p>
