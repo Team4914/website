@@ -1,14 +1,19 @@
 <script lang="ts">
     /*Storing button send-to links*/
-    export let linkFirstBox:String;
-    export let linkSecondBox:String;
-    export let linkThirdBox:String;
-    export let linkFourthBox:String;
+    export let linkFirstBox:string;
+    export let linkSecondBox:string;
+    export let linkThirdBox:string;
+    export let linkFourthBox:string;
 
-    export let FirstBoxText:String;
-    export let SecondBoxText:String;
-    export let ThirdBoxText:String;
-    export let FourthBoxText:String;
+    export let firstBoxText:string;
+    export let secondBoxText:string;
+    export let thirdBoxText:string;
+    export let fourthBoxText:string;
+
+    export let firstBoxImage:string;
+    export let secondBoxImage:string;
+    export let thirdBoxImage:string;
+    export let fourthBoxImage:string;
 </script>
 
 <!--
@@ -64,22 +69,22 @@ To change the position of the image inside of the buttons upon being hovered ove
                 <!--Button corresponding to the "Spirited" web page-->
                 <a
                     class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
-                    href={linkSpirited}>Spirited</a
+                    href={linkFirstBox}>{firstBoxText}</a
                 >
                 <!--Button corresponding to the "Team Oriented" web page-->
                 <a
                     class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://cdn.britannica.com/22/215522-050-8315BB78/green-grass-close-up.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
-                    href={linkTeamOriented}>Team-Oriented</a
+                    href={linkSecondBox}>{secondBoxText}</a
                 >
                 <!--Button corresponding to the "Empathetic" web page-->
                 <a
                     class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:300px_150px] bg-[center_bottom_-2rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:200px_100px] hover:opacity-100 hover:bg-[center_bottom_-1rem]"
-                    href={linkEmpathetic}>Empathetic</a
+                    href={linkThirdBox}>{thirdBoxText}</a
                 >
                 <!--Button corresponding to the "Methodical" web page-->
                 <a
                     class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-8rem] bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1024px-Cat_August_2010-4.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-7rem]"
-                    href={linkMethodical}>Methodical</a
+                    href={linkFourthBox}>{fourthBoxText}</a
                 >
             </div>
         </div>
