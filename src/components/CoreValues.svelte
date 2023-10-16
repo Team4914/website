@@ -1,9 +1,14 @@
 <script lang="ts">
     /*Storing button send-to links*/
-    const linkSpirited = "asd";
-    const linkTeamOriented = "asd";
-    const linkEmpathetic = "asd";
-    const linkMethodical = "asd";
+    export let linkFirstBox:String;
+    export let linkSecondBox:String;
+    export let linkThirdBox:String;
+    export let linkFourthBox:String;
+
+    export let FirstBoxText:String;
+    export let SecondBoxText:String;
+    export let ThirdBoxText:String;
+    export let FourthBoxText:String;
 </script>
 
 <!--
