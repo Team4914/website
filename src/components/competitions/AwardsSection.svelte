@@ -135,7 +135,7 @@
     }
 </script>
 
-<div class="bg-base-200 py-10 px-20">
+<div class="bg-base-200 py-10 sm:px-20">
     <h1 class = "font-bold text-5xl mb-5">Awards</h1> <!--Header-->
 
     <AwardsSearch 
@@ -146,7 +146,7 @@
         maxYear={maxYear}
     />
 
-    <ul class="mt-10">
+    <ul class="mt-10 flex flex-col align-center">
         {#if searchTerm && awardsFiltered.length === 0}
             <li>
                 <NoResult />
