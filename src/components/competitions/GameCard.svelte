@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="flex flex-row h-52 w-full lg:w-5/12 m-5 bg-slate-300 transition ease-in-out delay-150 hover:bg-slate-200 hover:scale-[1.03] hover:drop-shadow-[0_10px_10px_rgba(250,250,250,0.25)] bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+    class="flex flex-row h-52 w-full lg:w-5/12 m-5 bg-base-100 transition ease-in-out delay-150 hover:bg-slate-200 hover:scale-[1.03] hover:drop-shadow-[0_10px_10px_rgba(250,250,250,0.25)] border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
 >
     <iframe
         class="m-none mt-none w-2/5 h-52 border rounded-l-xl"

@@ -1,0 +1,17 @@
+---
+const {entry} = Astro.props;
+
+import NavbarFooterLayout from "../layouts/NavbarFooterLayout.astro";
+import Hero from "../components/Hero.svelte";
+---
+
+<NavbarFooterLayout>
+    <Hero
+		backgroundImage="url(about-us-hero.png)"
+		gradientTitle={true}
+		standardTitleText=""
+		gradientTitleText={entry.title} 
+		button={false}
+	/>
+    <slot />
+</NavbarFooterLayout>
