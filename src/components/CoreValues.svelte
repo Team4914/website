@@ -1,5 +1,4 @@
 <script lang="ts">
-    /*Storing button send-to links*/
     let linkFirstBox = "asd";
     let linkSecondBox = "asd";
     let linkThirdBox = "asd";
