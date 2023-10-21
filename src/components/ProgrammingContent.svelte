@@ -14,7 +14,7 @@
     <div class="py-6"></div>
         <div style="border-top: .5px solid white; border-right: .5px solid white;border-left: .5px solid white;" class="shadow-xl bg-base-200 rounded-xl p-6">
             <h2 class="text-center text-4xl rounded-3xl font-bold mb-4">Ongoing Programming Projects</h2>
-            <p class="bg-base-100 text-lg rounded-lg text-center p-4">We are constantly working to improve our robots' features and capabilities through the code powering it. Below are the ongoing programming projects. If you are interested, contact us via our socials or email.</p>
+            <p class="bg-base-100 text-2xl rounded-lg text-center p-4">We are constantly working to improve our robots' features and capabilities through the code powering it. Below are the ongoing programming projects. If you are interested, contact us via our socials or email.</p>
         </div>
     <div class="py-6"></div>
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
@@ -42,6 +42,15 @@
             <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
         </figure>
     </div>
+    <div style="border: .5px solid white;" class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">RESOURCES</h2>
+    <div class="flex justify-center">
+        <button onclick="window.location.href='https://github.com/Team4914'" class="bg-red-600 text-lg rounded-lg p-4 mx-2">VPCI Robotics GitHub</button>
+        <button onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world'" class="bg-red-600 text-lg rounded-lg p-4 mx-2">Github Tutorial</button>
+    </div>
+    </div>
+
+
 
 
 </div>
