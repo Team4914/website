@@ -1,0 +1,20 @@
+---
+import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
+
+import Hero from '../../components/Hero.svelte';
+import ProgrammingContent from "../../components/ProgrammingContent.svelte";
+---
+
+<NavbarFooterLayout title="Competitions | VPCI Robotics">
+	<Hero
+		backgroundImage="url(/hero-img.png)"
+		gradientTitle={true}
+		gradientTitleText="Programming"
+		button={false}
+		buttonText="See More"
+	/>
+	
+
+    <ProgrammingContent/>
+    
+</NavbarFooterLayout>
