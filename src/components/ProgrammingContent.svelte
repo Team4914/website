@@ -2,7 +2,7 @@
     <!-- Main Card -->
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Movie" />
         </figure>
         <div class="card-body">
             <h1 class="text-5xl font-bold">Programming Subteam</h1>
