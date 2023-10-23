@@ -2,7 +2,7 @@
     <!-- Main Card -->
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
         <div class="card-body">
             <h1 class="text-5xl font-bold">Programming Subteam</h1>
@@ -19,27 +19,27 @@
     <div class="py-6"></div>
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
         <div class="card-body text-center">
             <h1 class="text-5xl font-semibold">Robot Vision : Auto-Aim</h1>
             <p class="py-6">Our robot has an onboard camera running OpenCV on a Raspberry Pi to help automatically align the robot's ball shooter with the target goal. At the moment it runs on Python, however, we are looking to improve its efficiency. Some prior knowledge about Python, C++ or general computer vision processing is useful but not necessary.</p>
         </div>
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
     </div>
     <div class="py-6"></div>
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
         <div class="card-body text-center">
             <h1 class="text-5xl font-semibold">Robot Vision : Auto-Aim</h1>
             <p class="py-6">Our robot has an onboard camera running OpenCV on a Raspberry Pi to help automatically align the robot's ball shooter with the target goal. At the moment it runs on Python, however, we are looking to improve its efficiency. Some prior knowledge about Python, C++ or general computer vision processing is useful but not necessary.</p>
         </div>
         <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg?format=pjeg&auto=webp&crop=1:1" alt="Movie" />
+            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
     </div>
     <div style="border: .5px solid white;" class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center">
