@@ -1,0 +1,23 @@
+---
+import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+
+import CoreValues from '../components/CoreValues.svelte';
+import Hero_Cards from '../components/Hero_Cards.svelte';
+import Hero from '../components/Hero.svelte';
+import TextContainer from '../components/TextContainer.svelte';
+---
+
+<NavbarFooterLayout title="Ongoing Project">
+	<Hero
+		backgroundImage="url(about-us-hero.png)"
+		gradientTitle={true}
+		standardTitleText="Ongoing"
+		gradientTitleText="Project"
+		button={false}
+	/>
+	<TextContainer/>
+</NavbarFooterLayout>
+
+
+<style>
+</style>
