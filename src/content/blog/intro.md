@@ -1,5 +1,4 @@
---- 
-layout: ../../blog/[...slug].astro
+---
 title: "The Importance of Robotics in High School Education"
 snippet: "Robotics and the Importance of Robotics in High School Education"
 image: {
