@@ -1,0 +1,24 @@
+---
+import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+
+import CoreValues from '../components/CoreValues.svelte';
+import Hero_Cards from '../components/Hero_Cards.svelte';
+import Hero from '../components/Hero.svelte';
+import OutreachShowcase from '../components/OutreachShowcase.svelte';
+---
+
+<NavbarFooterLayout title="build-blog">
+	<Hero
+		backgroundImage="url(hero-img.png)"
+		gradientTitle={true}
+		standardTitleText="Community"
+		gradientTitleText="Outreach"
+		button={true}
+        buttonText="Contact Us"
+	/>
+    <OutreachShowcase/>
+</NavbarFooterLayout>
+
+
+<style>
+</style>
