@@ -1,0 +1,69 @@
+---
+import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import Hero from '../components/Hero.svelte';
+
+import { getCollection } from "astro:content";
+
+// Filter blog entries with 'draft: false' & date before current date
+const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+  return data.publishDate < new Date();
+});
+
+// Sort content entries by publication date
+publishedBlogEntries.sort(function (a, b) {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+---
+
+<NavbarFooterLayout title="Blog">
+    <Hero
+        backgroundImage="url(about-us-hero.png)"
+        gradientTitle={true}
+        standardTitleText="Build"
+        gradientTitleText="Blog"    
+        button={false}
+    />
+    <div class="text-center">
+        <h1 class="text-5xl mt-16 mb-4 font-bold">Our Blog</h1>
+      <p class="opacity-50 text-xl">
+        We write about important information.
+      </p>
+    </div>
+      
+    <main class="my-16">
+      <ul class="grid gap-16 max-w-4xl mx-auto">
+        {
+          publishedBlogEntries.map((blogPostEntry) => (
+            <li>
+              <a href={`/blog/${blogPostEntry.slug}`}>
+                <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+                  <img
+                    src={blogPostEntry.data.image.src}
+                    alt={blogPostEntry.data.image.alt}
+                    class="w-full rounded-md my-3"
+                  />
+                  <div>
+                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                      {blogPostEntry.data.title}
+                    </h2>
+
+                    <div class="flex gap-2 mt-3">
+                      <span class="text-gray-400">
+                        {blogPostEntry.data.author}
+                      </span>
+                      <span class="text-gray-400">• </span>
+                      <time
+                        class="text-gray-400"
+                        datetime={blogPostEntry.data.publishDate.toISOString()}>
+                        {blogPostEntry.data.publishDate.toDateString()}
+                      </time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+</NavbarFooterLayout>

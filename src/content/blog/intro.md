@@ -1,4 +1,5 @@
 ---
+draft: false
 title: "The Importance of Robotics in High School Education"
 snippet: "Robotics and the Importance of Robotics in High School Education"
 image: {
@@ -6,6 +7,7 @@ image: {
     alt: "PCB being manufactured"
 }
 publishDate: "2023-06-05 11:39"
+category: "Education"
 author: "VPCI Robotics"
 tags: [education]
 --- 

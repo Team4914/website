@@ -21,6 +21,7 @@ const pages: Page[] = [
   },
   { name: "About Us", href: "/about-us" },
   { name: "Ongoing Project", href: "/ongoing-project" },
+  { name: "Blog", href: "/blog"},
   { name: "Competitions", href: "/competitions" },
   { name: "Community Outreach", href: "/community-outreach" },
   { name: "Resources", href: "/resources" },
