@@ -1,8 +1,8 @@
 ---
 import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
-
+import ElectronicsContent from '../../components/ElectronicsContent.svelte';
+import ElectronicsGuide from '../../components/ElectronicsGuide.svelte';
 import Hero from '../../components/Hero.svelte';
-import BuildContent from "../../components/BuildContent.svelte";
 ---
 
 <script>
@@ -18,9 +18,10 @@ import BuildContent from "../../components/BuildContent.svelte";
 		buttonText=""
 	/> 
 
-    <BuildContent/>
-    
+	<ElectronicsContent/>
+	<ElectronicsGuide/>
 </NavbarFooterLayout>
 
 <style>
 </style>
+
