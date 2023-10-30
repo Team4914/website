@@ -1,7 +1,7 @@
 <!--This contains all the components of the Electronics subteam page.-->
 
 <script lang="ts">
-    
+
 </script>
 
 <div class = "my-10">
