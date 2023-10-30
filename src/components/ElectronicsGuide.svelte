@@ -23,7 +23,7 @@
         </div>
 
         <!--Creates the buttons and dividers for the Core Values section -->
-        <div class="flex flex-wrap w-full">
+        <div class="flex flex-wrap w-full grid grid-cols-4">
             <!--Button corresponding to the "Spirited" web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
