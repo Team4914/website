@@ -48,7 +48,7 @@ To change the position of the image inside of the buttons upon being hovered ove
 
 <main>
     <!--creates the outer-most box - sort of like the background-->
-    <div class="py-7 bg-base-200">
+    <div class="py-9 bg-base-200">
         <!--creates the inner box, used to hold all the Core Value components-->
         <div class="pb-7 bg-base-300 rounded-box">
             <!--Creates the heading for the Core Values section-->
@@ -62,22 +62,22 @@ To change the position of the image inside of the buttons upon being hovered ove
             <div class="flex flex-wrap w-full">
                 <!--Button corresponding to the "Spirited" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_300px] bg-[center_bottom_-8rem] bg-[url('/spirited.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_190px] hover:opacity-100 hover:bg-[center_bottom_-4rem]"
                     href={linkFirstBox}>{firstBoxText}
                 </a>
                 <!--Button corresponding to the "Team Oriented" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://cdn.britannica.com/22/215522-050-8315BB78/green-grass-close-up.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:500px_350px] bg-[center_bottom_-6rem] bg-[url('/team-oriented.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:350px_245px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
                     href={linkSecondBox}>{secondBoxText}
                 </a>
                 <!--Button corresponding to the "Empathetic" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:300px_150px] bg-[center_bottom_-2rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:200px_100px] hover:opacity-100 hover:bg-[center_bottom_-1rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:300px_200px] bg-[center_bottom_-4rem] bg-[url('/history.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_200px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
                     href={linkThirdBox}>{thirdBoxText}
                 </a>
                 <!--Button corresponding to the "Methodical" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-8rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-7rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('/methodical.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:310px_210px] hover:opacity-100 hover:bg-[center_bottom_-5rem]"
                     href={linkFourthBox}>{fourthBoxText}
                 </a>
             </div>

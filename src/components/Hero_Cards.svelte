@@ -53,7 +53,7 @@
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          src="our-mission.JPG"
           alt="Shoes"
         />
       </figure>
@@ -71,7 +71,7 @@
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          src="/goals.JPG"
           alt="Shoes"
         />
       </figure>
@@ -92,7 +92,7 @@
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          src="history.JPG"
           alt="Shoes"
         />
       </figure>
