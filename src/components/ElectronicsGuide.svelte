@@ -6,20 +6,18 @@
     let linkThirdBox = "asd";
     let linkFourthBox = "asd";
 
-    let firstBoxText = "Spirited";
-    let secondBoxText = "Team Oriented";
-    let thirdBoxText = "Empathetic";
-    let fourthBoxText = "Methodical";
+    let firstBoxText = "General Electrical System Notes";
+    let secondBoxText = "Additional System notes";
+    let thirdBoxText = "Wiring the FRC control system";
+    let fourthBoxText = "FRC pneumatics guide";
 </script>
 
 <main>
-    <div class="pb-7 bg-base-300 rounded-box">
+    <div class="py-6 bg-base-300 rounded-box">
         <!--Creates the heading for the section-->
-        <div
-            class="grid h-20 card place-items-center"
-        >
-            <p class = "sm:text-xl md:text-3xl">How to get Started</p>
-            <p class = "sm:text-base md:text-lg">This is example text</p>
+        <div class="grid card place-items-center leading-none">
+            <h5 class = "sm:text-xl md:text-3xl">How to get Started</h5>
+            <p class = "sm:text-base md:text-lg text-center leading-none my-4">If you are interested in joining the electronics subteam, there are many different online resources you can use to get a head start. There will be workshops to help new members learn. We suggest checking these links below in your own time for a better understanding of the way FRC electronics works.</p>
         </div>
 
         <!--Creates the buttons and dividers for the Core Values section -->
@@ -27,44 +25,34 @@
             <!--Button corresponding to a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
                     href={linkFirstBox}>{firstBoxText}
                 </a>
-                <br>
-                <p class = "flex-wrap">this is another paragraph that doesn't break the page, and which will wrap back towards....</p>
-                <p>this is another paragraph</p>
+                <p class = "flex-wrap">The intent of this document is to teach you (the reader) enough to go and do your own research and make your own informed decisions using the muscle between your ears about motors and their use in FRC. It is not an end-all-be-all but hopefully will introduce you to the tools we’ll be using throughout and teach you to use them yourself.</p>
             </div>
             <!--Button corresponding to a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://cdn.britannica.com/22/215522-050-8315BB78/green-grass-close-up.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://cdn.britannica.com/22/215522-050-8315BB78/green-grass-close-up.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
                     href={linkSecondBox}>{secondBoxText}
                 </a>
-                <br>
-                <p class = "flex-wrap">this is another paragraph that doesn't break the page, and which will wrap back towards....</p>
-                <p>this is another paragraph</p>
+                <p class = "flex-wrap">Something to note is that we program in C++, so references to classes like “Encoder” and our sample codes are written in C++. However, classes are interchangeable in Java and C++, and there are topics covered in this guide that are not language-exclusive like the roboRIO and the Driver Station itself. We hope this is guide serves to be useful for you!</p>
             </div>
             <!--Button corresponding to the a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:300px_150px] bg-[center_bottom_-2rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:200px_100px] hover:opacity-100 hover:bg-[center_bottom_-1rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:300px_150px] bg-[center_bottom_-2rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:200px_100px] hover:opacity-100 hover:bg-[center_bottom_-1rem]"
                     href={linkThirdBox}>{thirdBoxText}
                 </a>
-                <br>
-                <p class = "flex-wrap">this is another paragraph that doesn't break the page, and which will wrap back towards....</p>
-                <p>this is another paragraph</p>
+                <p class = "flex-wrap">This document details the wiring of a basic electronics board for bench-top testing. Some images shown in this section reflect the setup for a Robot Control System using Spark motor controllers. Wiring diagram and layout should be similar for other motor controllers. Where appropriate, a second set of images shows the wiring steps for using PWM controllers with integrated wires.</p>
             </div>
             <!--Button corresponding to the a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-8rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-7rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-8rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-7rem]"
                     href={linkFourthBox}>{fourthBoxText}
                 </a>
-                <br>
-                <p class = "flex-wrap">this is another paragraph that doesn't break the page, and which will wrap back towards....</p>
-                <p>this is another paragraph</p>
-                <p>this is another paragraph</p>
-                <p>this is another paragraph</p>
+                <p class = "flex-wrap">The FIRST Robotics Competition (FRC) pneumatic components are outlined in this document. It is being provided as a courtesy, and therefore does not supersede any information or rules provided in the FIRST Robotics Competition Manual.</p>
             </div>
         </div>
     </div>

@@ -6,8 +6,8 @@
 
 <div class = "my-10">
     <div class="card card-side bg-base-100 shadow-xl">
-        <div class = "w-1/2">
-            <figure class = "w-1/2"><img src="https://cdn.discordapp.com/attachments/1122723830973075506/1124830665406427136/KSapPirZBfeA5XzLS93LvqELu93MKsGGbgHNDZjyDOl5xWMgQ9YKh9unNuczPVZEQjS73zUoJOADjixgQa8G0rLsrwWIBtMBGY-58r_fvJpas4iww1280.png" style = "height: 300px; width: 500px;" alt="Movie"/></figure>
+        <div class = "">
+            <figure><img src="/electrical-subteam.JPG" style = "height: 300px; width: 500px;" alt="electrical-subteam"/></figure>
         </div>
         <div class="card-body w-1/2">
             <h2 class="card-title">ELECTRICAL SUBTEAM</h2>
