@@ -23,7 +23,7 @@
     <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
         <!-- Main Card -->
         <div class="card bg-base-200 shadow-xl w-96">
-            <figure><img src="/build-subteam.jpg" alt="Build Subteam"/></figure>
+            <figure><img src="/power-tools.jpeg" alt="Build Subteam"/></figure>
 
             <div class="card-body">
                 <h2 class="card-title">Power Tools</h2>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="card bg-base-200 shadow-xl w-96">
-            <figure><img src="/build-subteam.jpg" alt="Build Subteam"/></figure>
+            <figure><img src="/cnc-machine.jpg" alt="Build Subteam"/></figure>
 
             <div class="card-body">
                 <h2 class="card-title">CNC Machine</h2>
@@ -41,7 +41,8 @@
         </div>
 
         <div class="card bg-base-200 shadow-xl w-96">
-            <figure><img src="/build-subteam.jpg" alt="Build Subteam"/></figure>
+            <!--taken from https://www.nytimes.com/wirecutter/reviews/best-home-3d-printer/-->
+            <figure><img src="/3D-printer.jpg" alt="Build Subteam"/></figure>
 
             <div class="card-body">
                 <h2 class="card-title">3D-Printing</h2>
