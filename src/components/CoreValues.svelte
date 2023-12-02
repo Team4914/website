@@ -62,22 +62,22 @@ To change the position of the image inside of the buttons upon being hovered ove
             <div class="flex flex-wrap w-full">
                 <!--Button corresponding to the "Spirited" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_300px] bg-[center_bottom_-8rem] bg-[url('/spirited.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_190px] hover:opacity-100 hover:bg-[center_bottom_-4rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_300px] bg-[center_bottom_-8rem] bg-[url('/spirited.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_190px] hover:opacity-100 hover:bg-[center_bottom_-4rem]"
                     href={linkFirstBox}>{firstBoxText}
                 </a>
                 <!--Button corresponding to the "Team Oriented" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:500px_350px] bg-[center_bottom_-6rem] bg-[url('/team-oriented.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:350px_245px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:500px_350px] bg-[center_bottom_-6rem] bg-[url('/team-oriented.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:350px_245px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
                     href={linkSecondBox}>{secondBoxText}
                 </a>
                 <!--Button corresponding to the "Empathetic" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:300px_200px] bg-[center_bottom_-4rem] bg-[url('/history.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_200px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:300px_200px] bg-[center_bottom_-4rem] bg-[url('/history.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_200px] hover:opacity-100 hover:bg-[center_bottom_-6rem]"
                     href={linkThirdBox}>{thirdBoxText}
                 </a>
                 <!--Button corresponding to the "Methodical" web page-->
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('/methodical.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:310px_210px] hover:opacity-100 hover:bg-[center_bottom_-5rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('/methodical.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:310px_210px] hover:opacity-100 hover:bg-[center_bottom_-5rem]"
                     href={linkFourthBox}>{fourthBoxText}
                 </a>
             </div>
