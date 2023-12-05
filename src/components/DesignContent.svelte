@@ -5,7 +5,7 @@
             <img class="max-w-sm shadow-2xl" src="https://media.discordapp.net/attachments/952217244048445441/1124796493107314719/large.png?width=844&height=630" alt="Movie" />
         </figure>
         <div class="card-body">
-            <h1 class="text-5xl font-bold">What is Design and Cad?</h1>
+            <h1 class="text-5xl font-bold">What is Design and CAD?</h1>
             <p class="py-6">CAD or Computer Aided-Design is a software that allows us to design the entire robot with everything including the smallest items (bolts, nuts, washers, etc). We use CAD as a tool to communicate design ideas and details, once everything is fully planned and designed, the CAD is used as a blueprint.</p>
         </div>
     </div>

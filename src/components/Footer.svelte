@@ -3,7 +3,7 @@
 <script lang="ts">
     // Socials Links
     const logoImage =
-        "https://cdn.discordapp.com/attachments/1156357127011573840/1159979170386935808/Logo.png?ex=6532fdc9&is=652088c9&hm=099ded07c69c35a15e545fda0f451f2bda2cd4847fec044d1efbbefa17f021c6&";
+        "/LogoVPCIftc.png";
     const linkInstagram = "https://www.instagram.com/vpci.robotics/";
     const linkEmail = "mailto:frcteam4914@gmail.com";
     const linkYoutube = "https://www.youtube.com/@team4914";

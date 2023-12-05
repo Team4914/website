@@ -16,16 +16,16 @@
 
     const awards: Award[] = [ // sorted most recent to oldest
         {
-            img: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-            imgAlt: "Image of Shoes",
+            img: "/awards/awards2019.jpg",
+            imgAlt: "awards 2019",
             title: "2019 Finalist",
             year: 2019,
             link: "https://www.thebluealliance.com/event/2019onsi",
             description: "Southwest International",
         },
         {
-            img: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-            imgAlt: "Image of Shoes",
+            img: "/awards/awards2019.jpg",
+            imgAlt: "awards 2019",
             title: "2019 Team Spirit Award",
             year: 2019,
             link: "https://www.thebluealliance.com/event/2019onnyo",
@@ -56,8 +56,8 @@
             description: "ONT District North Bay Event",
         },
         {
-            img: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-            imgAlt: "Image of Shoes",
+            img: "/awards/awards2016.jpg",
+            imgAlt: "awards 2016",
             title: "2016 Gracious Professionalism Award",
             year: 2016,
             link: "https://www.thebluealliance.com/event/2016onwi",
