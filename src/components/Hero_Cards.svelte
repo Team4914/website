@@ -53,7 +53,7 @@
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
-          src="our-mission.JPG"
+          src="/our-mission.JPG"
           alt="Shoes"
         />
       </figure>
@@ -92,7 +92,7 @@
     <div class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12">
       <figure>
         <img
-          src="history.JPG"
+          src="/history.JPG"
           alt="Shoes"
         />
       </figure>

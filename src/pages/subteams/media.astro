@@ -1,13 +1,15 @@
 ---
 import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
 import Hero from '../../components/Hero.svelte';
+import MediaIntroduction from '../../components/MediaIntroduction.svelte';
+import MediaSocialLinks from '../../components/MediaSocialLinks.svelte';
 ---
 
 <script>
 
 </script>
 
-<NavbarFooterLayout title="Electronics | VPCI Robotics">
+<NavbarFooterLayout title="Media | VPCI Robotics">
 	<Hero
 		backgroundImage="url(/hero-img.png)"
 		gradientTitle={true}
@@ -16,6 +18,8 @@ import Hero from '../../components/Hero.svelte';
 		buttonText=""
 	/> 
     
+	<MediaIntroduction/>
+	<MediaSocialLinks/>
 </NavbarFooterLayout>
 
 <style>
