@@ -5,6 +5,7 @@ export let backgroundImage:string; // background variable
 export let gradientTitle:boolean;
 export let standardTitleText:string = ""; // background variable
 export let gradientTitleText:string = ""; // background variable
+export let descriptionText:string = ""; //
 export let button:boolean;
 export let buttonText:string = ""; // background variable
 
@@ -24,7 +25,7 @@ if(button) {
         {#if standardTitleText}&nbsp{/if}
         <span class="text-gradient bg-clip-text text-transparent">{#if gradientTitle}{gradientTitleText}{/if}<span>
       </h1>
-      <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p class="mb-5 text-xl">{descriptionText}</p>
        {#if button}
         <Button value={buttonText}/> 
        {/if}
