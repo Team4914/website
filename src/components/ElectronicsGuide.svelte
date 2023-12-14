@@ -1,10 +1,10 @@
 <!--This is the electronics guide component on the electronics subteam page-->
 
 <script lang="ts">
-    let linkFirstBox = "asd";
-    let linkSecondBox = "asd";
-    let linkThirdBox = "asd";
-    let linkFourthBox = "asd";
+    let linkFirstBox = "https://drive.google.com/file/d/1EDPonK7Pc_Vf_9crYTMUXauCYa4-7a5h/view";
+    let linkSecondBox = "https://mililanirobotics.gitbooks.io/frc-electrical-bible/content/";
+    let linkThirdBox = "https://wpilib.screenstepslive.com/s/currentCS/m/kop/l/1030226-wiring-the-frc-control-system";
+    let linkFourthBox = "https://firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf";
 
     let firstBoxText = "General Electrical System Notes";
     let secondBoxText = "Additional System notes";
@@ -25,34 +25,34 @@
             <!--Button corresponding to a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://th.bing.com/th/id/OIP.2mggqeJ4NZV5yiwdvcq5YwHaFj?pid=ImgDet&rs=1')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
                     href={linkFirstBox}>{firstBoxText}
                 </a>
-                <p class = "flex-wrap">The intent of this document is to teach you (the reader) enough to go and do your own research and make your own informed decisions using the muscle between your ears about motors and their use in FRC. It is not an end-all-be-all but hopefully will introduce you to the tools we’ll be using throughout and teach you to use them yourself.</p>
+                <p class = "mt-2">The intent of this document is to teach you (the reader) enough to go and do your own research and make your own informed decisions using the muscle between your ears about motors and their use in FRC. It is not an end-all-be-all but hopefully will introduce you to the tools we’ll be using throughout and teach you to use them yourself.</p>
             </div>
             <!--Button corresponding to a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-2rem] bg-[url('https://cdn.britannica.com/22/215522-050-8315BB78/green-grass-close-up.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-2rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
                     href={linkSecondBox}>{secondBoxText}
                 </a>
-                <p class = "flex-wrap">Something to note is that we program in C++, so references to classes like “Encoder” and our sample codes are written in C++. However, classes are interchangeable in Java and C++, and there are topics covered in this guide that are not language-exclusive like the roboRIO and the Driver Station itself. We hope this is guide serves to be useful for you!</p>
+                <p class = "mt-2">Something to note is that we program in C++, so references to classes like “Encoder” and our sample codes are written in C++. However, classes are interchangeable in Java and C++, and there are topics covered in this guide that are not language-exclusive like the roboRIO and the Driver Station itself. We hope this is guide serves to be useful for you!</p>
             </div>
             <!--Button corresponding to the a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:300px_150px] bg-[center_bottom_-2rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:200px_100px] hover:opacity-100 hover:bg-[center_bottom_-1rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
                     href={linkThirdBox}>{thirdBoxText}
                 </a>
-                <p class = "flex-wrap">This document details the wiring of a basic electronics board for bench-top testing. Some images shown in this section reflect the setup for a Robot Control System using Spark motor controllers. Wiring diagram and layout should be similar for other motor controllers. Where appropriate, a second set of images shows the wiring steps for using PWM controllers with integrated wires.</p>
+                <p class = "mt-2">This document details the wiring of a basic electronics board for bench-top testing. Some images shown in this section reflect the setup for a Robot Control System using Spark motor controllers. Wiring diagram and layout should be similar for other motor controllers. Where appropriate, a second set of images shows the wiring steps for using PWM controllers with integrated wires.</p>
             </div>
             <!--Button corresponding to the a web page-->
             <div class = "grid h-100 mx-4 my-2 flex-grow card bg-base-300">
                 <a
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-8rem] bg-[url('https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:400px_300px] hover:opacity-100 hover:bg-[center_bottom_-7rem]"
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
                     href={linkFourthBox}>{fourthBoxText}
                 </a>
-                <p class = "flex-wrap">The FIRST Robotics Competition (FRC) pneumatic components are outlined in this document. It is being provided as a courtesy, and therefore does not supersede any information or rules provided in the FIRST Robotics Competition Manual.</p>
+                <p class = mt-2>The FIRST Robotics Competition (FRC) pneumatic components are outlined in this document. It is being provided as a courtesy, and therefore does not supersede any information or rules provided in the FIRST Robotics Competition Manual.</p>
             </div>
         </div>
     </div>
