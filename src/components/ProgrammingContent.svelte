@@ -3,7 +3,7 @@
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <div class="card card-side bg-base-100 shadow-xl">
             <div class = "w-1/3 md:w-1/2">
-                <figure class = "rounded-lg"><img src="/electrical-subteam.JPG" style = "height: 400px;" alt="electrical-subteam"/></figure>
+                <figure class = "rounded-lg"><img src="/Programming.webp" style = "height: 400px;" alt="electrical-subteam"/></figure>
             </div>
             <div class="card-body w-1/2">
                 <h1 class="text-5xl font-bold card-title">Programming Subteam</h1>
@@ -25,8 +25,8 @@
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
         <div class="card-body text-center">
-            <h1 class="text-5xl font-semibold">Robot Vision : Auto-Aim</h1>
-            <p class="py-6">Our robot has an onboard camera running OpenCV on a Raspberry Pi to help automatically align the robot's ball shooter with the target goal. At the moment it runs on Python, however, we are looking to improve its efficiency. Some prior knowledge about Python, C++ or general computer vision processing is useful but not necessary.</p>
+            <h1 class="text-5xl font-semibold">Implementing roadrunner</h1>
+            <p class="py-6">Road Runner is a motion planning library, written for the FTC robotics competition. Designed primarily for autonomous robotic movement, it allows for path creation during the autonomous period. We are using odometry with deadwheels to determine the robot's position on the field.</p>
         </div>
         <figure class="basis-3/4">
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
@@ -34,6 +34,7 @@
     </div>
     <div class="py-6"></div>
 
+    <!--
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
@@ -46,6 +47,7 @@
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
     </div>
+    -->
 
     <!-- Resource box -->
     <div style="border: .5px solid white;" class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center">
