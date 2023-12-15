@@ -14,7 +14,7 @@
     }
     50% {
       opacity: 1;
-      content:"Beinvenue";
+      content:"Bienvenue";
     }
     75%{
       opacity: 1;
