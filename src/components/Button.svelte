@@ -3,5 +3,5 @@
 </script>
 
 <button class="btn btn-primary glass">
-    <a href="/AboutUs">{value}</a>
+    <a href="/about-us">{value}</a>
 </button>
