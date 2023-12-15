@@ -21,15 +21,15 @@
     <div class="py-6"></div>
 
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
-        <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
+        <figure>
+            <img class="shadow-2xl" src="/roadrunner.png" alt="roadrunner img" />
         </figure>
         <div class="card-body text-center">
             <h1 class="text-5xl font-semibold">Implementing roadrunner</h1>
             <p class="py-6">Road Runner is a motion planning library, written for the FTC robotics competition. Designed primarily for autonomous robotic movement, it allows for path creation during the autonomous period. We are using odometry with deadwheels to determine the robot's position on the field.</p>
         </div>
-        <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
+        <figure>
+            <img class="shadow-2xl" src="/roadrunner.png" alt="roadrunner img" />
         </figure>
     </div>
     <div class="py-6"></div>

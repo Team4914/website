@@ -19,6 +19,16 @@ Fix if possible-->
     <h2 class = "text-3xl">Resources:</h2>
     <br>
 
+    <!--Victoria Park Robotics-->
+    <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
+        <h3 class = "text-2xl">Victoria Park Robotics</h3>
+        <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="">VP Robotics Sponsorship package</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Engineering notebook</a></li>
+        </ul>
+    </div>
+    <br>
+
     <!--Build team resources-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
         <h3 class = "text-2xl">Build team</h3>
@@ -56,9 +66,9 @@ Fix if possible-->
 
         <h4 class = "text-xl mt-5">Other</h4>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://learnroadrunner.com/#frequently-asked-questions">Learn roadrunner</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://www.youtube.com/watch?v=noqBUEgyQ8A">Mecanum wheels tutorial</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://www.youtube.com/watch?v=TSCD2fjNh0I">Programming Mecanum wheels</a></li>
         </ul>
     </div>
     <br>
@@ -67,9 +77,9 @@ Fix if possible-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
         <h3 class = "text-2xl">Web development</h3>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
-            <li><a class = "link transition-all duration-500 hover:text-xl" href="">Guide</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://svelte.dev/">Learn Svelte</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://tailwindcss.com/">Tailwindcss</a></li>
+            <li><a class = "link transition-all duration-500 hover:text-xl" href="https://daisyui.com/components/">Tailwindcss Component library (DaisyUI)</a></li>
         </ul>
     </div>
 </div>

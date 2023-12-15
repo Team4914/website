@@ -20,8 +20,8 @@
 <!-- Link to community outreach-->
 <div class = "flex flex-col md:flex-row justify-evenly bg-base-300 pt-10">
     <figure>
-        <img class = "mx-auto"
-            src="/Instagram-icon.png"
+        <img class = "mx-auto w-96"
+            src="/team-oriented.JPG"
             alt="Image of media team"
         />
 

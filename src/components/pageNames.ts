@@ -16,7 +16,6 @@ const pages: Page[] = [
       { name: "Electronics", href: "/subteams/electronics" },
       { name: "Programming", href: "/subteams/programming" },
       { name: "Media", href: "/subteams/media" },
-      { name: "Scouting", href: "/subteams/scouting" },
     ]
   },
   { name: "About Us", href: "/about-us" },
