@@ -12,7 +12,7 @@
             <div id="slide1" class="carousel-item relative w-full">
                 <div class = "py-2">
                     <img class = "absolute left-1/3 w-1/3 h-2/3" src="/DC-motor.jpg"/>
-                    <p class = "absolute w-3/4 left-20 top-3/4">If you need to use a one-off top/right/bottom/left value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.</p>
+                    <p class = "absolute w-3/4 left-20 top-3/4">The motors are used in a number of different components on our robot. They allow our robot's claw to pick up pixels and place them high up on the board. They are also used to innitiate our hanging sequence. These motors allow us to do heavy-duty work. </p>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
@@ -22,7 +22,7 @@
             <div id="slide2" class="carousel-item relative w-full">
                 <div class = "py-5">
                     <img class = "absolute left-1/3 w-1/3 h-2/3" src="/Control-Hub.jpg"/>
-                    <p class = "absolute w-3/4 left-20 top-3/4">If you need to use a one-off top/right/bottom/left value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.</p>
+                    <p class = "absolute w-3/4 left-20 top-3/4">The control hub is basically the brain of the robot. It allows us to manipuate the entirety of the robot with much effectiveness. It connects our inputs from our driver hub, and turns these instructions given into brand new instructions for other parts of the robot, allowing it to innitiate a number of important sequences.</p>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
@@ -32,7 +32,7 @@
             <div id="slide3" class="carousel-item relative w-full">
                 <div class = "py-5">
                     <img class = "absolute h-2/3 left-1/3" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Genshin-Impact-Primogems.png.jpg"/>
-                    <p class = "absolute w-3/4 left-20 top-3/4">If you need to use a one-off top/right/bottom/left value that doesn’t make sense to include in your theme, use square brackets to generate a property on the fly using any arbitrary value.</p>
+                    <p class = "absolute w-3/4 left-20 top-3/4">The servos are like the precise and nimble fingers of our robot. They allow us to perform more precise actions than motors, at a tradeoff of power. On our robot, servos are used on the claw mechanisms, the _____</p>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <a href="#slide1" class="btn btn-circle">❯</a>

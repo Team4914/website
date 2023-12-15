@@ -1,12 +1,14 @@
 <div class="bg-base-200 min-h-96 flex flex-col items-center justify-center p-10">
-    <!-- Main Card -->
+    <!-- Introduction card -->
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
-        <figure class="basis-3/4">
-            <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
-        </figure>
-        <div class="card-body">
-            <h1 class="text-5xl font-bold">Programming Subteam</h1>
-            <p class="py-6">At team 4914, our programming subteam uses Java and Python to code the robot, which includes creating an intuitive and assistive control system for the drive team, as well as efficiently and safely utilizing the electronics. Being a programmer at 4914 requires you to understand how the entire robot functions as a system, so getting involved with the other technical sub-teams (build, design, electronics) is encouraged. Although prior programming experience is useful, the willingness to learn is more important.</p>
+        <div class="card card-side bg-base-100 shadow-xl">
+            <div class = "w-1/3 md:w-1/2">
+                <figure class = "rounded-lg"><img src="/electrical-subteam.JPG" style = "height: 400px;" alt="electrical-subteam"/></figure>
+            </div>
+            <div class="card-body w-1/2">
+                <h1 class="text-5xl font-bold card-title">Programming Subteam</h1>
+                <p class="py-6">At team 4914, our programming subteam uses Java and Python to code the robot, which includes creating an intuitive and assistive control system for the drive team, as well as efficiently and safely utilizing the electronics. Being a programmer at 4914 requires you to understand how the entire robot functions as a system, so getting involved with the other technical sub-teams (build, design, electronics) is encouraged. Although prior programming experience is useful, the willingness to learn is more important.</p>
+            </div>
         </div>
     </div>
 
@@ -17,6 +19,7 @@
             <p class="bg-base-100 text-2xl rounded-lg text-center p-4">We are constantly working to improve our robots' features and capabilities through the code powering it. Below are the ongoing programming projects. If you are interested, contact us via our socials or email.</p>
         </div>
     <div class="py-6"></div>
+
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
@@ -30,6 +33,7 @@
         </figure>
     </div>
     <div class="py-6"></div>
+
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
@@ -42,15 +46,28 @@
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
         </figure>
     </div>
+
+    <!-- Resource box -->
     <div style="border: .5px solid white;" class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center">
     <h2 class="text-4xl font-bold mb-4">RESOURCES</h2>
-    <div class="flex justify-center">
-        <button onclick="window.location.href='https://github.com/Team4914'" class="bg-red-600 text-lg rounded-lg p-4 mx-2">VPCI Robotics GitHub</button>
-        <button onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world'" class="bg-red-600 text-lg rounded-lg p-4 mx-2">Github Tutorial</button>
+    <div class="py-5 bg-base-300 rounded-box">
+        <!--Creates the buttons and dividers for the Core Values section -->
+        <div class="flex flex-wrap w-full justify-center opacity-90">
+            <!--Button corresponding to a web page-->
+            <div class = "grid h-100 mx-4 my-2 card bg-base-300">
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+                    href='https://github.com/Team4914'>Victoria Park Github
+                </a>
+            </div>
+            <!--Button corresponding to a web page-->
+            <div class = "grid h-100 mx-4 my-2 card bg-base-300">
+                <a
+                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
+                    href='https://docs.github.com/en/get-started/quickstart/hello-world'>Github tutorial
+                </a>
+            </div>
+        </div>
     </div>
     </div>
-
-
-
-
 </div>
