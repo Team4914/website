@@ -5,7 +5,7 @@
 </script>
 
 <div class = "my-10">
-    <div class="card card-side bg-base-100 shadow-xl">
+    <div class="card card-side bg-base-100 shadow-xl px-5">
         <div class = "">
             <figure><img src="/electrical-subteam.JPG" style = "height: 300px; width: 500px;" alt="electrical-subteam"/></figure>
         </div>
