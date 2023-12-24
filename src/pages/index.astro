@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import CoreValues from '../components/CoreValues.svelte';
 import Hero_Cards from '../components/Hero_Cards.svelte';
@@ -11,7 +11,7 @@ import Hero from '../components/Hero.svelte';
 	console.log(theme)
 </script>
 
-<NavbarFooterLayout title="Welcome to Robotics.">
+<BaseLayout title="Welcome to Robotics.">
 	<Hero
 		backgroundImage="url(hero-img.png)"
 		gradientTitle={true}
@@ -23,7 +23,7 @@ import Hero from '../components/Hero.svelte';
 	/> <!-- Team leader change (reason?) => recycling -->
 	<Hero_Cards />
 	<CoreValues/>
-</NavbarFooterLayout>
+</BaseLayout>
 
 <style>
 </style>

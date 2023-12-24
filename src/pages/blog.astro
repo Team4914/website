@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.svelte';
 import BlogButton from '../components/BlogButton.svelte';
 
@@ -16,7 +16,7 @@ publishedBlogEntries.sort(function (a, b) {
 });
 ---
 
-<NavbarFooterLayout title="Blog">
+<BaseLayout title="Blog">
     <Hero
         backgroundImage="url(about-us-hero.png)"
         gradientTitle={true}
@@ -34,4 +34,4 @@ publishedBlogEntries.sort(function (a, b) {
           linkTo="intro"
       />
     </div>
-</NavbarFooterLayout>
+</BaseLayout>

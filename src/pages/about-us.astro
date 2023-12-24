@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import CoreValues from '../components/CoreValues.svelte';
 import Hero_Cards from '../components/Hero_Cards.svelte';
@@ -7,7 +7,7 @@ import Hero from '../components/Hero.svelte';
 import TextContainer from '../components/TextContainer.svelte';
 ---
 
-<NavbarFooterLayout title="about-us | VPCI Robotics">
+<BaseLayout title="about-us | VPCI Robotics">
 	<Hero
 		backgroundImage="url(about-us-hero.png)"
 		gradientTitle={true}
@@ -17,7 +17,7 @@ import TextContainer from '../components/TextContainer.svelte';
 		button={false}
 	/>
 	<TextContainer/>
-</NavbarFooterLayout>
+</BaseLayout>
 
 
 <style>

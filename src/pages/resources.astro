@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import CoreValues from '../components/CoreValues.svelte';
 import Hero_Cards from '../components/Hero_Cards.svelte';
@@ -7,7 +7,7 @@ import Hero from '../components/Hero.svelte';
 import Resources from '../components/Resources.svelte';
 ---
 
-<NavbarFooterLayout title="Resources | VPCI Robotics">
+<BaseLayout title="Resources | VPCI Robotics">
 	<Hero
 		backgroundImage="url(about-us-hero.png)"
 		gradientTitle={true}
@@ -17,7 +17,7 @@ import Resources from '../components/Resources.svelte';
 	/>
 
 	<Resources/>
-</NavbarFooterLayout>
+</BaseLayout>
 
 
 <style>

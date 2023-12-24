@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import NavbarFooterLayout from "../../layouts/NavbarFooterLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import TextContainer from "../../components/TextContainer.svelte";
 
 
@@ -16,7 +16,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<NavbarFooterLayout>
+<BaseLayout>
     <div class="mx-auto mt-6 max-w-3xl">
       <TextContainer />
     </div>
@@ -27,4 +27,4 @@ const { Content } = await entry.render();
         >← Back to Blog</a
       >
     </div>
-</NavbarFooterLayout>
+</BaseLayout>

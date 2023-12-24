@@ -1,11 +1,11 @@
 ---
-import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 import Hero from '../../components/Hero.svelte';
 import ProgrammingContent from "../../components/ProgrammingContent.svelte";
 ---
 
-<NavbarFooterLayout title="Programming | VPCI Robotics">
+<BaseLayout title="Programming | VPCI Robotics">
 	<Hero
 		backgroundImage="url(/hero-img.png)"
 		gradientTitle={true}
@@ -18,4 +18,4 @@ import ProgrammingContent from "../../components/ProgrammingContent.svelte";
 
     <ProgrammingContent/>
     
-</NavbarFooterLayout>
+</BaseLayout>

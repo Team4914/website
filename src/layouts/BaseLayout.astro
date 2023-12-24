@@ -1,5 +1,8 @@
 ---
-import '../tailwind.css';
+import Footer from "../components/Footer.svelte";
+import Navbar from "../components/Navbar.svelte";
+import Sidebar from "../components/Sidebar.svelte";
+import "../tailwind.css";
 interface Props {
 	title: string;
 	theme?: string;
@@ -19,23 +22,34 @@ const { title, theme = "robodark" } = Astro.props;
 		<title>{title} | VPCI Robotics</title>
 	</head>
 	<body>
-		<slot />
+		<Sidebar />
+		<Navbar />
+
+		<main>
+			<!-- Main content of webpage goes here -->
+			<slot>
+				<!-- Child elements are put here -->
+				<!-- Default content if none added -->
+				 No content found/loaded for this page.
+			</slot>
+		</main>
+
+		<Footer />
 	</body>
 </html>
-<style is:global>
-</style>
+<style is:global></style>
 
 <script is:inline>
 	if (localStorage.getItem("theme") === null) {
-        document.documentElement.setAttribute("data-theme", "robodark");
-      } else
-        document.documentElement.setAttribute(
-          "data-theme",
-          localStorage.getItem("theme")
-        );
+		document.documentElement.setAttribute("data-theme", "robodark");
+	} else
+		document.documentElement.setAttribute(
+			"data-theme",
+			localStorage.getItem("theme"),
+		);
 </script>
 
 <script>
-	import { themeChange } from 'theme-change';
+	import { themeChange } from "theme-change";
 	themeChange();
 </script>

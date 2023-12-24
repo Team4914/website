@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import Hero from '../components/Hero.svelte';
 import AwardsSection from '../components/competitions/AwardsSection.svelte';
@@ -10,7 +10,7 @@ import GameSection from '../components/competitions/GameSection.svelte';
 
 </script>
 
-<NavbarFooterLayout title="Competitions | VPCI Robotics">
+<BaseLayout title="Competitions | VPCI Robotics">
 	<Hero
 		backgroundImage="url(hero-img.png)"
 		gradientTitle={true}
@@ -24,7 +24,7 @@ import GameSection from '../components/competitions/GameSection.svelte';
     <AwardsSection client:idle/>
 	<GameSection />
     
-</NavbarFooterLayout>
+</BaseLayout>
 
 <style>
 </style>

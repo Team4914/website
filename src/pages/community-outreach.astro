@@ -1,5 +1,5 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import CoreValues from '../components/CoreValues.svelte';
 import Hero_Cards from '../components/Hero_Cards.svelte';
@@ -7,7 +7,7 @@ import Hero from '../components/Hero.svelte';
 import OutreachShowcase from '../components/OutreachShowcase.svelte';
 ---
 
-<NavbarFooterLayout title="Community outreach | VPCI Robotics">
+<BaseLayout title="Community outreach | VPCI Robotics">
 	<Hero
 		backgroundImage="url(hero-img.png)"
 		gradientTitle={true}
@@ -18,7 +18,7 @@ import OutreachShowcase from '../components/OutreachShowcase.svelte';
         buttonText="Contact Us"
 	/>
     <OutreachShowcase/>
-</NavbarFooterLayout>
+</BaseLayout>
 
 
 <style>
