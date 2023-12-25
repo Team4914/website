@@ -44,7 +44,7 @@
       href="/"
     >
       <img
-        src="/logo-transparent.png"
+        src="/logo-transparent.webp"
         class="invert dark:invert-0 h-full"
         alt="VPCI Robotics Logo"
       />

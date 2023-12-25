@@ -2,7 +2,7 @@
 
 <script lang="ts">
   // Socials Links
-  const logoImage = "/LogoVPCIftc.png";
+  const logoImage = "/LogoVPCIftc.webp";
   const linkInstagram = "https://www.instagram.com/vpci.robotics/";
   const linkEmail = "mailto:frcteam4914@gmail.com";
   const linkYoutube = "https://www.youtube.com/@team4914";

@@ -8,7 +8,7 @@
     <div class="">
       <figure>
         <img
-          src="/electrical-subteam.JPG"
+          src="/electrical-subteam.webp"
           style="height: 300px; width: 500px;"
           alt="electrical-subteam"
         />

@@ -32,7 +32,7 @@
         <div class="py-5">
           <img
             class="absolute left-1/3 w-1/3 h-2/3 rounded-lg"
-            src="/Control-Hub.jpg"
+            src="/Control-Hub.webp"
           />
           <p class="absolute w-3/4 left-20 top-3/4">
             The control hub is basically the brain of the robot. It allows us to
@@ -51,7 +51,7 @@
       </div>
       <div id="slide3" class="carousel-item relative w-full">
         <div class="py-5">
-          <img class="absolute h-2/3 left-1/3 rounded-lg" src="/Servo.jpeg" />
+          <img class="absolute h-2/3 left-1/3 rounded-lg" src="/Servo.webp" />
           <p class="absolute w-3/4 left-20 top-3/4">
             The servos are like the precise and nimble fingers of our robot.
             They allow us to perform more precise actions than motors, at a

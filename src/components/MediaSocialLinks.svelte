@@ -9,7 +9,7 @@
   >
     <figure>
       <h1 class="md:text-center text-3xl"><b>Instagram</b></h1>
-      <img src="/Instagram-icon.png" alt="Instagram logo" />
+      <img src="/Instagram-icon.webp" alt="Instagram logo" />
     </figure>
   </a>
 
@@ -21,7 +21,7 @@
   <figure>
     <img
       class="mx-auto w-96"
-      src="/team-oriented.JPG"
+      src="/team-oriented.webp"
       alt="Image of media team"
     />
 
