@@ -21,7 +21,7 @@
   <figure>
     <img
       class="mx-auto w-96"
-      src="/team-oriented.jpg"
+      src="/team-oriented.JPG"
       alt="Image of media team"
     />
 

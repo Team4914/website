@@ -4,21 +4,21 @@
       title: "OUR MISSION",
       description:
         "Team 4914's mission is to stimulate students and inspire a new generation of students into STEM through hands-on learning and an environment for creativity and confidence to grow.",
-      image: "/our-mission.jpg",
+      image: "/our-mission.JPG",
       alt: "our-mission",
     },
     {
       title: "OUR GOALS",
       description:
         "The primary goal of 4914 is the extension of STEM into the community, and helping students understand the importance of STEM. Beyond that, we hope to propagate the values of FIRST & Team 4914 into the community, provide a comfortable enviroment for students to learn about STEM, and create strong bonds, both winthin our team members, and with the general community.",
-      image: "/goals.jpg",
+      image: "/goals.JPG",
       alt: "our-goals",
     },
     {
       title: "OUR HISTORY",
       description:
         "Starting in 2014, Team 4914 “Panthers” was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Our FIRST robotics team’s first year started off with “Aerial Assist”, where we received Rookie All Star Award and Imagery Award at our first event. Thereafter, the team progressed onto the International Stage at St.Louis, Missouri, all within a year of being founded. Since then, we have won 11 FRC awards and grown in size and diversity. Team 4914 has always had the same goals in mind since the start, and through the help of our dedicated members, has refined & polished a clear system to engage students & educate them about STEM while also providing a fun and engaging competition background for them to test their new skills and grow.",
-      image: "/history.jpg",
+      image: "/history.JPG",
       alt: "our-history",
     },
   ];
@@ -48,7 +48,7 @@
         class="card bg-base-200 my-10 shadow-xl hover:scale-[1.02] md:w-[30%] w-11/12"
       >
         <figure>
-          <img src={card.image} alt={card.alt} width="500" height="350" loading="lazy" />
+          <img src={card.image} alt={card.alt} loading="lazy" />
         </figure>
         <div class="card-body">
           <h1 class="card-title">{card.title}</h1>
