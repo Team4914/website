@@ -21,7 +21,7 @@ Fix if possible-->
 
     <!--Victoria Park Robotics-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
-        <h3 class = "text-2xl">Victoria Park Robotics</h3>
+        <h1 class = "text-2xl">Victoria Park Robotics</h1>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="">VP Robotics Sponsorship package</a></li>
             <li><a class = "link transition-all duration-500 hover:text-xl" href="">Engineering notebook</a></li>
@@ -31,7 +31,7 @@ Fix if possible-->
 
     <!--Build team resources-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
-        <h3 class = "text-2xl">Build team</h3>
+        <h1 class = "text-2xl">Build team</h1>
 
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://docs.google.com/presentation/d/1D-TTWkGcIM9IYwn_SvGX0fwiERCBiqFc/edit?rtpof=true&sd=true">Mechanical guide</a></li>
@@ -42,7 +42,7 @@ Fix if possible-->
 
     <!--Electrionics resources-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
-        <h3 class = "text-2xl">Electronics</h3>
+        <h1 class = "text-2xl">Electronics</h1>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://drive.google.com/file/d/1EDPonK7Pc_Vf_9crYTMUXauCYa4-7a5h/view">General Electronics System Notes</a></li>
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://mililanirobotics.gitbooks.io/frc-electrical-bible/content/">Additional System Notes</a></li>
@@ -54,9 +54,9 @@ Fix if possible-->
 
     <!-- Programming resources-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
-        <h3 class = "text-2xl">Programming</h3>
+        <h1 class = "text-2xl">Programming</h1>
 
-        <h4 class = "text-xl mt-5">Computer Vision</h4>
+        <h1 class = "text-xl mt-5">Computer Vision</h1>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://ftc-docs.firstinspires.org/en/latest/ftc_ml/">FIRST Machine Learning Toolchain</a></li>
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://www.firstinspires.org/resource-library/ftc/game-and-season-info">First Robotics Resource library</a></li>
@@ -64,7 +64,7 @@ Fix if possible-->
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://developers.google.com/machine-learning/crash-course/ml-intro">Introduction to Machine Learning</a></li>
         </ul>
 
-        <h4 class = "text-xl mt-5">Other</h4>
+        <h1 class = "text-xl mt-5">Other</h1>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://learnroadrunner.com/#frequently-asked-questions">Learn roadrunner</a></li>
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://www.youtube.com/watch?v=noqBUEgyQ8A">Mecanum wheels tutorial</a></li>
@@ -75,7 +75,7 @@ Fix if possible-->
 
     <!--Web development resources-->
     <div class = "rounded-lg p-5 bg-base-300 text-lg transition-all duration-500 hover:translate-x-3">
-        <h3 class = "text-2xl">Web development</h3>
+        <h1 class = "text-2xl">Web development</h1>
         <ul style = "list-style-type:disc; padding-left:60px;line-height:40px;">
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://svelte.dev/">Learn Svelte</a></li>
             <li><a class = "link transition-all duration-500 hover:text-xl" href="https://tailwindcss.com/">Tailwindcss</a></li>

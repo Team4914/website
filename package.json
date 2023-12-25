@@ -29,6 +29,6 @@
     "tailwindcss": "^3.4.0"
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": "prettier --write . --plugin=prettier-plugin-astro"
   }
 }

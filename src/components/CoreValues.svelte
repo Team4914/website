@@ -1,13 +1,38 @@
 <script lang="ts">
-    let linkFirstBox = "asd";
-    let linkSecondBox = "asd";
-    let linkThirdBox = "asd";
-    let linkFourthBox = "asd";
-
-    let firstBoxText = "Spirited";
-    let secondBoxText = "Team Oriented";
-    let thirdBoxText = "Empathetic";
-    let fourthBoxText = "Methodical";
+    const cards = [
+        {
+            title: "Spirited",
+            image: "/spirited.JPG",
+            size: "bg-[length:450px_300px]",
+            sizeHover: "hover:bg-[length:300px_190px]",
+            position: "bg-[center_bottom_-8rem]",
+            positionHover: "hover:bg-[center_bottom_-4rem]",
+        },
+        {
+            title: "Team Oriented",
+            image: "/team-oriented.JPG",
+            size: "bg-[length:500px_350px]",
+            sizeHover: "hover:bg-[length:350px_245px]",
+            position: "bg-[center_bottom_-6rem]",
+            positionHover: "hover:bg-[center_bottom_-6rem]"
+        },
+        {
+            title: "Empathetic",
+            image: "/history.JPG",
+            size: "bg-[length:300px_200px]",
+            sizeHover: "hover:bg-[length:300px_200px]",
+            position: "bg-[center_bottom_-5rem]",
+            positionHover: "hover:bg-[center_bottom_-3rem]"
+        },
+        {
+            title: "Methodical",
+            image: "/methodical.JPG",
+            size: "bg-[length:450px_350px]",
+            sizeHover: "hover:bg-[length:310px_210px]",
+            position: "bg-[center_bottom_-4rem]",
+            positionHover: "hover:bg-[center_bottom_-5rem]"
+        },
+    ];
 </script>
 
 <!--
@@ -43,33 +68,25 @@ To change the position of the image inside of the buttons upon being hovered ove
         <div class="pb-7 bg-base-300 rounded-box">
             <!--Creates the heading for the Core Values section-->
             <div
-                class="grid h-20 card place-items-center sm:text-xl md:text-3xl"
+                class="py-4 h-20 card place-items-center text-3xl font-semibold"
             >
                 Core Values
             </div>
-
             <!--Creates the buttons and dividers for the Core Values section -->
-            <div class="flex flex-wrap w-full">
-                <!--Button corresponding to the "Spirited" web page-->
-                <div
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_300px] bg-[center_bottom_-8rem] bg-[url('/spirited.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_190px] hover:opacity-100 hover:bg-[center_bottom_-4rem]">
-                    {firstBoxText}
-                </div>
-                <!--Button corresponding to the "Team Oriented" web page-->
-                <div
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:500px_350px] bg-[center_bottom_-6rem] bg-[url('/team-oriented.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:350px_245px] hover:opacity-100 hover:bg-[center_bottom_-6rem]">
-                    {secondBoxText}
-                </div>
-                <!--Button corresponding to the "Empathetic" web page-->
-                <div
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:300px_200px] bg-[center_bottom_-4rem] bg-[url('/history.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:300px_200px] hover:opacity-100 hover:bg-[center_bottom_-6rem]">
-                    {thirdBoxText}
-                </div>
-                <!--Button corresponding to the "Methodical" web page-->
-                <div
-                    class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-base-300 text-gray-50 rounded-box place-items-center bg-[length:450px_350px] bg-[center_bottom_-4rem] bg-[url('/methodical.JPG')] opacity-40 btn hover:-translate-y-2 hover:bg-[length:310px_210px] hover:opacity-100 hover:bg-[center_bottom_-5rem]">
-                    {fourthBoxText}
-                </div>
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 w-full px-4 gap-4 justify-center items-stretch text-center"
+            >
+                {#each cards as card}
+                <!-- tailwind doesnt support partial dynamic classes, which is why style attribute is used -->
+                        <div
+                            style="background-image: url({card.image});"
+                            class="bg-base-100 card md:dark:opacity-40 shadow-xl transition-all duration-700 ease-in-out hover:-translate-y-2 hover:scale-110 hover:opacity-100 {card.size} {card.sizeHover} {card.position} {card.positionHover}"
+                        >
+                            <div class="card-body justify-center items-center">
+                                <h1 class="card-title text-white">{card.title}</h1>
+                            </div>
+                        </div>
+                {/each}
             </div>
         </div>
     </div>
