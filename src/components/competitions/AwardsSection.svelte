@@ -33,7 +33,7 @@
       description: "ONT District York University Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2018 Team Spirit Award",
       year: 2018,
@@ -41,7 +41,7 @@
       description: "ONT District North Bay Event",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2017 Engineering Inspiration Award",
       year: 2017,
@@ -49,7 +49,7 @@
       description: "ONT District North Bay Event",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2017 Woodie Flowers Semi-Finalist",
       year: 2017,
@@ -65,7 +65,7 @@
       description: "Windsor Essex Great Lakes Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2015 Dean's List Finalist (Hanna Zhang)",
       year: 2015,
@@ -73,7 +73,7 @@
       description: "Greater Toronto Central Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2015 Team Spirit Award",
       year: 2015,
@@ -81,7 +81,7 @@
       description: "Greater Toronto Central Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2015 Imagery Award",
       year: 2015,
@@ -89,7 +89,7 @@
       description: "Greater Toronto Central Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2014 Winner",
       year: 2014,
@@ -97,7 +97,7 @@
       description: "North Bay Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2014 Rookie Inspiration Award",
       year: 2014,
@@ -105,7 +105,7 @@
       description: "North Bay Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2014 Rookie All-Star Award",
       year: 2014,
@@ -113,7 +113,7 @@
       description: "Greater Toronto West Regional",
     },
     {
-      img: "/about-us-hero.png",
+      img: "/about-us-hero.webp",
       imgAlt: "Victoria Park Robotics icon",
       title: "2014 Imagery Award",
       year: 2014,
