@@ -32,7 +32,7 @@ export default {
   theme: {
     extend: {},
   },
-  purge: [
+  content: [
     "./index.html",
     "./src/**/*.{svelte,js,ts}",
     "./src/**/**/*.{svelte,js,ts}",

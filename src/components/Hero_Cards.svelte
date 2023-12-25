@@ -40,7 +40,9 @@
     </div>
   </div>
   <!-- "OUR MISSION", "OUR GOALS" and "OUR HISTORY" Cards -->
-  <div class="flex flex-col md:flex-row justify-evenly items-center md:items-stretch">
+  <div
+    class="flex flex-col md:flex-row justify-evenly items-center md:items-stretch"
+  >
     {#each cards as card}
       <div
         class="card bg-base-200 my-10 shadow-xl hover:scale-[1.02] md:w-[30%] w-11/12"

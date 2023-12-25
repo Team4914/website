@@ -43,6 +43,9 @@ devDependencies:
   prettier-plugin-astro:
     specifier: ^0.12.2
     version: 0.12.2
+  prettier-plugin-svelte:
+    specifier: ^3.1.2
+    version: 3.1.2(prettier@3.1.1)(svelte@4.2.8)
   tailwindcss:
     specifier: ^3.4.0
     version: 3.4.0
@@ -65,7 +68,6 @@ packages:
     dependencies:
       "@jridgewell/gen-mapping": 0.3.3
       "@jridgewell/trace-mapping": 0.3.20
-    dev: false
 
   /@astrojs/compiler@1.8.2:
     resolution:
@@ -1085,7 +1087,6 @@ packages:
       {
         integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==,
       }
-    dev: false
 
   /@types/hast@3.0.3:
     resolution:
@@ -1149,7 +1150,6 @@ packages:
       }
     engines: { node: ">=0.4.0" }
     hasBin: true
-    dev: false
 
   /ansi-align@3.0.1:
     resolution:
@@ -1258,7 +1258,6 @@ packages:
       }
     dependencies:
       dequal: 2.0.3
-    dev: false
 
   /array-iterate@2.0.1:
     resolution:
@@ -1376,7 +1375,6 @@ packages:
       }
     dependencies:
       dequal: 2.0.3
-    dev: false
 
   /b4a@1.6.4:
     resolution:
@@ -1682,7 +1680,6 @@ packages:
       acorn: 8.11.2
       estree-walker: 3.0.3
       periscopic: 3.1.0
-    dev: false
 
   /color-convert@1.9.3:
     resolution:
@@ -1824,7 +1821,6 @@ packages:
     dependencies:
       mdn-data: 2.0.30
       source-map-js: 1.0.2
-    dev: false
 
   /cssesc@3.0.0:
     resolution:
@@ -1952,7 +1948,6 @@ packages:
         integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==,
       }
     engines: { node: ">=6" }
-    dev: false
 
   /detect-libc@2.0.2:
     resolution:
@@ -2148,7 +2143,6 @@ packages:
       }
     dependencies:
       "@types/estree": 1.0.5
-    dev: false
 
   /eventemitter3@5.0.1:
     resolution:
@@ -2773,7 +2767,6 @@ packages:
       }
     dependencies:
       "@types/estree": 1.0.5
-    dev: false
 
   /is-stream@3.0.0:
     resolution:
@@ -2974,7 +2967,6 @@ packages:
       {
         integrity: sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA==,
       }
-    dev: false
 
   /locate-path@5.0.0:
     resolution:
@@ -3092,7 +3084,6 @@ packages:
     engines: { node: ">=12" }
     dependencies:
       "@jridgewell/sourcemap-codec": 1.4.15
-    dev: false
 
   /markdown-table@3.0.3:
     resolution:
@@ -3289,7 +3280,6 @@ packages:
       {
         integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==,
       }
-    dev: false
 
   /merge-stream@2.0.0:
     resolution:
@@ -4072,7 +4062,6 @@ packages:
       "@types/estree": 1.0.5
       estree-walker: 3.0.3
       is-reference: 3.0.2
-    dev: false
 
   /picocolors@1.0.0:
     resolution:
@@ -4278,6 +4267,19 @@ packages:
       "@astrojs/compiler": 1.8.2
       prettier: 3.1.1
       sass-formatter: 0.7.8
+    dev: true
+
+  /prettier-plugin-svelte@3.1.2(prettier@3.1.1)(svelte@4.2.8):
+    resolution:
+      {
+        integrity: sha512-7xfMZtwgAWHMT0iZc8jN4o65zgbAQ3+O32V6W7pXrqNvKnHnkoyQCGCbKeUyXKZLbYE0YhFRnamfxfkEGxm8qA==,
+      }
+    peerDependencies:
+      prettier: ^3.0.0
+      svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
+    dependencies:
+      prettier: 3.1.1
+      svelte: 4.2.8
     dev: true
 
   /prettier@3.1.1:
@@ -5087,7 +5089,6 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.5
       periscopic: 3.1.0
-    dev: false
 
   /tailwindcss@3.4.0:
     resolution:
