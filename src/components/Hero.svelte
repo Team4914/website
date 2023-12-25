@@ -20,10 +20,9 @@ if(button) {
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-2xl">
-      <h1 class="my-5 md:text-8xl text-6xl text-white font-bold underline underline-offset-8 decoration-red-800" >
+      <h1 class="my-5 md:text-7xl text-5xl text-white font-bold underline underline-offset-8 decoration-red-800" >
         {standardTitleText}
-        {#if standardTitleText}&nbsp{/if}
-        <span class="text-gradient bg-clip-text text-transparent">{#if gradientTitle}{gradientTitleText}{/if}<span>
+        <span class="text-gradient bg-clip-text text-transparent">{#if gradientTitle}{gradientTitleText}{/if}<span></span>
       </h1>
       <p class="mb-5 text-xl">{descriptionText}</p>
        {#if button}
@@ -36,6 +35,7 @@ if(button) {
 <style> 
 .text-gradient {
   background: linear-gradient(45deg, rgb(140, 20, 30), #f2b035 20%, white 60%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400%;

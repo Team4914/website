@@ -11,16 +11,6 @@
 </script>
 
 <!--
-INSTRUCTIONS FOR CHANGING THIS COMPONENT
-
-SHOULD ANY PART OF THIS COMPONENT BE GREATLY ALTERED, 
-PLEASE RE-DOCUMENT THE INSTRUCTIONS FOR CHANGING THIS COMPONENT, 
-FOR ANY PART THAT MAY HAVE BEEN AFECTED
-
-This component creates the Core Values portion of the homepage. 
-In this component, the <a> tags make up the buttons under the core values heading,
-and the <div> classes with class divider make up the dividers dividing the buttons
-
 GENERAL APPEARANCE
 To change the sendto link of the buttons, modify the "link" constants containing the urls
 To change height of buttons, modify the "h-[]" class in the <a> tags
