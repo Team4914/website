@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar.svelte";
 import Sidebar from "../components/Sidebar.svelte";
 import "../global.css";
 interface Props {
-	title: string;
-	theme?: string;
+  title: string;
+  theme?: string;
 }
 
 const { title, theme = "robodark" } = Astro.props;
@@ -13,43 +13,43 @@ const { title, theme = "robodark" } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title} | VPCI Robotics</title>
-	</head>
-	<body>
-		<Sidebar />
-		<Navbar />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | VPCI Robotics</title>
+  </head>
+  <body>
+    <Sidebar />
+    <Navbar />
 
-		<main>
-			<!-- Main content of webpage goes here -->
-			<slot>
-				<!-- Child elements are put here -->
-				<!-- Default content if none added -->
-				 No content found/loaded for this page.
-			</slot>
-		</main>
+    <main>
+      <!-- Main content of webpage goes here -->
+      <slot>
+        <!-- Child elements are put here -->
+        <!-- Default content if none added -->
+         No content found/loaded for this page.
+      </slot>
+    </main>
 
-		<Footer />
-	</body>
+    <Footer />
+  </body>
 </html>
 <style is:global></style>
 
 <script is:inline>
-	if (localStorage.getItem("theme") === null) {
-		document.documentElement.setAttribute("data-theme", "robodark");
-	} else
-		document.documentElement.setAttribute(
-			"data-theme",
-			localStorage.getItem("theme"),
-		);
+  if (localStorage.getItem("theme") === null) {
+    document.documentElement.setAttribute("data-theme", "robodark");
+  } else
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme"),
+    );
 </script>
 
 <script>
-	import { themeChange } from "theme-change";
-	themeChange();
+  import { themeChange } from "theme-change";
+  themeChange();
 </script>

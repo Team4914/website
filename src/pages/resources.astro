@@ -1,24 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
-import Hero from '../components/Hero.svelte';
-import Resources from '../components/Resources.svelte';
+import CoreValues from "../components/CoreValues.svelte";
+import Hero_Cards from "../components/Hero_Cards.svelte";
+import Hero from "../components/Hero.svelte";
+import Resources from "../components/Resources.svelte";
 ---
 
 <BaseLayout title="Resources | VPCI Robotics">
-	<Hero
-		backgroundImage="url(about-us-hero.png)"
-		gradientTitle={true}
-		gradientTitleText="Resources"
-		descriptionText="Additional learning resources for members or visitors alike"
-		button={false}
-	/>
+  <Hero
+    backgroundImage="url(about-us-hero.png)"
+    gradientTitle={true}
+    gradientTitleText="Resources"
+    descriptionText="Additional learning resources for members or visitors alike"
+    button={false}
+  />
 
-	<Resources/>
+  <Resources />
 </BaseLayout>
 
-
-<style>
-</style>
+<style></style>

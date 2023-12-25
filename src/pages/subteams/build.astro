@@ -1,27 +1,23 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
-import Hero from '../../components/Hero.svelte';
+import Hero from "../../components/Hero.svelte";
 import BuildContent from "../../components/BuildContent.svelte";
 ---
 
-<script>
-
-</script>
+<script></script>
 
 <BaseLayout title="build | VPCI Robotics">
-	<Hero
-		backgroundImage="url(/hero-img.png)"
-		gradientTitle={true}
-		gradientTitleText="Build"
-		descriptionText="Build team - the makers of a dream come true"
-		button={false}
-		buttonText="See More"
-	/> 
+  <Hero
+    backgroundImage="url(/hero-img.png)"
+    gradientTitle={true}
+    gradientTitleText="Build"
+    descriptionText="Build team - the makers of a dream come true"
+    button={false}
+    buttonText="See More"
+  />
 
-    <BuildContent/>
-    
+  <BuildContent />
 </BaseLayout>
 
-<style>
-</style>
+<style></style>

@@ -1,25 +1,23 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
-import Hero from '../components/Hero.svelte';
-import OutreachShowcase from '../components/OutreachShowcase.svelte';
+import CoreValues from "../components/CoreValues.svelte";
+import Hero_Cards from "../components/Hero_Cards.svelte";
+import Hero from "../components/Hero.svelte";
+import OutreachShowcase from "../components/OutreachShowcase.svelte";
 ---
 
 <BaseLayout title="Community outreach | VPCI Robotics">
-	<Hero
-		backgroundImage="url(hero-img.png)"
-		gradientTitle={true}
-		standardTitleText="Community"
-		gradientTitleText="Outreach"
-		descriptionText="Learn about ways that VPCI Robotics is interacting with our community!"
-		button={true}
-        buttonText="Contact Us"
-	/>
-    <OutreachShowcase/>
+  <Hero
+    backgroundImage="url(hero-img.png)"
+    gradientTitle={true}
+    standardTitleText="Community"
+    gradientTitleText="Outreach"
+    descriptionText="Learn about ways that VPCI Robotics is interacting with our community!"
+    button={true}
+    buttonText="Contact Us"
+  />
+  <OutreachShowcase />
 </BaseLayout>
 
-
-<style>
-</style>
+<style></style>
