@@ -89,9 +89,18 @@
 
   <!-- Right end of navbar -->
   <div class="navbar-end mr-5">
+    <!-- ALTERNATE THEME SWITCHER: -->
+    <!-- <select
+      class="select select-ghost select-sm w-full max-w-xs font-bold"
+      data-choose-theme
+    >
+      <option value="">Default theme</option>
+      <option value="dark">Dark theme</option>
+      <option value="light">Light theme</option>
+    </select> -->
     <!-- Light/Dark Mode Icon -->
     <label class="swap swap-rotate">
-      <input data-toggle-theme="dark,light" type="checkbox" />
+      <input data-choose-theme type="checkbox" checked/>
       <!-- this hidden checkbox controls the state -->
 
       <!-- sun icon -->

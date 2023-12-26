@@ -48,7 +48,7 @@
         class="card bg-base-200 my-10 shadow-xl hover:scale-[1.02] md:w-[30%] w-11/12"
       >
         <figure>
-          <img src={card.image} alt={card.alt} loading="lazy" />
+          <img src={card.image} alt={card.alt} width="700" height="350" loading="lazy" />
         </figure>
         <div class="card-body">
           <h1 class="card-title">{card.title}</h1>

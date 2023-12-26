@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vicparkrobotics.picafe.me/sitemap-index.xml
