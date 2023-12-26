@@ -1,12 +1,12 @@
-# VPCI Robotics Website 
+# VPCI Robotics Website
 
-## 📕 Usage 
+## 📕 Usage
 
 1. Install the [pnpm package manager](https://pnpm.io/installation)
-2. Clone the repository: ``git clone https://github.com/Team4914/website`` Note: for the password, create a [personal access token](https://docs.github.com/en/enterprise-server@3.6/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) 
-3. Go into the project directory and install the dependencies: ``cd website && pnpm i``
-4. Run the Astro development server with: ``pnpm run dev``
-Note: If css or tailwindcss changes fail to apply, first try re-running the dev server.
+2. Clone the repository: `git clone https://github.com/Team4914/website` Note: for the password, create a [personal access token](https://docs.github.com/en/enterprise-server@3.6/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+3. Go into the project directory and install the dependencies: `cd website && pnpm i`
+4. Run the Astro development server with: `pnpm run dev`
+   Note: If css or tailwindcss changes fail to apply, first try re-running the dev server.
 
 ## 🚀 Project Structure
 
@@ -28,7 +28,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where the Astro and Svelte components are stored. 
+There's nothing special about `src/components/`, but that's where the Astro and Svelte components are stored.
 
 Any static assets, like images, can be placed in the `public/` directory.
 

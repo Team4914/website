@@ -1,25 +1,74 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
-
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
-import Hero from '../components/Hero.svelte';
-import OutreachShowcase from '../components/OutreachShowcase.svelte';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.svelte";
 ---
 
-<NavbarFooterLayout title="Community outreach | VPCI Robotics">
-	<Hero
-		backgroundImage="url(hero-img.png)"
-		gradientTitle={true}
-		standardTitleText="Community"
-		gradientTitleText="Outreach"
-		descriptionText="Learn about ways that VPCI Robotics is interacting with our community!"
-		button={true}
-        buttonText="Contact Us"
-	/>
-    <OutreachShowcase/>
-</NavbarFooterLayout>
+<BaseLayout title="Community outreach">
+  <Hero
+    backgroundImage="url(/hero-img.webp)"
+    gradientTitle={true}
+    standardTitleText="Community"
+    gradientTitleText="Outreach"
+    descriptionText="Learn about ways that VPCI Robotics is interacting with our community!"
+    button={true}
+    buttonText="Contact Us"
+  />
+  <div class="flex justify-center">
+    <p class="text-4xl my-10">
+      <b>Keep up with what's happening at Victoria Park Robotics!</b>
+    </p>
+  </div>
 
+  <div class="flex flex-wrap justify-evenly">
+    <div
+      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
+    >
+      <figure>
+        <img src="fundraising.webp" alt="image of fundraising" />
+      </figure>
+      <div class="card-body">
+        <h1 class="card-title">Fundraising!</h1>
+        <p>
+          Thank you all very much for today's round of fundraising! We were able
+          to make a lot from the mochi and other sales. Make sure to come back
+          these following days on the 29th and 30th for more mochi and noodles!
+        </p>
+      </div>
+    </div>
+    <div
+      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
+    >
+      <figure>
+        <img src="/Scratch-icon.webp" alt="Scratch icon" />
+      </figure>
+      <div class="card-body">
+        <h1 class="card-title">Scratch Outreach!</h1>
+        <p>
+          Hello Victoria Park! We are planning a scratch outreach program, where
+          we go to middle schools in the vicinity, and teach them the basics of
+          programming. Keep an eye on our blog for more updates!
+        </p>
+      </div>
+    </div>
+    <div
+      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
+    >
+      <figure>
+        <img
+          src="/VP-apparel.webp"
+          alt="Victoria Park Robotic's very own Apparel!"
+        />
+      </figure>
+      <div class="card-body">
+        <h1 class="card-title">Merchandise!</h1>
+        <p>
+          Hello Victoria Park Robotics! We now have official Victoria Park
+          Merchandise for Victoria Park Robotics members. If you're interested,
+          come down to Victoria Park Robotics after school to learn more.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
 
-<style>
-</style>
+<style></style>

@@ -1,30 +1,26 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import Hero from '../components/Hero.svelte';
-import AwardsSection from '../components/competitions/AwardsSection.svelte';
-import GameSection from '../components/competitions/GameSection.svelte';
+import Hero from "../components/Hero.svelte";
+import AwardsSection from "../components/competitions/AwardsSection.svelte";
+import GameSection from "../components/competitions/GameSection.svelte";
 ---
 
-<script>
+<script></script>
 
-</script>
+<BaseLayout title="Competitions">
+  <Hero
+    backgroundImage="url(/hero-img.webp)"
+    gradientTitle={true}
+    standardTitleText="Our"
+    gradientTitleText="Competitions"
+    descriptionText="Contests that we've won in the past."
+    button={false}
+    buttonText="See More"
+  />
 
-<NavbarFooterLayout title="Competitions | VPCI Robotics">
-	<Hero
-		backgroundImage="url(hero-img.png)"
-		gradientTitle={true}
-		standardTitleText="Our"
-		gradientTitleText="Competitions"
-		descriptionText="Contests that we've won in the past."
-		button={false}
-		buttonText="See More"
-	/> 
+  <AwardsSection client:idle />
+  <GameSection />
+</BaseLayout>
 
-    <AwardsSection client:idle/>
-	<GameSection />
-    
-</NavbarFooterLayout>
-
-<style>
-</style>
+<style></style>

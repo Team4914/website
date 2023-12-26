@@ -1,29 +1,29 @@
 ---
-import NavbarFooterLayout from '../layouts/NavbarFooterLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import CoreValues from '../components/CoreValues.svelte';
-import Hero_Cards from '../components/Hero_Cards.svelte';
-import Hero from '../components/Hero.svelte';
+import CoreValues from "../components/CoreValues.svelte";
+import Hero_Cards from "../components/Hero_Cards.svelte";
+import Hero from "../components/Hero.svelte";
 ---
 
 <script>
-	const theme = localStorage.getItem("theme");
-	console.log(theme)
+  const theme = localStorage.getItem("theme");
+  console.log(theme);
 </script>
 
-<NavbarFooterLayout title="Welcome to Robotics.">
-	<Hero
-		backgroundImage="url(hero-img.png)"
-		gradientTitle={true}
-		standardTitleText="VPCI"
-		gradientTitleText="Robotics"
-		descriptionText = "Welcome to VPCI Robotics! Hope you enjoy your stay!"
-		button={true}
-		buttonText="About Us"
-	/> <!-- Team leader change (reason?) => recycling -->
-	<Hero_Cards />
-	<CoreValues/>
-</NavbarFooterLayout>
+<BaseLayout title="Victoria Park Panthers">
+  <Hero
+    backgroundImage="url(/hero-img.webp)"
+    gradientTitle={true}
+    standardTitleText="VPCI"
+    gradientTitleText="Robotics"
+    descriptionText="Welcome to VPCI Robotics! Hope you enjoy your stay!"
+    button={true}
+    buttonText="About Us"
+  />
+  <!-- Team leader change (reason?) => recycling -->
+  <Hero_Cards />
+  <CoreValues />
+</BaseLayout>
 
-<style>
-</style>
+<style></style>

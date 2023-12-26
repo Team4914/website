@@ -1,31 +1,26 @@
 ---
-import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
-import ElectronicsIntroduction from '../../components/ElectronicsIntroduction.svelte';
-import ElectronicsGuide from '../../components/ElectronicsGuide.svelte';
-import ElectronicsComponents from '../../components/ElectronicsComponents.svelte';
-import Hero from '../../components/Hero.svelte';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ElectronicsIntroduction from "../../components/ElectronicsIntroduction.svelte";
+import ElectronicsGuide from "../../components/ElectronicsGuide.svelte";
+import ElectronicsComponents from "../../components/ElectronicsComponents.svelte";
+import Hero from "../../components/Hero.svelte";
 ---
 
-<script>
+<script></script>
 
-</script>
+<BaseLayout title="Electronics">
+  <Hero
+    backgroundImage="url(/hero-img.webp)"
+    gradientTitle={true}
+    gradientTitleText="Electronics"
+    descriptionText="Follow our electronics team!"
+    button={false}
+    buttonText=""
+  />
 
-<NavbarFooterLayout title="Electronics | VPCI Robotics">
-	<Hero
-		backgroundImage="url(/hero-img.png)"
-		gradientTitle={true}
-		gradientTitleText="Electronics"
-		descriptionText="Follow our electronics team!"
-		button={false}
-		buttonText=""
-	/> 
+  <ElectronicsIntroduction />
+  <ElectronicsGuide />
+  <ElectronicsComponents />
+</BaseLayout>
 
-	<ElectronicsIntroduction/>
-	<ElectronicsGuide/>
-	<ElectronicsComponents/>
-</NavbarFooterLayout>
-
-<style>
-</style>
-
-
+<style></style>

@@ -1,28 +1,24 @@
 ---
-import NavbarFooterLayout from '../../layouts/NavbarFooterLayout.astro';
-import Hero from '../../components/Hero.svelte';
-import MediaIntroduction from '../../components/MediaIntroduction.svelte';
-import MediaSocialLinks from '../../components/MediaSocialLinks.svelte';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.svelte";
+import MediaIntroduction from "../../components/MediaIntroduction.svelte";
+import MediaSocialLinks from "../../components/MediaSocialLinks.svelte";
 ---
 
-<script>
+<script></script>
 
-</script>
+<BaseLayout title="Media">
+  <Hero
+    backgroundImage="url(/hero-img.webp)"
+    gradientTitle={true}
+    gradientTitleText="Media"
+    descriptionText="Let us appreciate our media team's efforts!"
+    button={false}
+    buttonText=""
+  />
 
-<NavbarFooterLayout title="Media | VPCI Robotics">
-	<Hero
-		backgroundImage="url(/hero-img.png)"
-		gradientTitle={true}
-		gradientTitleText="Media"
-		descriptionText="Let us appreciate our media team's efforts!"
-		button={false}
-		buttonText=""
-	/> 
-    
-	<MediaIntroduction/>
-	<MediaSocialLinks/>
-</NavbarFooterLayout>
+  <MediaIntroduction />
+  <MediaSocialLinks />
+</BaseLayout>
 
-<style>
-</style>
-
+<style></style>

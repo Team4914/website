@@ -1,8 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import NavbarFooterLayout from "../../layouts/NavbarFooterLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import TextContainer from "../../components/TextContainer.svelte";
-
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -16,15 +15,15 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<NavbarFooterLayout>
-    <div class="mx-auto mt-6 max-w-3xl">
-      <TextContainer />
-    </div>
-    <div class="text-center my-8">
-      <a
-        href="/blog"
-        class="text-white bg-gray-800 px-5 py-3 rounded-md hover:bg-gray-900 transition"
-        >← Back to Blog</a
-      >
-    </div>
-</NavbarFooterLayout>
+<BaseLayout>
+  <div class="mx-auto mt-6 max-w-3xl">
+    <TextContainer />
+  </div>
+  <div class="text-center my-8">
+    <a
+      href="/blog"
+      class="text-white bg-gray-800 px-5 py-3 rounded-md hover:bg-gray-900 transition"
+      >← Back to Blog</a
+    >
+  </div>
+</BaseLayout>
