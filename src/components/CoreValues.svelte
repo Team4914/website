@@ -1,4 +1,5 @@
 <script lang="ts">
+  //  issue on larger screens where the size is too small and the image repeats
   const cards = [
     {
       title: "Spirited",
