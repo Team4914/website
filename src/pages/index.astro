@@ -12,15 +12,19 @@ import Hero from "../components/Hero.svelte";
 </script>
 
 <BaseLayout title="Victoria Park Panthers">
-  <Hero
-    backgroundImage="url(hero-img.webp)"
-    gradientTitle={true}
-    standardTitleText="VPCI"
-    gradientTitleText="Robotics"
-    descriptionText="Welcome to VPCI Robotics! Hope you enjoy your stay!"
-    button={true}
-    buttonText="About Us"
-  />
+  <div transition:persist>
+    <Hero
+      backgroundImage="url(hero-img.webp)"
+      gradientTitle={true}
+      standardTitleText="VPCI"
+      gradientTitleText="Robotics"
+      descriptionText="Welcome to VPCI Robotics! Hope you enjoy your stay!"
+      button={true}
+      buttonText="About Us"
+      client:only="svelte"
+    
+    />
+  </div>
   <!-- Team leader change (reason?) => recycling -->
   <Hero_Cards />
   <CoreValues />

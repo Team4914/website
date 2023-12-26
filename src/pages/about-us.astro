@@ -8,14 +8,17 @@ import TextContainer from "../components/TextContainer.svelte";
 ---
 
 <BaseLayout title="about-us">
-  <Hero
-    backgroundImage="url(about-us-hero.webp)"
-    gradientTitle={true}
-    standardTitleText="VPCI"
-    gradientTitleText="Robotics"
-    descriptionText="Learn more about us!"
-    button={false}
-  />
+  <div transition:persist>
+    <Hero
+      backgroundImage="url(about-us-hero.webp)"
+      gradientTitle={true}
+      standardTitleText="VPCI"
+      gradientTitleText="Robotics"
+      descriptionText="Learn more about us!"
+      button={false}
+      client:only="svelte"
+    />
+  </div>
   <TextContainer />
 </BaseLayout>
 
