@@ -16,10 +16,6 @@ interface Props {
 const { title, description, image, articleDate } = Astro.props;
 ---
 
-<script>
-  import "preline/dist/preline";
-</script>
-
 <html lang="en">
   <head>
     <BaseHead
@@ -28,7 +24,7 @@ const { title, description, image, articleDate } = Astro.props;
       ogImage={image}
       articleDate={articleDate}
     />
-    <SetTheme lightColor="#000" darkColor="#FFF" />
+    <SetTheme />
   </head>
   <body>
     <Sidebar />

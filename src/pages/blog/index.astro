@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.svelte";
-import BlogButton from "../components/BlogButton.svelte";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.svelte";
+import BlogButton from "../../components/BlogButton.svelte";
 
 import { getCollection } from "astro:content";
 
@@ -25,7 +25,7 @@ publishedBlogEntries.sort(function (a, b) {
     descriptionText="Catch up on all of VPCI Robotic's latest news!"
     button={false}
   />
-  <div class="grid grid-cols-1 gap-4 place-items-center">
+  <div class="grid grid-cols-2 gap-4 place-items-center p-8">
     <BlogButton
       title="The Importance of Robotics in High School Education"
       description="VPCI Robotics • Mon Jun 05 2023"

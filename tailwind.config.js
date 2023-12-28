@@ -28,11 +28,7 @@ export default {
       },
     ],
   },
-  plugins: [
-    require("daisyui"),
-    require("@tailwindcss/typography"),
-    require("preline/plugin"),
-  ],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
   theme: {
     extend: {},
   },
