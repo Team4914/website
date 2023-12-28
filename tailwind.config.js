@@ -28,14 +28,18 @@ export default {
       },
     ],
   },
-  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/typography"),
+    require("preline/plugin"),
+  ],
   theme: {
     extend: {},
   },
   content: [
     "./index.html",
-    "./src/**/*.{svelte,js,ts}",
-    "./src/**/**/*.{svelte,js,ts}",
+    "./src/**/*.{svelte,js,ts,astro}",
+    "./src/**/**/*.{svelte,js,ts,astro}",
   ], //for unused css
   variants: {
     extend: {},

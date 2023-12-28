@@ -15,7 +15,9 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/svelte": "^5.0.2",
+    "@preline/dropdown": "^2.0.1",
     "astro": "^4.0.7",
+    "preline": "^2.0.2",
     "svelte": "^4.2.8"
   },
   "devDependencies": {

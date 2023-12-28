@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.svelte";
-import Navbar from "../components/Navbar.svelte";
+import Navbar from "../components/Navbar.astro";
 import SetTheme from "../components/SetTheme.astro";
 import Sidebar from "../components/Sidebar.svelte";
 
@@ -15,6 +15,10 @@ interface Props {
 
 const { title, description, image, articleDate } = Astro.props
 ---
+
+<script>
+  import "preline/dist/preline";
+</script>
 
 <!doctype html>
 <html lang="en">

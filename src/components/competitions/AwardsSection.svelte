@@ -3,7 +3,6 @@
 
   import AwardCard from "./AwardCard.svelte";
   import AwardsSearch from "./AwardsSearch.svelte";
-  import NoResult from "./NoResult.svelte";
 
   type Award = {
     img: string;
@@ -156,7 +155,7 @@
   <ul class="mt-10 flex flex-col align-center">
     {#if searchTerm && awardsFiltered.length === 0}
       <li>
-        <NoResult />
+        <p class="font-italic font-bold text-xl">No Results.</p>
       </li>
     {:else}
       {#each awardsFiltered as award (award.title)}
