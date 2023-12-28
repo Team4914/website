@@ -1,17 +1,18 @@
 ---
 type Props = {
-    href: string;
-    text: string;
+  href: string;
+  text: string;
 };
-const { href, text } = Astro.props
-const { pathname } = Astro.url
-const isActive: boolean = href === pathname || href === pathname.replace(/\/$/, '')
+const { href, text } = Astro.props;
+const { pathname } = Astro.url;
+const isActive: boolean =
+  href === pathname || href === pathname.replace(/\/$/, "");
 ---
 
 <a
-    href={href}
-    class=`font-medium sm:py-6 hover:text-primary dark:hover:text-secondary ${isActive ? "text-primary dark:text-secondary" : "text-zinc-800 dark:text-zinc-300"}`
-    rel="noopener noreferrer"
+  href={href}
+  class=`font-medium sm:py-6 hover:text-primary dark:hover:text-secondary ${isActive ? "text-primary dark:text-secondary" : "text-zinc-800 dark:text-zinc-300"}`
+  rel="noopener noreferrer"
 >
-    {text}
+  {text}
 </a>

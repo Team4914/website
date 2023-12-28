@@ -13,18 +13,22 @@ interface Props {
   theme?: string;
 }
 
-const { title, description, image, articleDate } = Astro.props
+const { title, description, image, articleDate } = Astro.props;
 ---
 
 <script>
   import "preline/dist/preline";
 </script>
 
-<!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} ogImage={image} articleDate={articleDate} />
-    <SetTheme lightColor="#000" darkColor="#FFF"/>
+    <BaseHead
+      title={title}
+      description={description}
+      ogImage={image}
+      articleDate={articleDate}
+    />
+    <SetTheme lightColor="#000" darkColor="#FFF" />
   </head>
   <body>
     <Sidebar />
@@ -41,4 +45,3 @@ const { title, description, image, articleDate } = Astro.props
     <Footer />
   </body>
 </html>
-

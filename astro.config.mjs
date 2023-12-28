@@ -6,5 +6,5 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://vicparkrobotics.picafe.me",
-  integrations: [svelte(), sitemap()]
+  integrations: [svelte(), sitemap()],
 });
