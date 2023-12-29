@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TextContainer from "../../components/TextContainer.svelte";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -15,10 +14,12 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<BaseLayout>
-  <div class="mx-auto mt-6 max-w-3xl">
-    <TextContainer />
-  </div>
+<BaseLayout title={entry.data.title}>
+  <article class="px-6">
+    <div class="prose prose-md md:prose-lg dark:prose-invert mx-auto mt-6 max-w-3xl">
+      <Content />
+    </div>
+  </article>
   <div class="text-center my-8">
     <a
       href="/blog"

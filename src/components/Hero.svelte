@@ -1,16 +1,9 @@
 <script lang="ts">
-  export let backgroundImage: string; // background variable
-  export let gradientTitle: boolean;
-  export let standardTitleText: string = ""; // background variable
-  export let gradientTitleText: string = ""; // background variable
-  export let descriptionText: string = ""; //
-  export let button: boolean;
-  export let buttonText: string = ""; // background variable
-
-  let display: string = "none";
-  if (button) {
-    display = "block";
-  }
+  export let backgroundImage: string; 
+  export let standardTitleText: string = ""; 
+  export let gradientTitleText: string = ""; 
+  export let descriptionText: string = ""; 
+  export let buttonText: string = ""; 
 </script>
 
 <div
@@ -25,11 +18,11 @@
       >
         {standardTitleText}
         <span class="text-gradient bg-clip-text text-transparent"
-          >{#if gradientTitle}{gradientTitleText}{/if}<span></span>
+          >{#if gradientTitleText}{gradientTitleText}{/if}<span></span>
         </span>
       </h1>
       <p class="mb-5 text-xl">{descriptionText}</p>
-      {#if button}
+      {#if buttonText}
         <button class="btn btn-primary bg-opacity-75">
           <a href="/about-us">{buttonText}</a>
         </button>
