@@ -18,7 +18,7 @@
   style="background-image: {backgroundImage};"
 >
   <div class="hero-overlay bg-opacity-60"></div>
-  <div class="hero-content text-center text-neutral-content">
+  <div class="hero-content text-center text-neutral-content justify-center">
     <div class="max-w-2xl">
       <h1
         class="my-5 md:text-7xl text-5xl text-white font-bold underline underline-offset-8 decoration-red-800"
