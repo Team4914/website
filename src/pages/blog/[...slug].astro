@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogLayout from "../../layouts/BlogLayout.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -11,12 +11,18 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, remarkPluginFrontmatter } = await entry.render();
 ---
 
-<BaseLayout title={entry.data.title}>
+<BlogLayout
+  id={entry.id}
+  data={entry.data}
+  readTime={remarkPluginFrontmatter.minutesRead}
+>
   <article class="px-6">
-    <div class="prose prose-md md:prose-lg dark:prose-invert mx-auto mt-6 max-w-3xl">
+    <div
+      class="prose prose-md md:prose-lg dark:prose-invert mx-auto mt-6 max-w-3xl"
+    >
       <Content />
     </div>
   </article>
@@ -27,4 +33,4 @@ const { Content } = await entry.render();
       >← Back to Blog</a
     >
   </div>
-</BaseLayout>
+</BlogLayout>

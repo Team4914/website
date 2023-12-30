@@ -22,7 +22,7 @@ import Hero from "../components/Hero.svelte";
       class="card"
     >
       <figure>
-        <img src="fundraising.webp" alt="image of fundraising" />
+        <img src="/fundraising.webp" alt="image of fundraising" />
       </figure>
       <div class="card-body">
         <h1 class="card-title">Fundraising!</h1>
@@ -70,12 +70,10 @@ import Hero from "../components/Hero.svelte";
 </BaseLayout>
 
 <style>
-  @tailwind base;
 	@tailwind components;
-	@tailwind utilities;
   @layer components {
     .card {
-      @apply bg-base-200 mx-10 my-10 shadow-xl hover:scale-[1.02] md:w-3/12 transition-all ease-in-out;
+      @apply bg-base-200 mx-10 my-10 shadow-xl hover:scale-[1.02] md:w-3/12 transition-all duration-200 ease-in-out;
     }
   }
 </style>

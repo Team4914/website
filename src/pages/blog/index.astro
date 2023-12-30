@@ -1,19 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/Hero.svelte";
-import BlogButton from "../../components/BlogButton.svelte";
+import BlogButton from "../../components/BlogCard.svelte";
 
-import { getCollection } from "astro:content";
-
-// Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return data.publishDate < new Date();
-});
-
-// Sort content entries by publication date
-publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
 ---
 
 <BaseLayout title="Blog">
