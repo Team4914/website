@@ -1,9 +1,9 @@
 <script lang="ts">
-  export let backgroundImage: string; 
-  export let standardTitleText: string = ""; 
-  export let gradientTitleText: string = ""; 
-  export let descriptionText: string = ""; 
-  export let buttonText: string = ""; 
+  export let backgroundImage: string;
+  export let standardTitleText: string = "";
+  export let gradientTitleText: string = "";
+  export let descriptionText: string = "";
+  export let buttonText: string = "";
 </script>
 
 <div

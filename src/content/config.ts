@@ -10,7 +10,7 @@ const blogCollection = defineCollection({
     image: z.object({
       src: z.string(),
       alt: z.string(),
-      credits: z.string()
+      credits: z.string(),
     }),
     publishDate: z.string().transform((str) => new Date(str)),
     season: z.enum(["2023", "2024"]),
