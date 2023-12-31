@@ -15,8 +15,6 @@ credits: "VPCI Robotics"
 tags: [education]
 ---
 
-# The Importance of Robotics in High School Education
-
 Robotics programs in high schools are becoming increasingly popular as a way to engage students in STEM subjects and prepare them for future careers. There are many benefits of introducing robotics education at the high school level, including:
 
 ## Developing Technical Skills

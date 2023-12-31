@@ -10,7 +10,7 @@ export const getPosts = async (max?: number) => {
 export const formatDate = (date: Date) => {
   return date.toLocaleDateString("en-us", {
     year: "numeric",
-    month: "short",
+    month: "long",
     day: "numeric",
   });
 };

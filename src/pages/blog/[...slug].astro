@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
+import { type CollectionEntry } from 'astro:content'
 import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getPosts } from "../../utils/post";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -8,6 +10,14 @@ export async function getStaticPaths() {
     params: { slug: entry.slug },
     props: { entry },
   }));
+}
+
+const posts = await getPosts()
+const getRelatedPosts = (post: CollectionEntry<'blog'>) => {
+	const relatedPosts = posts.filter(
+		(p) => p.slug !== post.slug && p.data.tags.some((t) => post.data.tags.includes(t)) && p.data.team === post.data.team
+	)
+	return relatedPosts.slice(0, 3)
 }
 
 const { entry } = Astro.props;
@@ -18,19 +28,12 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
   id={entry.id}
   data={entry.data}
   readTime={remarkPluginFrontmatter.minutesRead}
+  relatedPosts={getRelatedPosts(entry)}
 >
-  <article class="px-6">
-    <div
-      class="prose prose-md md:prose-lg dark:prose-invert mx-auto mt-6 max-w-3xl"
+    <article
+      class="prose prose-md md:prose-lg dark:prose-invert"
     >
       <Content />
-    </div>
-  </article>
-  <div class="text-center my-8">
-    <a
-      href="/blog"
-      class="text-white bg-gray-800 px-5 py-3 rounded-md hover:bg-gray-900 transition"
-      >← Back to Blog</a
-    >
-  </div>
+</article>
+  
 </BlogLayout>
