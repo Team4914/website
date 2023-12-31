@@ -5,10 +5,10 @@ import { formatDate } from "../utils/post";
 import { Image } from "astro:assets";
 
 type Props = {
-	id: CollectionEntry<"blog">["id"];
-	data: CollectionEntry<"blog">["data"];
-	relatedPosts: CollectionEntry<"blog">[];
-	readTime: string;
+  id: CollectionEntry<"blog">["id"];
+  data: CollectionEntry<"blog">["data"];
+  relatedPosts: CollectionEntry<"blog">[];
+  readTime: string;
 };
 
 const { data, readTime, id, relatedPosts } = Astro.props;
@@ -18,156 +18,144 @@ const articleDate = publishDate.toISOString();
 ---
 
 <BaseLayout
-	title={title}
-	description={description}
-	image={image?.src}
-	articleDate={articleDate}
+  title={title}
+  description={description}
+  image={image?.src}
+  articleDate={articleDate}
 >
-	<!-- Blog Article -->
-	<div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-		<div class="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-12">
-			<!-- Content -->
-			<div class="lg:col-span-2">
-				<div class="py-8 lg:pe-8">
-					<div class="space-y-5 lg:space-y-8">
-						<a
-							class="inline-flex items-center gap-x-1.5 text-sm text-zinc-600 decoration-2 hover:underline dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-zinc-600"
-							href="/blog"
-						>
-							<svg
-								class="flex-shrink-0 w-4 h-4"
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="m15 18-6-6 6-6"></path>
-							</svg>
-							 Back to Blog
-						</a>
+  <!-- Blog Article -->
+  <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+    <div class="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-12">
+      <!-- Content -->
+      <div class="lg:col-span-2">
+        <div class="py-8 lg:pe-8">
+          <div class="space-y-5 lg:space-y-8">
+            <a
+              class="inline-flex items-center gap-x-1.5 text-sm text-zinc-600 decoration-2 hover:underline dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-zinc-600"
+              href="/blog"
+            >
+              <svg
+                class="flex-shrink-0 w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+               Back to Blog
+            </a>
 
-						<h1
-							class="text-3xl font-bold lg:text-5xl dark:text-white"
-						>
-							{title}
-						</h1>
+            <h1 class="text-3xl font-bold lg:text-5xl dark:text-white">
+              {title}
+            </h1>
 
-						<div class="flex items-center gap-x-5">
-							{
-								tags.map((tag) => (
-									<a
-										class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-zinc-200 text-zinc-800 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-800 dark:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-zinc-600"
-										href={"/blog/tag/" + tag}
-									>
-										{"#" + tag}
-									</a>
-								))
-							}
-							<p
-								class="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200"
-							>
-								{formatDate(publishDate)}
-							</p>
-							<p
-								class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400"
-							>
-								{readTime}
-							</p>
-						</div>
+            <div class="flex items-center gap-x-5">
+              {
+                tags.map((tag) => (
+                  <a
+                    class="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-zinc-200 text-zinc-800 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-800 dark:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-zinc-600"
+                    href={"/blog/tag/" + tag}
+                  >
+                    {"#" + tag}
+                  </a>
+                ))
+              }
+              <p class="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200">
+                {formatDate(publishDate)}
+              </p>
+              <p class="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+                {readTime}
+              </p>
+            </div>
 
-						<Image
-							src={image?.src}
-							alt={image?.alt}
-							width={1000}
-							height={500}
-							loading="eager"
-							class="rounded-md w-full max-h-[300px] md:max-h-[500px] my-8 object-cover"
-						/>
+            <Image
+              src={image?.src}
+              alt={image?.alt}
+              width={1000}
+              height={500}
+              loading="eager"
+              class="rounded-md w-full max-h-[300px] md:max-h-[500px] my-8 object-cover"
+            />
 
-						<hr />
+            <hr />
 
-						<slot />
-					</div>
-				</div>
-			</div>
-			<!-- End Content -->
+            <slot />
+          </div>
+        </div>
+      </div>
+      <!-- End Content -->
 
-			<!-- Sidebar -->
-			<div class="lg:col-span-1 lg:w-full lg:h-full lg:bg-base-200">
-				<div class="sticky top-0 start-0 py-8 lg:ps-8 lg:pe-8">
-					<!-- Avatar Media -->
-					<div
-						class="group flex items-center gap-x-3 border-b border-zinc-400 pb-8 mb-8 dark:border-zinc-700"
-					>
-						<figure class="block flex-shrink-0">
-							<Image
-								class="h-10 w-10 rounded-full"
-								src="/favicon.svg"
-								alt="Image Description"
-								width={40}
-								height={40}
-								format="jpg"
-							/>
-						</figure>
+      <!-- Sidebar -->
+      <div class="lg:col-span-1 lg:w-full lg:h-full lg:bg-base-200">
+        <div class="sticky top-0 start-0 py-8 lg:ps-8 lg:pe-8">
+          <!-- Avatar Media -->
+          <div
+            class="group flex items-center gap-x-3 border-b border-zinc-400 pb-8 mb-8 dark:border-zinc-700"
+          >
+            <figure class="block flex-shrink-0">
+              <Image
+                class="h-10 w-10 rounded-full"
+                src="/favicon.svg"
+                alt="Image Description"
+                width={40}
+                height={40}
+                format="jpg"
+              />
+            </figure>
 
-						<div class="group grow block">
-							<h1
-								class="text-sm font-semibold text-zinc-800 dark:text-zinc-200"
-							>
-								{"Team " + team}
-							</h1>
-							<p class="text-sm text-zinc-500">
-								{
-									team === "24484"
-										? "Victoria Park Panthers"
-										: "Panthertronics"
-								}
-							</p>
-						</div>
-					</div>
-					<!-- End Avatar Media -->
+            <div class="group grow block">
+              <h1
+                class="text-sm font-semibold text-zinc-800 dark:text-zinc-200"
+              >
+                {"Team " + team}
+              </h1>
+              <p class="text-sm text-zinc-500">
+                {team === "24484" ? "Victoria Park Panthers" : "Panthertronics"}
+              </p>
+            </div>
+          </div>
+          <!-- End Avatar Media -->
 
-					<div class="space-y-6">
-						{
-							relatedPosts.length !== 0 ? (
-								relatedPosts.map((post) => (
-									<a
-										class="group flex items-center gap-x-6"
-										href={"/blog/" + post.slug}
-									>
-										<div class="grow">
-											<span class="text-sm font-bold text-zinc-800 group-hover:text-blue-600 dark:text-zinc-200 dark:group-hover:text-blue-500">
-												{post.data.title}
-											</span>
-										</div>
+          <div class="space-y-6">
+            {
+              relatedPosts.length !== 0 ? (
+                relatedPosts.map((post) => (
+                  <a
+                    class="group flex items-center gap-x-6"
+                    href={"/blog/" + post.slug}
+                  >
+                    <div class="grow">
+                      <span class="text-sm font-bold text-zinc-800 group-hover:text-blue-600 dark:text-zinc-200 dark:group-hover:text-blue-500">
+                        {post.data.title}
+                      </span>
+                    </div>
 
-										<div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-											<Image
-												class="w-full h-full absolute top-0 start-0 object-cover rounded-lg"
-												src={post.data.image?.src}
-												alt={post.data.image?.alt}
-												width={300}
-												height={200}
-											/>
-										</div>
-									</a>
-								))
-							) : (
-								<p class="text-zinc-500">
-									No Related Posts Found 🥲
-								</p>
-							)
-						}
-					</div>
-				</div>
-			</div>
-			<!-- End Sidebar -->
-		</div>
-	</div>
-	<!-- End Blog Article -->
+                    <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
+                      <Image
+                        class="w-full h-full absolute top-0 start-0 object-cover rounded-lg"
+                        src={post.data.image?.src}
+                        alt={post.data.image?.alt}
+                        width={300}
+                        height={200}
+                      />
+                    </div>
+                  </a>
+                ))
+              ) : (
+                <p class="text-zinc-500">No Related Posts Found 🥲</p>
+              )
+            }
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+    </div>
+  </div>
+  <!-- End Blog Article -->
 </BaseLayout>

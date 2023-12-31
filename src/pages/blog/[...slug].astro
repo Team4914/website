@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { type CollectionEntry } from 'astro:content'
+import { type CollectionEntry } from "astro:content";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import { getPosts } from "../../utils/post";
 
@@ -12,13 +12,16 @@ export async function getStaticPaths() {
   }));
 }
 
-const posts = await getPosts()
-const getRelatedPosts = (post: CollectionEntry<'blog'>) => {
-	const relatedPosts = posts.filter(
-		(p) => p.slug !== post.slug && p.data.tags.some((t) => post.data.tags.includes(t)) && p.data.team === post.data.team
-	)
-	return relatedPosts.slice(0, 3)
-}
+const posts = await getPosts();
+const getRelatedPosts = (post: CollectionEntry<"blog">) => {
+  const relatedPosts = posts.filter(
+    (p) =>
+      p.slug !== post.slug &&
+      p.data.tags.some((t) => post.data.tags.includes(t)) &&
+      p.data.team === post.data.team,
+  );
+  return relatedPosts.slice(0, 3);
+};
 
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await entry.render();
@@ -30,10 +33,7 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
   readTime={remarkPluginFrontmatter.minutesRead}
   relatedPosts={getRelatedPosts(entry)}
 >
-    <article
-      class="prose prose-md md:prose-lg dark:prose-invert"
-    >
-      <Content />
-</article>
-  
+  <article class="prose prose-md md:prose-lg dark:prose-invert">
+    <Content />
+  </article>
 </BlogLayout>
