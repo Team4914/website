@@ -1,14 +1,18 @@
 <script lang="ts">
+  import { expoInOut } from "svelte/easing";
+  import { scale } from "svelte/transition";
+
   export let title: string; // Card Title
   export let videoURL: string; // Video Link
   export let content: string; // Card Content
 </script>
 
 <div
-  class="flex flex-row h-52 w-full lg:w-5/12 m-5 bg-base-100 transition ease-in-out delay-150 hover:bg-slate-200 hover:scale-[1.03] hover:drop-shadow-[0_10px_10px_rgba(250,250,250,0.25)] border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+  transition:scale={{ duration: 1000, easing: expoInOut }}
+  class="card card-side h-48 bg-base-100 shadow-lg transition ease-in-out delay-75 hover:scale-[1.01] hover:drop-shadow-[0_10px_10px_rgba(250,250,250,0.25)] border dark:border-zinc-700"
 >
   <iframe
-    class="m-none mt-none w-2/5 h-52 border rounded-l-xl"
+    class="m-none mt-none max-w-[45%] h-full border-r dark:border-zinc-700 rounded-l-xl"
     src={videoURL}
     title="Youtube Video"
     frameborder="0"
@@ -16,12 +20,9 @@
     allowfullscreen
   >
   </iframe>
-  <div class="w-3/5 ml-5 p-5">
-    <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white">
-      {title}
-    </h1>
-    <p class="mt-2 text-sm text-gray-800 dark:text-gray-400 text-center">
-      {content}
-    </p>
+
+  <div class="card-body overflow-scroll">
+    <h2 class="card-title text-2xl">{title}</h2>
+    <p>{content}</p>
   </div>
 </div>

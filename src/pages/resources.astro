@@ -2,17 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.svelte";
 ---
-<!--Note, I was unable to alter the padding and type of unordered lists with the tailwind styles/classes. 
-Fix if possible-->
 
-<!--This seems to be the case with many tailwind classes-->
+<!--Note, I was unable to alter the padding and type of unordered lists with the tailwind styles/classes. 
+Fix if possible--><!--This seems to be the case with many tailwind classes-->
 <BaseLayout title="Resources">
   <Hero
     backgroundImage="url(/about-us-hero.webp)"
-    gradientTitle={true}
     gradientTitleText="Resources"
     descriptionText="Additional learning resources for members or visitors alike"
-    button={false}
   />
 
   <div class="p-10">

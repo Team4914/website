@@ -3,7 +3,7 @@
   const cards = [
     {
       title: "Spirited",
-      image: "/spirited.webp",
+      image: "/index/spirited.webp",
       size: "bg-[length:450px_300px]",
       sizeHover: "hover:bg-[length:300px_190px]",
       position: "bg-[center_bottom_-8rem]",
@@ -11,7 +11,7 @@
     },
     {
       title: "Team Oriented",
-      image: "/team-oriented.webp",
+      image: "/index/team-oriented.webp",
       size: "bg-[length:500px_350px]",
       sizeHover: "hover:bg-[length:350px_245px]",
       position: "bg-[center_bottom_-6rem]",
@@ -19,15 +19,15 @@
     },
     {
       title: "Empathetic",
-      image: "/history.webp",
+      image: "/index/empathetic.webp",
       size: "bg-[length:300px_200px]",
-      sizeHover: "hover:bg-[length:300px_200px]",
-      position: "bg-[center_bottom_-5rem]",
-      positionHover: "hover:bg-[center_bottom_-3rem]",
+      sizeHover: "hover:bg-[length:275px_183px]",
+      position: "bg-[center_bottom_-2.5rem]",
+      positionHover: "hover:bg-[center_bottom_-4rem]",
     },
     {
       title: "Methodical",
-      image: "/methodical.webp",
+      image: "/index/methodical.webp",
       size: "bg-[length:450px_350px]",
       sizeHover: "hover:bg-[length:310px_210px]",
       position: "bg-[center_bottom_-4rem]",

@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.svelte";
-import Navbar from "../components/Navbar.svelte";
+import Navbar from "../components/Navbar.astro";
 import SetTheme from "../components/SetTheme.astro";
 import Sidebar from "../components/Sidebar.svelte";
 
@@ -13,14 +13,18 @@ interface Props {
   theme?: string;
 }
 
-const { title, description, image, articleDate } = Astro.props
+const { title, description, image, articleDate } = Astro.props;
 ---
 
-<!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} ogImage={image} articleDate={articleDate} />
-    <SetTheme lightColor="#000" darkColor="#FFF"/>
+    <BaseHead
+      title={title}
+      description={description}
+      ogImage={image}
+      articleDate={articleDate}
+    />
+    <SetTheme />
   </head>
   <body>
     <Sidebar />
@@ -37,4 +41,3 @@ const { title, description, image, articleDate } = Astro.props
     <Footer />
   </body>
 </html>
-

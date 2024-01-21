@@ -6,19 +6,12 @@ import Hero_Cards from "../components/Hero_Cards.svelte";
 import Hero from "../components/Hero.svelte";
 ---
 
-<script>
-  const theme = localStorage.getItem("theme");
-  console.log(theme);
-</script>
-
 <BaseLayout title="Victoria Park Panthers">
   <Hero
-    backgroundImage="url(/hero-img.webp)"
-    gradientTitle={true}
+    backgroundImage="url(/hero-new.webp)"
     standardTitleText="VPCI"
     gradientTitleText="Robotics"
     descriptionText="Welcome to VPCI Robotics! Hope you enjoy your stay!"
-    button={true}
     buttonText="About Us"
   />
   <!-- Team leader change (reason?) => recycling -->

@@ -1,175 +1,66 @@
----
-interface Props {
-    lightColor: string;
-    darkColor: string;
-}
-
-const { lightColor, darkColor } = Astro.props;
----
-
-<!-- Special Thanks: https://gist.github.com/trepidacious/4456a5cc7004449fe82b5170942306ea --><!-- Store the theme colors for scripts to use -->
-<meta
-    name="set-theme-color-data"
-    data-light-color={lightColor}
-    data-dark-color={darkColor}
-/>
-
-<!--
-  Start with theme color set by preferred color scheme
-  This will work when user is on "Default" theme
--->
-<meta
-    name="theme-color"
-    media="(prefers-color-scheme: light)"
-    content={lightColor}
-/>
-<meta
-    name="theme-color"
-    media="(prefers-color-scheme: dark)"
-    content={darkColor}
-/>
-
+<!-- Special Thanks: https://gist.github.com/trepidacious/4456a5cc7004449fe82b5170942306ea -->
 <script is:inline>
-    // This script is inline to apply styles as early as possible
-    // to avoid a flash of unthemed content
+  // This script is inline to apply styles as early as possible
+  // to avoid a flash of unthemed content
 
-    // Loads theme from local storage and applies to document
-    const setTheme = () => {
-        const theme = localStorage.getItem("theme");
+  // Loads theme from local storage and applies to document
+  const setTheme = () => {
+    const theme = localStorage.getItem("theme");
 
-        if (theme) {
-            document.documentElement.setAttribute("data-theme", theme);
-        } else {
-            document.documentElement.removeAttribute("data-theme");
-        }
+    if (theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  };
 
-        const getThemeColorData = () => {
-            const setThemeColorData = document.querySelector(
-                'meta[name="set-theme-color-data"]',
-            );
-            if (setThemeColorData instanceof HTMLElement) {
-                const lightColor = setThemeColorData.dataset["lightColor"];
-                const darkColor = setThemeColorData.dataset["darkColor"];
-                if (lightColor && darkColor) {
-                    return { lightColor, darkColor };
-                }
-            }
-            return { lightColor: "#EEEEEE", darkColor: "#333333" };
-        };
+  // Runs on initial navigation
+  setTheme();
 
-        const { lightColor, darkColor } = getThemeColorData();
-
-        const setThemeColors = (l, d) => {
-            document
-                .querySelector(
-                    'meta[name="theme-color"][media="(prefers-color-scheme: light)"]',
-                )
-                ?.setAttribute("content", l);
-            document
-                .querySelector(
-                    'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]',
-                )
-                ?.setAttribute("content", d);
-        };
-
-        const setThemeColor = (theme) => {
-            if (theme === "dark") {
-                setThemeColors(darkColor, darkColor);
-            } else if (theme === "light") {
-                setThemeColors(lightColor, lightColor);
-            } else {
-                setThemeColors(lightColor, darkColor);
-            }
-        };
-
-        setThemeColor(theme);
-    };
-
-    // Runs on initial navigation
-    setTheme();
-
-    // Runs on view transitions navigation
-    document.addEventListener("astro:after-swap", setTheme);
+  // Runs on view transitions navigation
+  document.addEventListener("astro:after-swap", setTheme);
 </script>
 
 <script>
-    // This script isn't inline, so it runs after the select
-    // elements for choosing a theme are present
+  // Sets up theme color meta, and adds event listeners to the ThemeSelect checkbox in the navbar
+  // This function is setup for multiple theme switchers as in the navbar, there are 2 theme switchers, one for mobile and one for desktop due to the different placements of each in the navbar
+  const setThemeCheckboxes = () => {
+    const themeCheckboxes = document.querySelectorAll(
+      "input[type='checkbox'][data-choose-theme]",
+    );
 
-    const getThemeColorData = () => {
-        const setThemeColorData = document.querySelector(
-            'meta[name="set-theme-color-data"]',
-        );
-        if (setThemeColorData instanceof HTMLElement) {
-            const lightColor = setThemeColorData.dataset["lightColor"];
-            const darkColor = setThemeColorData.dataset["darkColor"];
-            if (lightColor && darkColor) {
-                return { lightColor, darkColor };
-            }
-        }
-        return { lightColor: "#EEEEEE", darkColor: "#333333" };
-    };
+    themeCheckboxes.forEach((checkbox) => {
+      const savedTheme = localStorage.getItem("theme");
 
-    const { lightColor, darkColor } = getThemeColorData();
-
-    const setThemeColors = (l: string, d: string) => {
-        document
-            .querySelector(
-                'meta[name="theme-color"][media="(prefers-color-scheme: light)"]',
-            )
-            ?.setAttribute("content", l);
-        document
-            .querySelector(
-                'meta[name="theme-color"][media="(prefers-color-scheme: dark)"]',
-            )
-            ?.setAttribute("content", d);
-    };
-
-    const setThemeColor = (theme: string | null) => {
-        if (theme === "dark") {
-            setThemeColors(darkColor, darkColor);
-        } else if (theme === "light") {
-            setThemeColors(lightColor, lightColor);
+      if (checkbox instanceof HTMLInputElement) {
+        if (savedTheme === "dark") {
+          checkbox.checked = true;
+          document.documentElement.setAttribute("data-theme", "dark");
+          // Set other dark theme-related configurations if needed
         } else {
-            setThemeColors(lightColor, darkColor);
+          checkbox.checked = false;
+          document.documentElement.setAttribute("data-theme", "light");
+          // Set other light theme-related configurations if needed
         }
-    };
 
-    // Sets up theme color meta, and adds event listeners to the ThemeSelect checkbox in the navbar
-    const setThemeCheckbox = () => {
-        const themeCheckbox = document.querySelector(
-            "input[data-choose-theme]",
-        );
+        checkbox.addEventListener("change", function () {
+          if (checkbox.checked) {
+            document.documentElement.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+            // Set other dark theme-related configurations if needed
+          } else {
+            document.documentElement.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+            // Set other light theme-related configurations if needed
+          }
+        });
+      }
+    });
+  };
 
-        const theme = localStorage.getItem("theme");
+  // Runs on initial navigation
+  setThemeCheckboxes();
 
-        if (themeCheckbox instanceof HTMLInputElement) {
-            if (theme === "dark") {
-                themeCheckbox.checked = true;
-                document.documentElement.setAttribute("data-theme", "dark");
-            } else {
-                themeCheckbox.checked = false;
-                document.documentElement.setAttribute("data-theme", "light");
-            }
-
-            themeCheckbox.addEventListener("change", function () {
-                if (themeCheckbox.checked) {
-                    document.documentElement.setAttribute("data-theme", "dark");
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    document.documentElement.setAttribute(
-                        "data-theme",
-                        "light",
-                    );
-                    localStorage.setItem("theme", "light");
-                }
-            });
-        }
-    };
-
-    // Runs on initial navigation
-    setThemeCheckbox();
-
-    // Runs on view transitions navigation
-    document.addEventListener("astro:after-swap", setThemeCheckbox);
+  // Runs on view transitions navigation
+  document.addEventListener("astro:after-swap", setThemeCheckboxes);
 </script>

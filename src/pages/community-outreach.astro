@@ -3,14 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.svelte";
 ---
 
-<BaseLayout title="Community outreach">
+<BaseLayout title="Community Outreach">
   <Hero
     backgroundImage="url(/hero-img.webp)"
-    gradientTitle={true}
     standardTitleText="Community"
     gradientTitleText="Outreach"
     descriptionText="Learn about ways that VPCI Robotics is interacting with our community!"
-    button={true}
     buttonText="Contact Us"
   />
   <div class="flex justify-center">
@@ -20,11 +18,9 @@ import Hero from "../components/Hero.svelte";
   </div>
 
   <div class="flex flex-wrap justify-evenly">
-    <div
-      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
-    >
+    <div class="card">
       <figure>
-        <img src="fundraising.webp" alt="image of fundraising" />
+        <img src="/fundraising.webp" alt="image of fundraising" />
       </figure>
       <div class="card-body">
         <h1 class="card-title">Fundraising!</h1>
@@ -35,9 +31,7 @@ import Hero from "../components/Hero.svelte";
         </p>
       </div>
     </div>
-    <div
-      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
-    >
+    <div class="card">
       <figure>
         <img src="/Scratch-icon.webp" alt="Scratch icon" />
       </figure>
@@ -50,9 +44,7 @@ import Hero from "../components/Hero.svelte";
         </p>
       </div>
     </div>
-    <div
-      class="card bg-base-200 mx-10 my-10 shadow-xl hover:scale-105 md:w-3/12"
-    >
+    <div class="card">
       <figure>
         <img
           src="/VP-apparel.webp"
@@ -71,4 +63,11 @@ import Hero from "../components/Hero.svelte";
   </div>
 </BaseLayout>
 
-<style></style>
+<style>
+  @tailwind components;
+  @layer components {
+    .card {
+      @apply bg-base-200 mx-10 my-10 shadow-xl hover:scale-[1.02] md:w-3/12 transition-all duration-200 ease-in-out;
+    }
+  }
+</style>

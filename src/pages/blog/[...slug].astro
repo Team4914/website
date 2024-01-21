@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import TextContainer from "../../components/TextContainer.svelte";
+import { type CollectionEntry } from "astro:content";
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getPosts } from "../../utils/post";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
@@ -11,19 +12,28 @@ export async function getStaticPaths() {
   }));
 }
 
+const posts = await getPosts();
+const getRelatedPosts = (post: CollectionEntry<"blog">) => {
+  const relatedPosts = posts.filter(
+    (p) =>
+      p.slug !== post.slug &&
+      p.data.tags.some((t) => post.data.tags.includes(t)) &&
+      p.data.team === post.data.team,
+  );
+  return relatedPosts.slice(0, 3);
+};
+
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, remarkPluginFrontmatter } = await entry.render();
 ---
 
-<BaseLayout>
-  <div class="mx-auto mt-6 max-w-3xl">
-    <TextContainer />
-  </div>
-  <div class="text-center my-8">
-    <a
-      href="/blog"
-      class="text-white bg-gray-800 px-5 py-3 rounded-md hover:bg-gray-900 transition"
-      >← Back to Blog</a
-    >
-  </div>
-</BaseLayout>
+<BlogLayout
+  id={entry.id}
+  data={entry.data}
+  readTime={remarkPluginFrontmatter.minutesRead}
+  relatedPosts={getRelatedPosts(entry)}
+>
+  <article class="prose prose-md md:prose-lg dark:prose-invert">
+    <Content />
+  </article>
+</BlogLayout>

@@ -34,8 +34,8 @@ export default {
   },
   content: [
     "./index.html",
-    "./src/**/*.{svelte,js,ts}",
-    "./src/**/**/*.{svelte,js,ts}",
+    "./src/**/*.{svelte,js,ts,astro}",
+    "./src/**/**/*.{svelte,js,ts,astro}",
   ], //for unused css
   variants: {
     extend: {},

@@ -1,20 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-import CoreValues from "../components/CoreValues.svelte";
-import Hero_Cards from "../components/Hero_Cards.svelte";
 import Hero from "../components/Hero.svelte";
 import TextContainer from "../components/TextContainer.svelte";
 ---
 
-<BaseLayout title="about-us">
+<BaseLayout title="About Us">
   <Hero
     backgroundImage="url(/about-us-hero.webp)"
-    gradientTitle={true}
     standardTitleText="VPCI"
     gradientTitleText="Robotics"
     descriptionText="Learn more about us!"
-    button={false}
   />
   <TextContainer />
 </BaseLayout>
