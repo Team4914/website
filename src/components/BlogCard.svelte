@@ -1,5 +1,6 @@
 <script lang="ts">
   export let title: string;
+  export let author: string;
   export let description: string;
   export let sideImage: string;
   export let altText: string;
@@ -24,6 +25,5 @@
     </p>
   </div>
   <div class="mt-auto flex items-center gap-x-3">
-    <p class="text-sm text-gray-800 dark:text-gray-200">By Lauren Waller</p>
-  </div>
+    <p class="text-sm text-gray-800 dark:text-gray-200">{"Team " + author}</p>
 </a>

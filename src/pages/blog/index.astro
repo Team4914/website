@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Hero from "../../components/Hero.svelte";
 import BlogButton from "../../components/BlogCard.svelte";
+import { getPosts } from "../../utils/post";
+const posts = await getPosts();
 ---
 
 <BaseLayout title="Blog">
@@ -12,12 +14,15 @@ import BlogButton from "../../components/BlogCard.svelte";
     descriptionText="Catch up on all of VPCI Robotic's latest news!"
   />
   <div class="grid grid-cols-2 gap-4 place-items-center p-8">
-    <BlogButton
-      title="The Importance of Robotics in High School Education"
-      description="VPCI Robotics • Mon Jun 05 2023"
-      sideImage="/about-us-hero.webp"
-      altText="Students In Robotics"
-      linkTo="intro"
-    />
+    {posts.map((post) => (
+      <BlogButton
+        title={post.data.title}
+        author={post.data.team}
+        description={post.data.description}
+        sideImage={post.data.image.src}
+        altText={post.data.image.alt}
+        linkTo={post.slug}
+      />
+    ))}
   </div>
 </BaseLayout>

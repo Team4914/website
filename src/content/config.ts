@@ -13,9 +13,8 @@ const blogCollection = defineCollection({
       credits: z.string(),
     }),
     publishDate: z.string().transform((str) => new Date(str)),
-    season: z.enum(["2023", "2024"]),
-    credits: z.string().default("VPCI Robotics Team"),
-    team: z.enum(["24484", "24485"]),
+    season: z.enum(["2023-2024"]),
+    team: z.enum(["24484", "24485", "24484 and 24485"]),
     tags: z.array(z.string()),
   }),
 });

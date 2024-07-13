@@ -33,7 +33,7 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
   readTime={remarkPluginFrontmatter.minutesRead}
   relatedPosts={getRelatedPosts(entry)}
 >
-  <article class="prose prose-md md:prose-lg dark:prose-invert">
+  <article class="prose prose-md md:prose-lg dark:prose-invert min-w-full">
     <Content />
   </article>
 </BlogLayout>

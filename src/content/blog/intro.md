@@ -9,9 +9,8 @@ image:
     credits: "unsplash",
   }
 publishDate: "2023-06-05 11:39"
-season: "2023"
-team: "24484"
-credits: "VPCI Robotics"
+season: "2023-2024"
+team: "24484 and 24485"
 tags: [education]
 ---
 
