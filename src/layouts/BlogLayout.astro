@@ -115,8 +115,18 @@ const articleDate = publishDate.toISOString();
               >
                 {"Team " + team}
               </h1>
-              <p class="text-sm text-zinc-500">
-                {team === "24484" ? "Victoria Park Panthers" : "Panthertronics"}
+                <p class="text-sm text-zinc-500">
+                {(() => {
+                  switch (team) {
+                  case "24484":
+                    return "Victoria Park Panthers";
+                  case "24485":
+                    return "Panthertronics";
+                  default:
+                    return "Victoria Park Robotics and Panthertronics";
+                  }
+                })()}
+                </p>
               </p>
             </div>
           </div>
