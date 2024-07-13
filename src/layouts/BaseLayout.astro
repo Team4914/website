@@ -17,16 +17,18 @@ const { title, description, image, articleDate } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
-      <BaseHead
-        title={title}
-        description={description}
-        ogImage={image}
-        articleDate={articleDate}
-      />
-      <!-- Main content of webpage goes here -->
+    <BaseHead
+      title={title}
+      description={description}
+      ogImage={image}
+      articleDate={articleDate}
+    />
+    
+  <body>
+    <Sidebar />
+    <Navbar />
+    <main>
       <slot>
-        <!-- Child elements are put here -->
-        <!-- Default content if none added -->
          No content found for this page.
       </slot>
     </main>
