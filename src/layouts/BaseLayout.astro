@@ -16,20 +16,13 @@ interface Props {
 const { title, description, image, articleDate } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead
-      title={title}
-      description={description}
-      ogImage={image}
-      articleDate={articleDate}
-    />
-    <SetTheme />
-  </head>
-  <body>
-    <Sidebar />
-    <Navbar />
-    <main>
+<html lang="en" class="scroll-smooth">
+      <BaseHead
+        title={title}
+        description={description}
+        ogImage={image}
+        articleDate={articleDate}
+      />
       <!-- Main content of webpage goes here -->
       <slot>
         <!-- Child elements are put here -->
