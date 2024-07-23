@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/svelte':
-        specifier: ^5.6.0
-        version: 5.6.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.3)
+        specifier: ^5.7.0
+        version: 5.7.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.3)
       astro:
         specifier: ^4.11.5
         version: 4.11.5(typescript@5.5.3)
@@ -96,12 +96,12 @@ packages:
   '@astrojs/sitemap@3.1.6':
     resolution: {integrity: sha512-1Qp2NvAzVImqA6y+LubKi1DVhve/hXXgFvB0szxiipzh7BvtuKe4oJJ9dXSqaubaTkt4nMa6dv6RCCAYeB6xaQ==}
 
-  '@astrojs/svelte@5.6.0':
-    resolution: {integrity: sha512-rdHBlqMQE6UOA1ySF1t3sdb6pf44yP8Dd0TqxGO0yR4HAgbtKtW8XToJ3mQ1PmuRmf5fisH9xzt3EEx7NAQuZg==}
+  '@astrojs/svelte@5.7.0':
+    resolution: {integrity: sha512-pC/xM5ejDzqIhfr8e6gbjBkIwyTQDLuOH778LfH0EiVlTq5H0WUHCnIcjFBvcaJv9ye8AR0TlGvQmZtkt9x3Eg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       astro: ^4.0.0
-      svelte: ^4.0.0 || ^5.0.0-next.90
+      svelte: ^4.0.0 || ^5.0.0-next.190
       typescript: ^5.3.3
 
   '@astrojs/telemetry@3.1.0':
@@ -2325,7 +2325,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/svelte@5.6.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.3)':
+  '@astrojs/svelte@5.7.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.3)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.18)(vite@5.3.3)
       astro: 4.11.5(typescript@5.5.3)
