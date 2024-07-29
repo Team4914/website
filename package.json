@@ -23,7 +23,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.12.10",
-    "husky": "^9.0.11",
+    "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "mdast-util-to-string": "^4.0.0",
     "postcss": "^8.4.39",
