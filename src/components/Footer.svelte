@@ -26,19 +26,19 @@
     <!-- End Col -->
 
     <div class="md:w-1/3 flex flex-col justify-center">
-      <h1 class="mt-auto text-lg font-boldtext-base uppercase">Industries</h1>
+      <h1 class="mt-auto text-lg font-boldtext-base uppercase">Links</h1>
 
       <div class="mt-3 grid space-y-3 text-base">
         <p>
           <a
             class="inline-flex gap-x-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-            href="/resources">Financial Services</a
+            href="/about-us">About</a
           >
         </p>
         <p>
           <a
             class="inline-flex gap-x-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-            href="/resources">Education</a
+            href="/resources">Resources</a
           >
         </p>
       </div>
