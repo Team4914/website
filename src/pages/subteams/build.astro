@@ -37,11 +37,13 @@ import Hero from "../../components/Hero.svelte";
   </section>
 
   <div class="bg-base-100 pt-10">
-    <h2
-      class="mx-auto text-center 4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-    >
-      DESIGN PRINCIPLES
-    </h2>
+    <div class="mx-auto max-w-screen-xl px-4 lg:px-6">
+      <h2
+        class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        DESIGN PRINCIPLES
+      </h2>
+    </div>
 
     <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
       <!-- Main Card -->
@@ -105,56 +107,123 @@ import Hero from "../../components/Hero.svelte";
     </div>
   </div>
 
-  <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="max-w-screen-md mb-8 lg:mb-16">
-        <h2
-          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-        >
-          MAJOR COMPONENTS
-        </h2>
-      </div>
+  <div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div
-        class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
-        <div>
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2
+              class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+            >
+              HOW WE MANUFACTURE PARTS
+            </h2>
+            <ul
+              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none list-disc pl-5"
+            >
+              <li>
+                <strong class="font-semibold text-gray-900">Power Tools.</strong
+                >
+                The majority of all parts that go onto the robot are machined in-house
+                using various power tools such as drills, bandsaws, and drill presses.
+                Every build member will be trained to operate these tools safely
+                and effectively.
+              </li>
+              <li>
+                <strong class="font-semibold text-gray-900">CNC Machine.</strong
+                >
+                For parts that require accuracy and precision, we use the CNC, a
+                machine that uses programmed instructions to control and automate
+                machining processes. We use the CNC primarily for polycarbonate parts
+                such as gussets.
+              </li>
+              <li>
+                <strong class="font-semibold text-gray-900">3D-Printing.</strong
+                >
+                3D printing technology is used to create small, precise shapes. We
+                use 3D printed parts primarily for pulleys and other non-load-bearing
+                pieces of the robot.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          src="/3D-printer.webp"
+          alt="Product screenshot"
+          class="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 lg:w-[57rem] md:-ml-4 lg:-ml-0"
+        />
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-base-100 py-10">
+    <div class="mx-auto max-w-screen-xl px-4 lg:px-6">
+      <h2
+        class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        MAJOR COMPONENTS
+      </h2>
+    </div>
+
+    <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
+      <!-- Motors Card -->
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
           <img
             src="/DC-motor.webp"
-            alt="Marketing"
-            class="w-full h-64 mb-4 rounded-lg object-cover"
+            alt="Motors"
+            class="h-64 object-cover w-full rounded-lg"
           />
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Motors</h3>
+        </figure>
+
+        <div class="card-body">
+          <h3 class="card-title text-xl font-bold dark:text-white">Motors</h3>
           <p class="text-gray-500 dark:text-gray-400">
             The motors are used in a number of different components on our
             robot. They allow our robot's claw to pick up pixels and place them
-            high up on the board. They are also used to innitiate our hanging
+            high up on the board. They are also used to initiate our hanging
             sequence. These motors allow us to do heavy-duty work.
           </p>
         </div>
+      </div>
 
-        <div>
+      <!-- Control Hub Card -->
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
           <img
             src="/Control-Hub.webp"
-            alt="Legal"
-            class="w-full h-64 mb-4 rounded-lg object-cover"
+            alt="Control Hub"
+            class="h-64 object-cover w-full rounded-lg"
           />
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Control Hub</h3>
+        </figure>
+
+        <div class="card-body">
+          <h3 class="card-title text-xl font-bold dark:text-white">
+            Control Hub
+          </h3>
           <p class="text-gray-500 dark:text-gray-400">
             The control hub is basically the brain of the robot. It allows us to
-            manipuate the entirety of the robot with much effectiveness. It
-            connects our inputs from our driver hub, and turns these
-            instructions given into brand new instructions for other parts of
-            the robot, allowing it to innitiate a number of important sequences.
+            manipulate the entirety of the robot with much effectiveness. It
+            connects our inputs from our driver hub and turns these instructions
+            into brand new instructions for other parts of the robot, allowing
+            it to initiate a number of important sequences.
           </p>
         </div>
+      </div>
 
-        <div>
+      <!-- Servos Card -->
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
           <img
             src="/Servo.webp"
-            alt="Business Automation"
-            class="w-full h-64 mb-4 rounded-lg object-cover"
+            alt="Servos"
+            class="h-64 object-cover w-full rounded-lg"
           />
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Servos</h3>
+        </figure>
+
+        <div class="card-body">
+          <h3 class="card-title text-xl font-bold dark:text-white">Servos</h3>
           <p class="text-gray-500 dark:text-gray-400">
             The servos are like the precise and nimble fingers of our robot.
             They allow us to perform more precise actions than motors, at a
@@ -167,59 +236,12 @@ import Hero from "../../components/Hero.svelte";
     </div>
   </section>
 
-  <div class="bg-base-100 pt-5">
-    <h1 class="text-bold mx-auto text-center text-3xl">
-      HOW WE MANUFACTURE PARTS
-    </h1>
-
-    <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
-      <!-- Main Card -->
-      <div class="card bg-base-200 shadow-xl w-96">
-        <figure><img src="/power-tools.webp" alt="Build Subteam" /></figure>
-
-        <div class="card-body">
-          <h2 class="card-title">Power Tools</h2>
-          <p>
-            The majority of all parts that go onto the robot are machined in
-            house using various power tools such as drills, bandsaws, and drill
-            presses. Every build member will be trained to operate these tools
-            safely and effectively.
-          </p>
-        </div>
-      </div>
-
-      <div class="card bg-base-200 shadow-xl w-96">
-        <figure><img src="/cnc-machine.webp" alt="Build Subteam" /></figure>
-
-        <div class="card-body">
-          <h2 class="card-title">CNC Machine</h2>
-          <p>
-            For parts that require accuracy and precision, we use the CNC, a
-            machine that uses programmed instructions to control and automate
-            machining processes. We use the CNC primarily for polycarbonate
-            parts such as gussets.
-          </p>
-        </div>
-      </div>
-
-      <div class="card bg-base-200 shadow-xl w-96">
-        <!--taken from https://www.nytimes.com/wirecutter/reviews/best-home-3d-printer/-->
-        <figure><img src="/3D-printer.webp" alt="Build Subteam" /></figure>
-
-        <div class="card-body">
-          <h2 class="card-title">3D-Printing</h2>
-          <p>
-            3D printing technology is used to create small, precise shapes. We
-            use 3D printed parts primarily for pulleys and other non load
-            bearing pieces of the robot.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="bg-base-200 pt-5">
-    <h1 class="text-bold mx-auto text-center text-3xl">RESOURCES</h1>
+    <h2
+      class="mx-auto text-center mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+    >
+      RESOURCES
+    </h2>
 
     <div class="flex justify-center p-5 gap-x-8 gap-y-2 flex-wrap">
       <a
