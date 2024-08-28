@@ -2,15 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.svelte";
 import TextContainer from "../components/TextContainer.svelte";
+import AboutHero from "../components/AboutHero.svelte";
+import AboutSection from "../components/AboutSection.svelte";
 ---
 
 <BaseLayout title="About Us">
-  <Hero
-    backgroundImage="url(/about-us-hero.webp)"
-    standardTitleText="VPCI"
-    gradientTitleText="Robotics"
-    descriptionText="Learn more about us!"
-  />
+  <AboutHero client:only="svelte" />
+  <AboutSection client:only="svelte" />
   <TextContainer />
 </BaseLayout>
 
