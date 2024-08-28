@@ -56,13 +56,13 @@
       title: "Tailwind Master Kit",
       link: "https://tailwindmasterkit.com",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+        "https://live.staticflickr.com/65535/53403645916_71b8e4057a_d.jpg",
     },
     {
       title: "SmartBridge",
       link: "https://smartbridgetech.com",
       thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+        "https://live.staticflickr.com/65535/53403645916_71b8e4057a_d.jpg",
     },
     {
       title: "Renderwork Studio",
@@ -98,6 +98,6 @@
   ];
 </script>
 
-<div class="container mx-auto w-[80vw] lg:w-[60vw]">
+<div class="container mx-auto w-full lg:w-[80vw]">
   <HeroParallax {products} />
 </div>
