@@ -31,14 +31,14 @@ import Hero from "../../components/Hero.svelte";
         <div class="card-body w-1/2">
           <h1 class="text-5xl font-bold card-title">Programming Subteam</h1>
           <p class="py-6">
-            At team 4914, our programming subteam uses Java and Python to code
-            the robot, which includes creating an intuitive and assistive
-            control system for the drive team, as well as efficiently and safely
-            utilizing the electronics. Being a programmer at 4914 requires you
-            to understand how the entire robot functions as a system, so getting
-            involved with the other technical sub-teams (build, design,
-            electronics) is encouraged. Although prior programming experience is
-            useful, the willingness to learn is more important.
+            Our programming subteam uses Java and Python to code the robot,
+            which includes creating an intuitive and assistive control system
+            for the drive team, as well as efficiently and safely utilizing the
+            electronics. Being a programmer requires you to understand how the
+            entire robot functions as a system, so getting involved with the
+            other technical sub-teams (build, design, electronics) is
+            encouraged. Although prior programming experience is useful, the
+            willingness to learn is more important.
           </p>
         </div>
       </div>
@@ -51,14 +51,8 @@ import Hero from "../../components/Hero.svelte";
       class="shadow-xl bg-base-200 rounded-xl p-6"
     >
       <h2 class="text-center text-4xl rounded-3xl font-bold mb-4">
-        Ongoing Programming Projects
+        Programming Projects
       </h2>
-      <p class="bg-base-100 text-2xl rounded-lg text-center p-4">
-        We are constantly working to improve our robots' features and
-        capabilities through the code powering it. Below are the ongoing
-        programming projects. If you are interested, contact us via our socials
-        or email.
-      </p>
     </div>
     <div class="py-6"></div>
 
@@ -69,18 +63,59 @@ import Hero from "../../components/Hero.svelte";
         <img class="shadow-2xl" src="/roadrunner.webp" alt="roadrunner img" />
       </figure>
       <div class="card-body text-center">
-        <h1 class="text-5xl font-semibold">Implementing roadrunner</h1>
+        <h1 class="text-5xl font-semibold">TeleOp</h1>
         <p class="py-6">
-          Road Runner is a motion planning library, written for the FTC robotics
-          competition. Designed primarily for autonomous robotic movement, it
-          allows for path creation during the autonomous period. We are using
-          odometry with deadwheels to determine the robot's position on the
-          field.
+          For added manoeuvrability, we chose to use a mecanum drive, keeping in
+          mind the drivers’ ease of motion since the bot is fairly simple, such
+          as by avoiding control arrangements that might make the driver
+          accidentally make a mistake. We also slowed down some of the bot
+          movements during the TeleOp period to make it easier for the driver to
+          be precise.
         </p>
       </div>
+    </div>
+    <div class="py-6"></div>
+
+    <div
+      class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row"
+    >
       <figure>
         <img class="shadow-2xl" src="/roadrunner.webp" alt="roadrunner img" />
       </figure>
+      <div class="card-body text-center">
+        <h1 class="text-5xl font-semibold">Tensorflow</h1>
+        <p class="py-6">
+          In general, the Tensorflow machine learning tool manipulates frames by
+          creating randomized filters to detect patterns. By the process of
+          trial and error, the model trains by recognizing the team prop and
+          verifies its accuracy by using a set number of manually labeled
+          frames. After the model had been trained, we verified our metrics and
+          trained it more for better results.
+        </p>
+      </div>
+    </div>
+    <div class="py-6"></div>
+
+    <div
+      class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row"
+    >
+      <figure>
+        <img class="shadow-2xl" src="/roadrunner.webp" alt="roadrunner img" />
+      </figure>
+      <div class="card-body text-center">
+        <h1 class="text-5xl font-semibold">April Tags</h1>
+        <p class="py-6">
+          April tags are essentially like QR codes but for our robot. It
+          provides our robot with essential data such as X and Y coordinates
+          along with information such as the something. We used snippets of
+          code, the April tag library provided by FTC along with our knowledge
+          of Java, to piece together a program that would read these April tags
+          and provide us with valuable information. We had a few hiccups along
+          the way, such as the April tags being incorrectly detected, or
+          identified. But through a bit of perseverance, we were able to fix all
+          the issues we faced.
+        </p>
+      </div>
     </div>
     <div class="py-6"></div>
 

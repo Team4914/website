@@ -6,8 +6,8 @@ import Hero from "../../components/Hero.svelte";
 <BaseLayout title="Build Subteam">
   <Hero
     backgroundImage="url(/hero-img.webp)"
-    gradientTitleText="Build"
-    descriptionText="Build Team - the makers of a dream come true"
+    gradientTitleText="Build and Design"
+    descriptionText=""
   />
 
   <div class="bg-base-200 flex justify-center p-10 min-h-96">
@@ -22,13 +22,142 @@ import Hero from "../../components/Hero.svelte";
       <div class="card-body basis-full">
         <h2 class="card-title">BUILD SUBTEAM</h2>
         <p>
-          The build subteam is responsible for manufacturing and assembling the
-          parts of the robot. This subteam takes the CAD models and created by
-          the Design and CAD subteam and fabricates them using a variety of
-          tools. Build members will be taught how to operate all tools safely
-          and effectively with the various materials that we use such as
-          plexiglass and aluminum.
+          The build and design subteam is responsible for designing,
+          manufacturing and assembling the parts of the robot. This subteam
+          creates CAD models and fabricates them using a variety of tools. Build
+          members will be taught how to operate all tools safely and effectively
+          with the various materials that we use.
         </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-base-100 pt-5">
+    <h1 class="text-bold mx-auto text-center text-3xl">DESIGN PRINCIPLES</h1>
+
+    <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
+      <!-- Main Card -->
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
+          <img
+            src="/drivetrain.png"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">Designated Subsystems</h2>
+          <p>
+            Our mechanisms can be both designed and assembled independently,
+            allowing multiple stages of the design process to take place
+            simultaneously.
+          </p>
+        </div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
+          <img
+            src="https://www.onshape.com/global-assets/img/industry-pages/robotics/be-robust-robotics-cad-model.png"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">CAD First</h2>
+          <p>
+            To ensure all parts fit together properly, before spending time and
+            resources on implementation, parts are designed in Computer Aided
+            Design (CAD) software.
+          </p>
+        </div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl w-96">
+        <!--taken from https://www.nytimes.com/wirecutter/reviews/best-home-3d-printer/-->
+        <figure>
+          <img
+            src="/slide1.png"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">Iterative Design</h2>
+          <p>
+            At the beginning of the season, we watched CENTERSTAGE as a large
+            team, began brainstorming different ideas, and shared our thoughts.
+            From there we researched and started to plan different designs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-base-200 rounded-box shadow-xl mt-10 pt-7">
+    <p class="sm:text-3xl md:text-4xl text-center py-2">Major Components</p>
+    <div class="carousel w-full h-96 bg">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="py-2">
+          <img
+            class="absolute left-1/3 w-1/3 h-2/3 rounded-lg"
+            src="/DC-motor.webp"
+          />
+          <p class="absolute w-1/2 left-1/4 top-3/4">
+            The motors are used in a number of different components on our
+            robot. They allow our robot's claw to pick up pixels and place them
+            high up on the board. They are also used to innitiate our hanging
+            sequence. These motors allow us to do heavy-duty work.
+          </p>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="py-5">
+          <img
+            class="absolute left-1/3 w-1/3 h-2/3 rounded-lg"
+            src="/Control-Hub.webp"
+          />
+          <p class="absolute w-1/2 left-1/4 top-3/4">
+            The control hub is basically the brain of the robot. It allows us to
+            manipuate the entirety of the robot with much effectiveness. It
+            connects our inputs from our driver hub, and turns these
+            instructions given into brand new instructions for other parts of
+            the robot, allowing it to innitiate a number of important sequences.
+          </p>
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="py-5">
+          <img class="absolute h-2/3 left-1/3 rounded-lg" src="/Servo.webp" />
+          <p class="absolute w-1/2 left-1/4 top-3/4">
+            The servos are like the precise and nimble fingers of our robot.
+            They allow us to perform more precise actions than motors, at a
+            tradeoff of power. On our robot, servos are used on the claw
+            mechanisms among other components, and they play a crucial role in
+            the making of our robot.
+          </p>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -95,6 +224,22 @@ import Hero from "../../components/Hero.svelte";
       <a
         href="https://docs.google.com/presentation/d/1XWlT2D6pqDgk782QwVp3kUptwbJLyZR2/edit?usp=sharing&ouid=115198120432465400656&rtpof=true&sd=true"
         class="btn btn-primary">VPCI Robotics Material Guide</a
+      >
+      <a
+        href="https://drive.google.com/file/d/1EDPonK7Pc_Vf_9crYTMUXauCYa4-7a5h/view"
+        class="btn btn-primary">General Electrical System Notes</a
+      >
+      <a
+        href="https://mililanirobotics.gitbooks.io/frc-electrical-bible/content/"
+        class="btn btn-primary">Additional System notes</a
+      >
+      <a
+        href="https://wpilib.screenstepslive.com/s/currentCS/m/kop/l/1030226-wiring-the-frc-control-system"
+        class="btn btn-primary">Wiring the FRC control system</a
+      >
+      <a
+        href="https://firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf"
+        class="btn btn-primary">FRC pneumatics guide</a
       >
     </div>
   </div>
