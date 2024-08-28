@@ -10,18 +10,22 @@ import Hero from "../../components/Hero.svelte";
     descriptionText=""
   />
 
-  <div class="bg-base-200 flex justify-center p-10 min-h-96">
-    <!-- Main Card -->
+  <section class="bg-white dark:bg-gray-900">
     <div
-      class="card sm:card-side bg-base-100 shadow-xl lg:w-3/5 justify-between"
+      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
-      <figure class="basis-3/4">
-        <img class="sm:h-full" src="/build-subteam.webp" alt="Build Subteam" />
-      </figure>
-
-      <div class="card-body basis-full">
-        <h2 class="card-title">BUILD SUBTEAM</h2>
-        <p>
+      <img
+        class="w-full"
+        src="https://live.staticflickr.com/65535/53466317270_6b23053bab_c_d.jpg"
+        alt="build image"
+      />
+      <div class="mt-4 md:mt-0">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          BUILD SUBTEAM
+        </h2>
+        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
           The build and design subteam is responsible for designing,
           manufacturing and assembling the parts of the robot. This subteam
           creates CAD models and fabricates them using a variety of tools. Build
@@ -30,10 +34,14 @@ import Hero from "../../components/Hero.svelte";
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="bg-base-100 pt-5">
-    <h1 class="text-bold mx-auto text-center text-3xl">DESIGN PRINCIPLES</h1>
+  <div class="bg-base-100 pt-10">
+    <h2
+      class="mx-auto text-center 4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+    >
+      DESIGN PRINCIPLES
+    </h2>
 
     <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
       <!-- Main Card -->
@@ -97,36 +105,41 @@ import Hero from "../../components/Hero.svelte";
     </div>
   </div>
 
-  <div class="bg-base-200 rounded-box shadow-xl mt-10 pt-7">
-    <p class="sm:text-3xl md:text-4xl text-center py-2">Major Components</p>
-    <div class="carousel w-full h-96 bg">
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="py-2">
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md mb-8 lg:mb-16">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          MAJOR COMPONENTS
+        </h2>
+      </div>
+      <div
+        class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+      >
+        <div>
           <img
-            class="absolute left-1/3 w-1/3 h-2/3 rounded-lg"
             src="/DC-motor.webp"
+            alt="Marketing"
+            class="w-full h-64 mb-4 rounded-lg object-cover"
           />
-          <p class="absolute w-1/2 left-1/4 top-3/4">
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Motors</h3>
+          <p class="text-gray-500 dark:text-gray-400">
             The motors are used in a number of different components on our
             robot. They allow our robot's claw to pick up pixels and place them
             high up on the board. They are also used to innitiate our hanging
             sequence. These motors allow us to do heavy-duty work.
           </p>
         </div>
-        <div
-          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-        >
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <div class="py-5">
+
+        <div>
           <img
-            class="absolute left-1/3 w-1/3 h-2/3 rounded-lg"
             src="/Control-Hub.webp"
+            alt="Legal"
+            class="w-full h-64 mb-4 rounded-lg object-cover"
           />
-          <p class="absolute w-1/2 left-1/4 top-3/4">
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Control Hub</h3>
+          <p class="text-gray-500 dark:text-gray-400">
             The control hub is basically the brain of the robot. It allows us to
             manipuate the entirety of the robot with much effectiveness. It
             connects our inputs from our driver hub, and turns these
@@ -134,33 +147,25 @@ import Hero from "../../components/Hero.svelte";
             the robot, allowing it to innitiate a number of important sequences.
           </p>
         </div>
-        <div
-          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-        >
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <div class="py-5">
-          <img class="absolute h-2/3 left-1/3 rounded-lg" src="/Servo.webp" />
-          <p class="absolute w-1/2 left-1/4 top-3/4">
+
+        <div>
+          <img
+            src="/Servo.webp"
+            alt="Business Automation"
+            class="w-full h-64 mb-4 rounded-lg object-cover"
+          />
+          <h3 class="mb-2 text-xl font-bold dark:text-white">Servos</h3>
+          <p class="text-gray-500 dark:text-gray-400">
             The servos are like the precise and nimble fingers of our robot.
             They allow us to perform more precise actions than motors, at a
             tradeoff of power. On our robot, servos are used on the claw
             mechanisms among other components, and they play a crucial role in
             the making of our robot.
           </p>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="bg-base-100 pt-5">
     <h1 class="text-bold mx-auto text-center text-3xl">
