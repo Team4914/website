@@ -27,9 +27,11 @@
 <div class="relative mx-auto max-w-2xl py-20 mt-20 antialiased">
   {#each content as item, index (`content-${index}`)}
     <div class="mb-10 w-full p-4">
-      <p class={twMerge("mb-4 text-2xl font-bold")}>
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
         {item.title}
-      </p>
+      </h2>
 
       <div class="w-full prose prose-sm md:prose-lg text-sm dark:prose-invert">
         {#if item?.image}

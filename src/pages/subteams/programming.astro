@@ -11,7 +11,7 @@ import Hero from "../../components/Hero.svelte";
     buttonText="See More"
   />
 
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white dark:bg-neutral-800">
     <div
       class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
@@ -26,7 +26,7 @@ import Hero from "../../components/Hero.svelte";
         >
           PROGRAMMING SUBTEAM
         </h2>
-        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+        <p class="mb-6 font-light md:text-lg dark:text-white">
           Our programming subteam uses Java and Python to code the robot, which
           includes creating an intuitive and assistive control system for the
           drive team, as well as efficiently and safely utilizing the
@@ -139,35 +139,21 @@ import Hero from "../../components/Hero.svelte";
     -->
 
   <!-- Resource box -->
-  <div
-    style="border: .5px solid white;"
-    class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center"
-  >
+  <div class="bg-base-200 pt-5">
     <h2
-      class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      class="mx-auto text-center mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
     >
       RESOURCES
     </h2>
-    <div class="py-5 bg-base-300 rounded-box">
-      <!--Creates the buttons and dividers for the Core Values section -->
-      <div class="flex flex-wrap w-full justify-center opacity-90">
-        <!--Button corresponding to a web page-->
-        <div class="grid h-100 mx-4 my-2 card bg-base-300">
-          <a
-            class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
-            href="https://github.com/Team4914"
-            >Victoria Park Github
-          </a>
-        </div>
-        <!--Button corresponding to a web page-->
-        <div class="grid h-100 mx-4 my-2 card bg-base-300">
-          <a
-            class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
-            href="https://docs.github.com/en/get-started/quickstart/hello-world"
-            >Github tutorial
-          </a>
-        </div>
-      </div>
+
+    <div class="flex justify-center p-5 gap-x-8 gap-y-2 flex-wrap">
+      <a href="https://github.com/Team4914" class="btn btn-primary"
+        >Victoria Park Github</a
+      >
+      <a
+        href="https://docs.github.com/en/get-started/quickstart/hello-world"
+        class="btn btn-primary">Github tutorial</a
+      >
     </div>
   </div>
 </BaseLayout>

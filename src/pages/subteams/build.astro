@@ -10,7 +10,7 @@ import Hero from "../../components/Hero.svelte";
     descriptionText=""
   />
 
-  <section class="bg-white dark:bg-gray-900">
+  <section class="bg-white dark:bg-neutral-800">
     <div
       class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
@@ -25,7 +25,7 @@ import Hero from "../../components/Hero.svelte";
         >
           BUILD SUBTEAM
         </h2>
-        <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+        <p class="mb-6 font-light md:text-lg dark:text-white">
           The build and design subteam is responsible for designing,
           manufacturing and assembling the parts of the robot. This subteam
           creates CAD models and fabricates them using a variety of tools. Build
@@ -107,7 +107,7 @@ import Hero from "../../components/Hero.svelte";
     </div>
   </div>
 
-  <div class="overflow-hidden bg-white py-24 sm:py-32">
+  <div class="overflow-hidden bg-base-100 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
@@ -120,10 +120,11 @@ import Hero from "../../components/Hero.svelte";
               HOW WE MANUFACTURE PARTS
             </h2>
             <ul
-              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none list-disc pl-5"
+              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-400 lg:max-w-none list-disc pl-5"
             >
               <li>
-                <strong class="font-semibold text-gray-900">Power Tools.</strong
+                <strong class="font-semibold text-gray-900 dark:text-white"
+                  >Power Tools.</strong
                 >
                 The majority of all parts that go onto the robot are machined in-house
                 using various power tools such as drills, bandsaws, and drill presses.
@@ -131,7 +132,8 @@ import Hero from "../../components/Hero.svelte";
                 and effectively.
               </li>
               <li>
-                <strong class="font-semibold text-gray-900">CNC Machine.</strong
+                <strong class="font-semibold text-gray-900 dark:text-white"
+                  >CNC Machine.</strong
                 >
                 For parts that require accuracy and precision, we use the CNC, a
                 machine that uses programmed instructions to control and automate
@@ -139,7 +141,8 @@ import Hero from "../../components/Hero.svelte";
                 such as gussets.
               </li>
               <li>
-                <strong class="font-semibold text-gray-900">3D-Printing.</strong
+                <strong class="font-semibold text-gray-900 dark:text-white"
+                  >3D-Printing.</strong
                 >
                 3D printing technology is used to create small, precise shapes. We
                 use 3D printed parts primarily for pulleys and other non-load-bearing

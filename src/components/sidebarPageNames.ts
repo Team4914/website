@@ -11,9 +11,7 @@ const pages: Page[] = [
   {
     name: "Subteams",
     submenus: [
-      { name: "Design and CAD", href: "/subteams/design" },
-      { name: "Build", href: "/subteams/build" },
-      { name: "Electronics", href: "/subteams/electronics" },
+      { name: "Build and Design", href: "/subteams/build" },
       { name: "Programming", href: "/subteams/programming" },
       { name: "Media", href: "/subteams/media" },
     ],
