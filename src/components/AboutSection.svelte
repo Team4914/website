@@ -3,28 +3,26 @@
 
   const content = [
     {
-      title: "Collaborative Editing",
+      title: "Overview",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "The Victoria Park Collegiate Institute Robotics Team (Teams 24484 and 24485) is a FIRST Tech Challenge (FTC) comprised of an extremely dedicated group of 36 members, two teachers, community supporters and volunteer mentors. Teams 24484 and 24485 were founded in October 2023 by the teachers and staff of Victoria Park Collegiate Institute.",
+      imageSrc: "/group-photo.jpg",
     },
     {
-      title: "Real time changes",
+      title: "Our Vision",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        "...is to become a model organization that promotes FIRST’s vision of cultural transformation in Canada, through partnerships with our community, students, parents, teachers and our sponsors.",
+      imageSrc: "/hero-new.webp",
     },
     {
-      title: "Version control",
+      title: "Our Mission",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    },
-    {
-      title: "Running out of content",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "...is to encourage the personal growth and development of all of our stakeholders to focus on science and technology education through participation in FIRST competitions.",
+      imageSrc: "/group-photo.jpg",
     },
   ];
 </script>
 
-<div class="p-10">
+<div class="">
   <StickyScrollReveal {content} />
 </div>

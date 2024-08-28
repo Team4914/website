@@ -14,15 +14,17 @@ const posts = await getPosts();
     descriptionText="Catch up on all of VPCI Robotic's latest news!"
   />
   <div class="grid grid-cols-2 gap-4 place-items-center p-8">
-    {posts.map((post) => (
-      <BlogButton
-        title={post.data.title}
-        author={post.data.team}
-        description={post.data.description}
-        sideImage={post.data.image.src}
-        altText={post.data.image.alt}
-        linkTo={post.slug}
-      />
-    ))}
+    {
+      posts.map((post) => (
+        <BlogButton
+          title={post.data.title}
+          author={post.data.team}
+          description={post.data.description}
+          sideImage={post.data.image.src}
+          altText={post.data.image.alt}
+          linkTo={post.slug}
+        />
+      ))
+    }
   </div>
 </BaseLayout>

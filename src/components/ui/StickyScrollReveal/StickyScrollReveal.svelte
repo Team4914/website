@@ -1,25 +1,19 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
+  export let content: {
+    title: string;
+    description: string;
+    imageSrc: string;
+  }[];
+
   let activeCard = 0;
   let backgroundColors = [
     "var(--slate-900)",
     "var(--black)",
     "var(--neutral-900)",
   ];
-  let linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-  ];
   let scrollYProgress = 0;
-
-  export let content: { title: string; description: string }[] = [
-    { title: "Title 1", description: "Description 1" },
-    { title: "Title 2", description: "Description 2" },
-    // Add more items as needed
-  ];
-
   let ref: HTMLDivElement;
 
   onMount(() => {
@@ -77,7 +71,9 @@
     </div>
   </div>
   <div
-    style="background: {linearGradients[activeCard % linearGradients.length]}"
+    style="background-image: url({content[activeCard].imageSrc});
+           background-size: cover;
+           background-position: center;"
     class="sticky top-10 hidden h-60 w-80 overflow-hidden rounded-md bg-white lg:block"
   ></div>
 </div>

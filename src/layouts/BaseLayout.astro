@@ -17,20 +17,18 @@ const { title, description, image, articleDate } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
-    <BaseHead
-      title={title}
-      description={description}
-      ogImage={image}
-      articleDate={articleDate}
-    />
-    
+  <BaseHead
+    title={title}
+    description={description}
+    ogImage={image}
+    articleDate={articleDate}
+  />
+
   <body>
     <Sidebar />
     <Navbar />
     <main>
-      <slot>
-         No content found for this page.
-      </slot>
+      <slot> No content found for this page. </slot>
     </main>
 
     <Footer />

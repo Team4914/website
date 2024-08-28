@@ -48,7 +48,7 @@ const articleDate = publishDate.toISOString();
               >
                 <path d="m15 18-6-6 6-6"></path>
               </svg>
-               Back to Blog
+              Back to Blog
             </a>
 
             <h1 class="text-3xl font-bold lg:text-5xl dark:text-white">
@@ -115,57 +115,58 @@ const articleDate = publishDate.toISOString();
               >
                 {"Team " + team}
               </h1>
-                <p class="text-sm text-zinc-500">
-                {(() => {
-                  switch (team) {
-                  case "24484":
-                    return "Victoria Park Panthers";
-                  case "24485":
-                    return "Panthertronics";
-                  default:
-                    return "Victoria Park Robotics and Panthertronics";
-                  }
-                })()}
-                </p>
+              <p class="text-sm text-zinc-500">
+                {
+                  (() => {
+                    switch (team) {
+                      case "24484":
+                        return "Victoria Park Panthers";
+                      case "24485":
+                        return "Panthertronics";
+                      default:
+                        return "Victoria Park Robotics and Panthertronics";
+                    }
+                  })()
+                }
               </p>
             </div>
           </div>
-          <!-- End Avatar Media -->
+        </div>
+        <!-- End Avatar Media -->
 
-          <div class="space-y-6">
-            {
-              relatedPosts.length !== 0 ? (
-                relatedPosts.map((post) => (
-                  <a
-                    class="group flex items-center gap-x-6"
-                    href={"/blog/" + post.slug}
-                  >
-                    <div class="grow">
-                      <span class="text-sm font-bold text-zinc-800 group-hover:text-blue-600 dark:text-zinc-200 dark:group-hover:text-blue-500">
-                        {post.data.title}
-                      </span>
-                    </div>
+        <div class="space-y-6">
+          {
+            relatedPosts.length !== 0 ? (
+              relatedPosts.map((post) => (
+                <a
+                  class="group flex items-center gap-x-6"
+                  href={"/blog/" + post.slug}
+                >
+                  <div class="grow">
+                    <span class="text-sm font-bold text-zinc-800 group-hover:text-blue-600 dark:text-zinc-200 dark:group-hover:text-blue-500">
+                      {post.data.title}
+                    </span>
+                  </div>
 
-                    <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                      <Image
-                        class="w-full h-full absolute top-0 start-0 object-cover rounded-lg"
-                        src={post.data.image?.src}
-                        alt={post.data.image?.alt}
-                        width={300}
-                        height={200}
-                      />
-                    </div>
-                  </a>
-                ))
-              ) : (
-                <p class="text-zinc-500">No Related Posts Found 🥲</p>
-              )
-            }
-          </div>
+                  <div class="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
+                    <Image
+                      class="w-full h-full absolute top-0 start-0 object-cover rounded-lg"
+                      src={post.data.image?.src}
+                      alt={post.data.image?.alt}
+                      width={300}
+                      height={200}
+                    />
+                  </div>
+                </a>
+              ))
+            ) : (
+              <p class="text-zinc-500">No Related Posts Found 🥲</p>
+            )
+          }
         </div>
       </div>
-      <!-- End Sidebar -->
     </div>
+    <!-- End Sidebar -->
   </div>
-  <!-- End Blog Article -->
 </BaseLayout>
+<!-- End Blog Article -->
