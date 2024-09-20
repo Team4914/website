@@ -11,80 +11,119 @@ import Hero from "../../components/Hero.svelte";
     buttonText="See More"
   />
 
-  <div
-    class="bg-base-200 min-h-96 flex flex-col items-center justify-center p-10"
-  >
-    <!-- Introduction card -->
+  <section class="bg-white dark:bg-neutral-800">
     <div
-      class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row"
+      class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
-      <div class="card card-side bg-base-100 shadow-xl">
-        <div class="w-1/3 md:w-1/2">
-          <figure class="rounded-lg">
-            <img
-              src="/Programming.webp"
-              style="height: 400px;"
-              alt="electrical-subteam"
-            />
-          </figure>
+      <img
+        class="w-full rounded-xl"
+        src="https://live.staticflickr.com/65535/53466214869_e4baede0f5_b_d.jpg"
+        alt="build image"
+      />
+      <div class="mt-4 md:mt-0">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          PROGRAMMING SUBTEAM
+        </h2>
+        <p class="mb-6 font-light md:text-lg dark:text-white">
+          Our programming subteam uses Java and Python to code the robot, which
+          includes creating an intuitive and assistive control system for the
+          drive team, as well as efficiently and safely utilizing the
+          electronics. Being a programmer requires you to understand how the
+          entire robot functions as a system, so getting involved with the other
+          technical sub-teams (build, design, electronics) is encouraged.
+          Although prior programming experience is useful, the willingness to
+          learn is more important.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-base-100 pt-10">
+    <div class="mx-auto max-w-screen-xl px-4 lg:px-6">
+      <h2
+        class="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        PROGRAMMING PROJECTS
+      </h2>
+    </div>
+
+    <div class="flex justify-center p-10 gap-x-10 gap-y-8 flex-wrap">
+      <!-- Main Card -->
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Xbox-360-Controller-Black.jpg/635px-Xbox-360-Controller-Black.jpg"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">TeleOp</h2>
+          <p>
+            For added manoeuvrability, we chose to use a mecanum drive, keeping
+            in mind the drivers’ ease of motion since the bot is fairly simple,
+            such as by avoiding control arrangements that might make the driver
+            accidentally make a mistake. We also slowed down some of the bot
+            movements during the TeleOp period to make it easier for the driver
+            to be precise.
+          </p>
         </div>
-        <div class="card-body w-1/2">
-          <h1 class="text-5xl font-bold card-title">Programming Subteam</h1>
-          <p class="py-6">
-            At team 4914, our programming subteam uses Java and Python to code
-            the robot, which includes creating an intuitive and assistive
-            control system for the drive team, as well as efficiently and safely
-            utilizing the electronics. Being a programmer at 4914 requires you
-            to understand how the entire robot functions as a system, so getting
-            involved with the other technical sub-teams (build, design,
-            electronics) is encouraged. Although prior programming experience is
-            useful, the willingness to learn is more important.
+      </div>
+
+      <div class="card bg-base-200 shadow-xl w-96">
+        <figure>
+          <img
+            src="https://i.ytimg.com/vi/4uBRRA1gai0/hqdefault.jpg"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">Tensorflow</h2>
+          <p>
+            In general, the Tensorflow machine learning tool manipulates frames
+            by creating randomized filters to detect patterns. By the process of
+            trial and error, the model trains by recognizing the team prop and
+            verifies its accuracy by using a set number of manually labeled
+            frames. After the model had been trained, we verified our metrics
+            and trained it more for better results.
+          </p>
+        </div>
+      </div>
+
+      <div class="card bg-base-200 shadow-xl w-96">
+        <!--taken from https://www.nytimes.com/wirecutter/reviews/best-home-3d-printer/-->
+        <figure>
+          <img
+            src="https://docs.cbteeple.com/assets/img/apriltags_30mm.png"
+            alt="Build Subteam"
+            class="h-64 object-cover w-full"
+          />
+        </figure>
+
+        <div class="card-body">
+          <h2 class="card-title">April Tags</h2>
+          <p>
+            April tags are essentially like QR codes but for our robot. It
+            provides our robot with essential data such as X and Y coordinates
+            along with information such as the something. We used snippets of
+            code, the April tag library provided by FTC along with our knowledge
+            of Java, to piece together a program that would read these April
+            tags and provide us with valuable information. We had a few hiccups
+            along the way, such as the April tags being incorrectly detected, or
+            identified. But through a bit of perseverance, we were able to fix
+            all the issues we faced.
           </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Design Process Heading -->
-    <div class="py-6"></div>
-    <div
-      style="border-top: .5px solid white; border-right: .5px solid white;border-left: .5px solid white;"
-      class="shadow-xl bg-base-200 rounded-xl p-6"
-    >
-      <h2 class="text-center text-4xl rounded-3xl font-bold mb-4">
-        Ongoing Programming Projects
-      </h2>
-      <p class="bg-base-100 text-2xl rounded-lg text-center p-4">
-        We are constantly working to improve our robots' features and
-        capabilities through the code powering it. Below are the ongoing
-        programming projects. If you are interested, contact us via our socials
-        or email.
-      </p>
-    </div>
-    <div class="py-6"></div>
-
-    <div
-      class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row"
-    >
-      <figure>
-        <img class="shadow-2xl" src="/roadrunner.webp" alt="roadrunner img" />
-      </figure>
-      <div class="card-body text-center">
-        <h1 class="text-5xl font-semibold">Implementing roadrunner</h1>
-        <p class="py-6">
-          Road Runner is a motion planning library, written for the FTC robotics
-          competition. Designed primarily for autonomous robotic movement, it
-          allows for path creation during the autonomous period. We are using
-          odometry with deadwheels to determine the robot's position on the
-          field.
-        </p>
-      </div>
-      <figure>
-        <img class="shadow-2xl" src="/roadrunner.webp" alt="roadrunner img" />
-      </figure>
-    </div>
-    <div class="py-6"></div>
-
-    <!--
+  <!--
     <div class="card card-side bg-base-100 mb-4 flex-col p-4 shadow-xl lg:flex-row">
         <figure class="basis-3/4">
             <img class="max-w-sm shadow-2xl" src="https://miro.medium.com/v2/resize:fit:1400/1*u1Ol4tsi18H-dFfJIc4VWQ.jpeg" alt="Movie" />
@@ -99,33 +138,22 @@ import Hero from "../../components/Hero.svelte";
     </div>
     -->
 
-    <!-- Resource box -->
-    <div
-      style="border: .5px solid white;"
-      class="w-full shadow-xl bg-base-200 rounded-xl p-6 text-center"
+  <!-- Resource box -->
+  <div class="bg-base-200 pt-5">
+    <h2
+      class="mx-auto text-center mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
     >
-      <h2 class="text-4xl font-bold mb-4">RESOURCES</h2>
-      <div class="py-5 bg-base-300 rounded-box">
-        <!--Creates the buttons and dividers for the Core Values section -->
-        <div class="flex flex-wrap w-full justify-center opacity-90">
-          <!--Button corresponding to a web page-->
-          <div class="grid h-100 mx-4 my-2 card bg-base-300">
-            <a
-              class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
-              href="https://github.com/Team4914"
-              >Victoria Park Github
-            </a>
-          </div>
-          <!--Button corresponding to a web page-->
-          <div class="grid h-100 mx-4 my-2 card bg-base-300">
-            <a
-              class="transition-all duration-700 ease-in-out grid h-20 mx-4 my-2 flex-grow card bg-red-900 text-gray-50 rounded-box place-items-center btn hover:-translate-y-2 hover:bg-red-800"
-              href="https://docs.github.com/en/get-started/quickstart/hello-world"
-              >Github tutorial
-            </a>
-          </div>
-        </div>
-      </div>
+      RESOURCES
+    </h2>
+
+    <div class="flex justify-center p-5 gap-x-8 gap-y-2 flex-wrap">
+      <a href="https://github.com/Team4914" class="btn btn-primary"
+        >Victoria Park Github</a
+      >
+      <a
+        href="https://docs.github.com/en/get-started/quickstart/hello-world"
+        class="btn btn-primary">Github tutorial</a
+      >
     </div>
   </div>
 </BaseLayout>

@@ -1,3 +1,5 @@
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+
 export default {
   daisyui: {
     darkTheme: "dark",
@@ -28,18 +30,45 @@ export default {
       },
     ],
   },
-  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/typography"),
+    addVariablesForColors,
+  ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+    },
   },
   content: [
     "./index.html",
     "./src/**/*.{svelte,js,ts,astro}",
     "./src/**/**/*.{svelte,js,ts,astro}",
-  ], //for unused css
+  ], // Specify the paths for purging unused CSS
   variants: {
     extend: {},
   },
-  darkMode: ["class", '[data-theme="dark"]'],
-  // or 'media' or 'class'
+  darkMode: ["class", '[data-theme="dark"]'], // Enable dark mode
 };
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g., var(--gray-200).
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}

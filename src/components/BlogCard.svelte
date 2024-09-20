@@ -26,4 +26,5 @@
   </div>
   <div class="mt-auto flex items-center gap-x-3">
     <p class="text-sm text-gray-800 dark:text-gray-200">{"Team " + author}</p>
-</a>
+  </div></a
+>
