@@ -37,6 +37,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        pixel: ["Argent Pixel", "sans-serif"],
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

@@ -17,6 +17,7 @@ const pages: Page[] = [
     ],
   },
   { name: "Blog", href: "/blog" },
+  { name: "Sponsors", href: "/sponsors" },
   { name: "Awards", href: "/awards" },
   { name: "Community Outreach", href: "/community-outreach" },
   { name: "Resources", href: "/resources" },

@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte"
   },
   "dependencies": {

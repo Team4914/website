@@ -11,3 +11,9 @@
   -webkit-text-fill-color: transparent;
   background-size: 400%;
 }
+
+@font-face {
+  font-family: Argent Pixel;
+  font-weight: 400;
+  src: url(/fonts/ArgentPixelCF-Regular.woff) format("woff");
+}

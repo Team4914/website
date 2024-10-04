@@ -1,30 +1,46 @@
 <script lang="ts">
+  import { cn } from "../utils/cn";
+
   export let title: string;
   export let author: string;
   export let description: string;
-  export let sideImage: string;
-  export let altText: string;
+  export let coverImg: string;
   export let linkTo: string;
+  export let readTime: string;
 </script>
 
-<a
-  class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-  href={"/blog/" + linkTo}
->
-  <div class="aspect-w-16 aspect-h-11">
-    <img class="w-full object-cover rounded-xl" src={sideImage} alt={altText} />
-  </div>
-  <div class="my-6">
-    <h1
-      class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white"
+<a href={"/blog/" + linkTo}>
+  <div class="max-w-lg w-full group/card">
+    <div
+      class="cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl max-w-lg mx-auto backgroundImage flex flex-col justify-between p-4 bg-cover"
+      style={`background-image: url(${coverImg})`}
     >
-      {title}
-    </h1>
-    <p class="mt-5 text-gray-600 dark:text-gray-400">
-      {description}
-    </p>
+      <div
+        class="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black bg-black hover:opacity-70 opacity-30"
+      ></div>
+      <div class="flex flex-row items-center space-x-4 z-10">
+        <img
+          height="100"
+          width="100"
+          alt="Avatar"
+          src="/favicon.svg"
+          class="h-10 w-10 rounded-full border-2 object-cover"
+        />
+        <div class="flex flex-col">
+          <p class="font-normal text-base text-gray-50 relative z-10">
+            {author}
+          </p>
+          <p class="text-sm text-gray-400">{readTime}</p>
+        </div>
+      </div>
+      <div class="text content">
+        <h1 class="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
+          {title}
+        </h1>
+        <p class="font-normal text-sm text-gray-50 relative z-10 my-4">
+          {description}
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="mt-auto flex items-center gap-x-3">
-    <p class="text-sm text-gray-800 dark:text-gray-200">{"Team " + author}</p>
-  </div></a
->
+</a>

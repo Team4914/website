@@ -1,23 +1,23 @@
 <script lang="ts">
   const cards = [
     {
-      title: "OUR MISSION",
+      title: "Our Mission",
       description:
         "Team 4914's mission is to stimulate students and inspire a new generation of students into STEM through hands-on learning and an environment for creativity and confidence to grow.",
       image: "/index/our-mission.webp",
       alt: "our-mission",
     },
     {
-      title: "OUR GOALS",
+      title: "Our Goals",
       description:
         "The primary goal of 4914 is the extension of STEM into the community, and helping students understand the importance of STEM. Beyond that, we hope to propagate the values of FIRST & Team 4914 into the community, provide a comfortable enviroment for students to learn about STEM, and create strong bonds, both winthin our team members, and with the general community.",
       image: "/index/goals.webp",
       alt: "our-goals",
     },
     {
-      title: "OUR HISTORY",
+      title: "Our History",
       description:
-        "Starting in 2014, Team 4914 “Panthers” was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Our FIRST robotics team’s first year started off with “Aerial Assist”, where we received Rookie All Star Award and Imagery Award at our first event. Thereafter, the team progressed onto the International Stage at St.Louis, Missouri, all within a year of being founded. Since then, we have won 11 FRC awards and grown in size and diversity. Team 4914 has always had the same goals in mind since the start, and through the help of our dedicated members, has refined & polished a clear system to engage students & educate them about STEM while also providing a fun and engaging competition background for them to test their new skills and grow.",
+        "Starting in 2014, Team 4914 “Panthers” was established at Victoria Park Collegiate Institute with students from the school and several teacher mentors. Since then, we have won 11 FRC awards and grown in size and diversity. Through the help of our dedicated members, we have refined & polished a clear system to engage students & educate them about STEM while also providing a fun and engaging competition background for them to test their skills and grow.",
       image: "/index/history.webp",
       alt: "our-history",
     },
@@ -28,7 +28,7 @@
   <div class="hero bg-base-200 h-fit">
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold duration-100">
+        <h1 class="text-5xl font-bold font-pixel duration-100">
           <span id="welcome"></span>
         </h1>
         <p class="pt-6">
@@ -41,27 +41,31 @@
   </div>
   <!-- "OUR MISSION", "OUR GOALS" and "OUR HISTORY" Cards -->
   <div
-    class="flex flex-col md:flex-row justify-evenly items-center md:items-stretch"
+    class="flex flex-col md:flex-row justify-center gap-6 items-center md:items-stretch p-10 mb-10"
   >
     {#each cards as card}
       <div
-        class="card bg-base-200 my-10 shadow-xl hover:scale-[1.02] md:w-[30%] w-11/12"
+        class="max-w-sm w-full p-4 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group hover:scale-[1.05] transition-transform duration-200"
       >
-        <figure>
+        <div class="rounded-xl z-40">
           <img
             src={card.image}
             alt={card.alt}
             width="700"
             height="350"
-            loading="lazy"
+            loading="eager"
           />
-        </figure>
-        <div class="card-body">
-          <h1 class="card-title">{card.title}</h1>
-          <p>
-            {card.description}
-          </p>
         </div>
+        <h3
+          class="text-3xl font-pixel font-semibold text-gray-800 dark:text-white py-2"
+        >
+          {card.title}
+        </h3>
+        <p
+          class="text-md font-normal text-neutral-600 dark:text-neutral-400 max-w-sm"
+        >
+          {card.description}
+        </p>
       </div>
     {/each}
   </div>
@@ -103,11 +107,5 @@
   #welcome::before {
     animation: welcome 28s linear infinite;
     content: "Welcome";
-  }
-  .card {
-    transition: transform 330ms ease-in-out;
-    box-shadow:
-      0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -2px rgba(0, 0, 0, 0.1);
   }
 </style>
