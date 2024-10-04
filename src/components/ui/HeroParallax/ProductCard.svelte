@@ -3,7 +3,6 @@
 
   export let product: {
     title: string;
-    link: string;
     thumbnail: string;
   };
   export let translate: MotionValue<number>;
@@ -13,6 +12,9 @@
   let:motion
   style={{
     x: translate,
+  }}
+  whileHover={{
+    y: -20,
   }}
 >
   <div use:motion class="relative h-96 w-[30rem] flex-shrink-0">

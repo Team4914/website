@@ -1,7 +1,6 @@
 <script lang="ts">
   export let products: {
     title: string;
-    link: string;
     thumbnail: string;
   }[];
 
@@ -51,7 +50,7 @@
 
 <div
   bind:this={ref}
-  class="relative flex flex-col self-auto overflow-hidden py-4 antialiased [perspective:1000px] [transform-style:preserve-3d]"
+  class="h-[300vh] relative flex flex-col self-auto overflow-hidden py-4 antialiased [perspective:1000px] [transform-style:preserve-3d]"
 >
   <div
     class="relative left-0 top-20 mx-auto w-full max-w-7xl px-4 py-8 md:py-4"
